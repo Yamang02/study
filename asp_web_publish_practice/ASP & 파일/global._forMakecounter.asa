@@ -1,0 +1,52 @@
+<SCRIPT LANGUAGE=VBscript RUNAT=Server>
+
+Sub Application_OnStart
+   strFname=Server.MapPath(".")+"\visit.txt"   
+   'visit.txt가 있는 곳의 경로지정. 현재 global.asa 가 있는 디렉토리에 존재하는 visit.txt로 설정한다.
+   Set objFile = Server.CreateObject("Scripting.FileSystemObject")
+   Set out = objFile.OpenTextFile(strFname,1)
+   Application("visit") = out.ReadLine      '텍스트 파일안에 있는 숫자를 읽어온다.
+   Set out = nothing
+   Set objFile = nothing
+End Sub
+
+Sub Application_OnEnd
+   strFname=Server.MapPath(".")+"\visit.txt"   
+   Set objFile = Server.CreateObject("Scripting.FileSystemObject")
+   Set out = objFile.CreateTextFile(strFname, true)
+   out.WriteLine(Application("visit"))      '텍스트 파일에 현재까지의 방문자의 총 수를 저장한다.
+   Set out = nothing
+   Set objFile = nothing
+End Sub
+
+Sub Session_OnStart
+   strFname=Server.MapPath(".")+"\visit.txt"   
+
+   Application.Lock
+   Application("visit") = Application("visit") + 1
+   Application.UnLock
+
+   If Application("visit") MOD 5 =0 then
+      Set objFile = Server.CreateObject("Scripting.FileSystemObject")
+      Set out = objFile.CreateTextFile(strFname, true)
+      Application.Lock
+      out.WriteLine(Application("visit"))
+      Application.UnLock
+      Set out = nothing
+      Set objFile = nothing
+   End If
+
+   '오늘의 카운트가 추가된 부분이다.
+   if Application("today") <> date then  '날짜가 다음날이 되었다면....
+     Application.lock
+     Application("today") = date
+     Application("today_visit") = 1
+     Application.unlock
+   else   '아직 오늘이라면...
+     Application.lock
+     Application("today_visit") = Application("today_visit") + 1
+     Application.unlock
+  end if
+End Sub
+
+</SCRIPT>

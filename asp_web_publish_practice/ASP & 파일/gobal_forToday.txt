@@ -1,0 +1,12 @@
+Sub Sesion_OnStart
+   if Application("today") <> date then  '날짜가 다음날이 되었다면....
+     Application.lock
+     Application("today") = date
+     Application("today_visit") = 1
+     Application.unlock
+   else   '아직 오늘이라면...
+     Application.lock
+     Application("today_visit") = Application("today_visit") + 1
+     Application.unlock
+   end if
+End Sub
