@@ -1,0 +1,13 @@
+﻿  Hello.c
+C:\Users\dit223501\Desktop\practice\jeongcheogi_practice\clang_practice\clang_practice\Hello.c(27,2): warning C4013: 'step1_a'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
+C:\Users\dit223501\Desktop\practice\jeongcheogi_practice\clang_practice\clang_practice\Hello.c(90,20): warning C4305: '=': 'int'에서 'short'(으)로 잘립니다.
+C:\Users\dit223501\Desktop\practice\jeongcheogi_practice\clang_practice\clang_practice\Hello.c(93,18): warning C4307: '+': 부호 있는 정수 계열 상수 오버플로입니다.
+C:\Users\dit223501\Desktop\practice\jeongcheogi_practice\clang_practice\clang_practice\Hello.c(94,18): warning C4307: '-': 부호 있는 정수 계열 상수 오버플로입니다.
+C:\Users\dit223501\Desktop\practice\jeongcheogi_practice\clang_practice\clang_practice\Hello.c(51): warning C4716: 'step1_a': 값을 반환해야 합니다.
+C:\Users\dit223501\Desktop\practice\jeongcheogi_practice\clang_practice\clang_practice\Hello.c(67): warning C4716: 'step1_b': 값을 반환해야 합니다.
+C:\Users\dit223501\Desktop\practice\jeongcheogi_practice\clang_practice\clang_practice\Hello.c(102): warning C4716: 'step1_c': 값을 반환해야 합니다.
+C:\Users\dit223501\Desktop\practice\jeongcheogi_practice\clang_practice\clang_practice\Hello.c(149): warning C4716: 'step2_a': 값을 반환해야 합니다.
+C:\Users\dit223501\Desktop\practice\jeongcheogi_practice\clang_practice\clang_practice\Hello.c(121): warning C4716: 'step1_d': 값을 반환해야 합니다.
+C:\Users\dit223501\Desktop\practice\jeongcheogi_practice\clang_practice\clang_practice\Hello.c(164): warning C4716: 'step2_b': 값을 반환해야 합니다.
+C:\Users\dit223501\Desktop\practice\jeongcheogi_practice\clang_practice\clang_practice\Hello.c(186): warning C4716: 'step2_d': 값을 반환해야 합니다.
+  clang_practice.vcxproj -> C:\Users\dit223501\Desktop\practice\jeongcheogi_practice\clang_practice\x64\Debug\clang_practice.exe
