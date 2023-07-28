@@ -11,8 +11,9 @@ url = Request.form("url")
 memo = Request.form("memo")
 pwd = Request.form("pwd")
 
+
 Dim strConnect
-strConnect="Provider=Microsoft.ACE.OLEDB.16.0;Data Source=C:\Users\dit223501\Desktop\git\study\asp_web_publish_practice\ASP & 게시판\MyDataBase.mdb;Persist Security Info=False"
+strConnect="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\dit223501\Desktop\git\study\asp_web_publish_practice\ASP & 게시판\MyDataBase.mdb;Persist Security Info=False"
 
 Dim adoRs
 Set adoRs = Server.CreateObject("ADODB.RecordSet")
