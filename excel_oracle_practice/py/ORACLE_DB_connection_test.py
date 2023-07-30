@@ -6,6 +6,7 @@ import cx_Oracle
 
 cpath = os.getcwd()
 config_file_path = cpath + '/excel_oracle_practice/config/test_connection_info.json'
+# config_file_path = '../config/test_connection_info.json'
 
 # 설정 파일 읽기
 with open(config_file_path, 'r') as config_file:
@@ -26,25 +27,9 @@ def connect() :
     try:
         connection = cx_Oracle.connect(username, password, dsn)
         print("Oracle DB에 성공적으로 연결되었습니다.")
-        connection.isconnected()
         return connection
     except cx_Oracle.Error as error:
         print(f"Oracle DB 연결에 실패했습니다: {error}")
         return None
 
-def connectionCheck(connection):
-    # 연결이 열려있는지 확인
-    if connection.isconnected():
-        print("연결이 열려있습니다.")
-        # 연결 종료
-        connection.close()
-    else:
-        print("연결이 닫혔거나 실패하였습니다.")
-
-nc = connect()
-if nc is not None:
-    try:
-        print(nc)
-        connectionCheck(nc)
-    except:
-        print("실패했습니다.")
+# connect()

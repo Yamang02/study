@@ -1,6 +1,7 @@
 import cx_Oracle
 from openpyxl import load_workbook
 import os
+import ORACLE_DB_connection_test as conn
 
 # 스크립트가 위치한 경로
 script_path = os.path.dirname(os.path.abspath(__file__))
@@ -9,7 +10,6 @@ script_path = os.path.dirname(os.path.abspath(__file__))
 file_path = os.path.join(script_path, "../EXCEL_TEST.xlsx")
 
 ''' 데이터베이스 연결 정보는 config로 실행
-
 # Oracle 데이터베이스 연결 정보
 username = "PRACTICE_TEST"
 password = "TEST"
@@ -31,7 +31,8 @@ else:
     print("Oracle DB 연결에 실패했습니다.")
     exit()
 '''
-    
+# 
+connection = conn.connect()    
 
 # Excel 파일에서 데이터 가져오기
 wb = load_workbook(filename=file_path)
