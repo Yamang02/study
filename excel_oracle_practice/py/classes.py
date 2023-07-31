@@ -1,4 +1,4 @@
-class ExcelData :
+class DataManage :
 
     # worksheet 내 헤더 정보 확인
     def worksheetHeader(self, worksheet):
@@ -10,12 +10,14 @@ class ExcelData :
         return header_data
 
     # 새 정보 입력
-    def dataInsert(self, worksheet, target_row, data):
-        for col_idx, (key, value) in enumerate(data.items(), 1):
+    def dataInsert(worksheet, target_row : int, data):
+        data_dict = data.__dict__
+
+        for col_idx, (key, value) in enumerate(data_dict.items(), 1):
             worksheet.cell(row=target_row, column=col_idx).value = value
 
     # 특정 행의 정보 확인
-    def dataSelect(self, worksheet, target_row):
+    def dataSelect(worksheet, target_row : int):
         selected_row_data = {}
         header_row = worksheet[1]  # 1행의 데이터를 가져옴
 
@@ -27,11 +29,12 @@ class ExcelData :
         return selected_row_data
     
 
-     # 특정 행의 정보 수정
-    def dataUpdate(self, worksheet, target_row, data):
+     # 특정 행의 정보 수정 (컬럼 대소문자 구분)
+    def dataUpdate(worksheet, target_row : int, data):
+        data_dict = data.__dict__
         header_row = worksheet[1]  # 1행의 데이터를 가져옴
 
-        for col_idx, (key, value) in enumerate(data.items(), 1):
+        for col_idx, (key, value) in enumerate(data_dict.items(), 1):
             # 헤더에 해당하는 컬럼을 찾기 위해 key와 일치하는 컬럼을 탐색
             for header_cell in header_row:
                 if header_cell.value == key:
@@ -41,7 +44,7 @@ class ExcelData :
                 print(f"Warning: '{key}' is not a valid column in the worksheet.")
 
      # 행의 'visible' 값을 'n'으로 변환하고 변경된 행의 인덱스를 반환하는 함수
-    def visibleToggle(self, worksheet, target_row):
+    def visibleToggle(worksheet, target_row : int):
         header_row = worksheet[1]  # 1행의 데이터를 가져옴
 
         # 'visible' 컬럼을 찾기 위해 헤더를 탐색
@@ -63,7 +66,7 @@ class ExcelData :
     
          # visible 값이 'n'인 행을 삭제하고 삭제된 행의 개수를 반환하는 함수
     
-    def dataDelete(self, worksheet):
+    def dataDelete(worksheet):
         header_row = worksheet[1]  # 1행의 데이터를 가져옴
 
         # 'visible' 컬럼을 찾기 위해 헤더를 탐색
@@ -86,3 +89,9 @@ class ExcelData :
                 deleted_row_count += 1
 
         return deleted_row_count
+
+class data_type1 :
+    def __init__(self, num, name) :
+        self.num = num
+        self.name = name
+        self.visible = 'y'
