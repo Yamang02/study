@@ -1,3 +1,5 @@
+from openpyxl import Worksheet
+
 class DataManage :
 
     # worksheet 내 헤더 정보 확인
@@ -10,7 +12,7 @@ class DataManage :
         return header_data
 
     # 새 정보 입력
-    def dataInsert(worksheet, target_row : int, data):
+    def dataInsert(worksheet : Worksheet, target_row : int, data):
         data_dict = data.__dict__
 
         for col_idx, (key, value) in enumerate(data_dict.items(), 1):
@@ -30,7 +32,7 @@ class DataManage :
     
 
      # 특정 행의 정보 수정 (컬럼 대소문자 구분)
-    def dataUpdate(worksheet, target_row : int, data):
+    def dataUpdate(worksheet : Worksheet, target_row : int, data):
         data_dict = data.__dict__
         header_row = worksheet[1]  # 1행의 데이터를 가져옴
 
@@ -44,7 +46,7 @@ class DataManage :
                 print(f"Warning: '{key}' is not a valid column in the worksheet.")
 
      # 행의 'visible' 값을 'n'으로 변환하고 변경된 행의 인덱스를 반환하는 함수
-    def visibleToggle(worksheet, target_row : int):
+    def visibleToggle(worksheet : Worksheet, target_row : int):
         header_row = worksheet[1]  # 1행의 데이터를 가져옴
 
         # 'visible' 컬럼을 찾기 위해 헤더를 탐색
@@ -66,7 +68,7 @@ class DataManage :
     
          # visible 값이 'n'인 행을 삭제하고 삭제된 행의 개수를 반환하는 함수
     
-    def dataDelete(worksheet):
+    def dataDelete(worksheet : Worksheet):
         header_row = worksheet[1]  # 1행의 데이터를 가져옴
 
         # 'visible' 컬럼을 찾기 위해 헤더를 탐색
@@ -89,6 +91,16 @@ class DataManage :
                 deleted_row_count += 1
 
         return deleted_row_count
+    
+
+
+def create_data_list(worksheet: Worksheet) -> list:
+    headers = [cell.value for cell in next(worksheet.iter_rows(min_row=1, max_row=1, values_only=True))]
+    data_list = []
+    for row in worksheet.iter_rows(min_row=2, values_only=True):
+        data = {headers[i]: row[i] for i in range(len(headers))}
+        data_list.append(data)
+    return data_list
 
 class data_type1 :
     def __init__(self, num, name) :

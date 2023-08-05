@@ -26,7 +26,6 @@ test_data2 = data_type1(3,'Tom')
 dm.dataInsert(ws_sheet1, 2, test_data)
 dm.dataInsert(ws_sheet1, 3, test_data2)
 
-
 print(dm.dataSelect(ws_sheet1, 2))
 
 dm.dataUpdate(ws_sheet1, 3, test_data2)
