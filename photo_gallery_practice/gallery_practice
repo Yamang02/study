@@ -1,0 +1,84 @@
+import os
+import tkinter as tk
+from tkinter import ttk
+from tkinter import filedialog
+from PIL import Image, ImageTk
+
+class PhotoGalleryApp:
+    def __init__(self, root):
+        self.root = root
+        self.root.title("Photo Gallery App")
+        
+        self.image_paths = []  # 이미지 파일 경로 리스트를 저장할 변수
+        self.current_index = 0  # 현재 보여지는 이미지의 인덱스
+        
+        self.frame = ttk.Frame(root)
+        self.frame.pack(padx=10, pady=10)
+        
+        self.canvas = tk.Canvas(self.frame)
+        self.canvas.pack()
+        
+        self.info_label = ttk.Label(self.frame, text="")  # 이미지 정보를 표시할 레이블 위젯
+        self.info_label.pack()
+        
+        self.prev_button = ttk.Button(self.frame, text="Previous", command=self.show_previous_image)
+        self.prev_button.pack(side="left")
+        
+        self.next_button = ttk.Button(self.frame, text="Next", command=self.show_next_image)
+        self.next_button.pack(side="right")
+        
+        self.load_button = ttk.Button(self.frame, text="Load Images", command=self.load_images)
+        self.load_button.pack()
+        
+    def load_images(self):
+        """이미지를 불러올 폴더를 선택하고 이미지 파일 경로를 저장"""
+        folder_path = filedialog.askdirectory(title="Select Folder")
+        if folder_path:
+            self.image_paths = self.get_image_paths(folder_path)
+            self.current_index = 0
+            self.show_image()
+            
+    def get_image_paths(self, folder_path):
+        """주어진 폴더 경로에서 이미지 파일을 재귀적으로 탐색하여 경로 리스트 반환"""
+        image_paths = []
+        for root_folder, _, files in os.walk(folder_path):
+            for file in files:
+                if file.lower().endswith(('.png', '.jpg', '.jpeg', '.gif')):
+                    image_paths.append(os.path.join(root_folder, file))
+        return image_paths
+            
+    def show_image(self):
+        """현재 인덱스에 해당하는 이미지를 화면에 보여주고 이미지 정보를 업데이트"""
+        if self.image_paths:
+            image_path = self.image_paths[self.current_index]
+            try:
+                image = Image.open(image_path)
+                image = image.resize((400, 300), Image.LANCZOS)
+                self.photo = ImageTk.PhotoImage(image)
+                self.canvas.create_image(0, 0, anchor="nw", image=self.photo)
+                self.info_label.config(text="")  # 이미지 표시 후 레이블 초기화
+            except Exception as e:
+                self.canvas.delete("all")  # 이미지 영역 초기화
+                self.info_label.config(text="Cannot load image")
+            
+            # 이미지 파일명과 상위 디렉토리명을 표시
+            file_name = os.path.basename(image_path)
+            parent_folder = os.path.basename(os.path.dirname(image_path))
+            self.info_label.config(text=f"File: {file_name}\nFolder: {parent_folder}")
+            
+    def show_previous_image(self):
+        """이전 이미지로 전환"""
+        if self.image_paths:
+            self.current_index = (self.current_index - 1) % len(self.image_paths)
+            self.show_image()
+            
+    def show_next_image(self):
+        """다음 이미지로 전환"""
+        if self.image_paths:
+            self.current_index = (self.current_index + 1) % len(self.image_paths)
+            self.show_image()
+
+if __name__ == "__main__":
+    root = tk.Tk()
+    app = PhotoGalleryApp(root)
+    root.mainloop()
