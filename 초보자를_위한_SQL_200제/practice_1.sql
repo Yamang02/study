@@ -1,0 +1,6 @@
+SELECT
+    EMPNO,
+    ENAME,
+    SAL
+FROM
+    EMP;

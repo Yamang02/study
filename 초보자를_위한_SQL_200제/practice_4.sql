@@ -1,0 +1,4 @@
+SELECT
+    ENAME || SAL
+FROM
+    EMP;

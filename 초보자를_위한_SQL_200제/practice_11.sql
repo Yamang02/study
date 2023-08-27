@@ -1,0 +1,40 @@
+/*비교연산자 배우기 BETWEEN AND*/
+
+SELECT
+    ENAME,
+    SAL
+FROM
+    EMP
+WHERE
+    SAL BETWEEN 1000 AND 3000;
+    
+    
+-- BETWEEN 은 하한값 AND 상한값으로 해야한다.
+SELECT
+    ENAME,
+    SAL
+FROM
+    EMP
+WHERE
+    SAL BETWEEN 3000 AND 1000;
+-- 결과 없음
+
+SELECT
+    ENAME,
+    SAL
+FROM
+    EMP
+WHERE
+    SAL NOT BETWEEN 1000 AND 3000;
+
+SELECT
+    ENAME,
+    SAL
+FROM
+    EMP
+WHERE
+    ( SAL < 1000
+      OR SAL > 3000 );
+      
+SELECT ENAME, HIREDATE
+FROM EMP
