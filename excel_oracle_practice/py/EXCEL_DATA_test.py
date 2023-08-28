@@ -2,6 +2,8 @@
 from openpyxl import load_workbook
 import os
 from classes import DataManage as dm, data_type1
+
+
 # 스크립트가 위치한 경로
 script_path = os.path.dirname(os.path.abspath(__file__))
 
@@ -17,7 +19,6 @@ ws_sheet1 = wb['Sheet1']
 # 데이터 생성
 from classes import data_type1  # classes 모듈에서 data_type1 클래스를 임포트합니다.
 
-'''
 # data_type1 클래스의 생성자에 num과 name을 전달합니다.
 test_data = data_type1(2, 'John')
 test_data2 = data_type1(3,'Tom')
@@ -28,10 +29,11 @@ dm.dataInsert(ws_sheet1, 3, test_data2)
 
 print(dm.dataSelect(ws_sheet1, 2))
 
-dm.dataUpdate(ws_sheet1, 3, test_data2)
+# dm.dataUpdate(ws_sheet1, 3, test_data2)
 
-dm.visibleToggle(ws_sheet1, 3)
-dm.dataDelete(ws_sheet1)
-'''
+# dm.visibleToggle(ws_sheet1, 3)
+# dm.dataDelete(ws_sheet1)
+
+
 
 wb.save(filename=file_path)

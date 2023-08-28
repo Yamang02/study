@@ -1,0 +1,28 @@
+SELECT
+    ENAME,
+    SAL,
+    JOB
+FROM
+    EMP
+WHERE
+    JOB IN ( 'SALESMAN', 'ANALYST', 'MANAGER' );
+
+SELECT
+    ENAME,
+    SAL,
+    JOB
+FROM
+    EMP
+WHERE
+    ( JOB = 'SALESMAN'
+      OR JOB = 'ANALYST'
+      OR JOB = 'MANAGER' );
+
+SELECT
+    ENAME,
+    SAL,
+    JOB
+FROM
+    EMP
+WHERE
+    JOB NOT IN ( 'SALESMAN', 'ANALYST', 'MANAGER' );

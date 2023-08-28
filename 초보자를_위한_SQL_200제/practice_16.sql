@@ -1,0 +1,12 @@
+/* 대소문자 변환 함수 UPPER, LOWER, INITCAP */
+SELECT
+    UPPER(ENAME),
+    LOWER(ENAME),
+    INITCAP(ENAME)
+FROM
+    EMP;
+    
+/* 
+문자 함수 UPPER LOWER INCAP SUBSTR LENGTH CONCAT INSTR TRIM LPAD RPAD
+단일행 함수 : 하나의 행을 입력받아 하나의 행을 반환
+*/
