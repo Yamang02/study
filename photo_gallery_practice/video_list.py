@@ -2,7 +2,7 @@ import os
 import glob
 import csv
 
-directory = "F:\\영상\\정리완료"  # 동영상 파일이 있는 디렉토리 경로로 변경하세요.
+directory = "E:\\video_source"  # 동영상 파일이 있는 디렉토리 경로로 변경하세요.
 video_files = glob.glob(os.path.join(directory, "*.mp4"))
 
 with open("video_list.csv", "w", newline="") as csvfile:
