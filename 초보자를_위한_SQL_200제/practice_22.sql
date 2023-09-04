@@ -1,0 +1,20 @@
+/* 특정 글자 잘라내기 (TRIM, RTRIM, LTRIM)*/
+
+SELECT 'smith', LTRIM('smith', 's'), RTRIM('smith', 'h'), TRIM('s' from 'smiths')
+FROM dual;
+
+INSERT INTO EMP(EMPNO, ENAME, SAL, JOB, DEPTNO) VALUES(8291, 'JACK ', 3000, 'SALESMAN', 30);
+COMMIT;
+
+SELECT ENAME, SAL
+FROM  EMP
+WHERE ENAME = 'JACK';
+-- 입력할 때 공백을 입력했으므로, 결과가 나오지 않음
+
+SELECT ENAME, SAL
+FROM  EMP
+WHERE RTRIM(ENAME) = 'JACK';
+
+
+DELETE FROM EMP WHERE TRIM(ENAME) = 'JACK';
+COMMIT;
