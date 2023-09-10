@@ -1,0 +1,21 @@
+/* 날짜 간 개월 수 출력하기 MONTHS_BETWEEN */
+
+-- 최신날짜, 예전날짜 순으로 입력해야 함
+SELECT
+    ENAME,
+    MONTHS_BETWEEN(SYSDATE, HIREDATE)
+FROM
+    EMP;
+
+-- MONTHS_BETWEEN을 사용하지 않는다면
+SELECT
+    TO_DATE('2019-06-01', 'RRRR-MM-DD') - TO_DATE('2018-10-01', 'RRRR-MM-DD')
+FROM
+    DUAL;
+
+
+SELECT
+    MONTHS_BETWEEN(SYSDATE,(SYSDATE - 1))
+FROM
+    DUAL;
+    
