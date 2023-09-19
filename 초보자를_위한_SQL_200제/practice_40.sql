@@ -1,0 +1,6 @@
+/* 건수 출력하기(COUNT) */
+
+SELECT COUNT(EMPNO)
+FROM EMP;
+
+
