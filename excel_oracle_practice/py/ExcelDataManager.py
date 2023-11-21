@@ -59,14 +59,14 @@ class ExcelDataManager :
 
 
     # 새 정보 입력
-    def dataInsert(worksheet, target_row : int, data):
+    def dataInsert(self, worksheet, target_row : int, data):
         data_dict = data.__dict__
 
         for col_idx, (key, value) in enumerate(data_dict.items(), 1):
             worksheet.cell(row=target_row, column=col_idx).value = value
 
     # 특정 행의 정보 확인
-    def dataSelect(worksheet, target_row : int):
+    def dataSelect(self, worksheet, target_row : int):
         selected_row_data = {}
         header_row = worksheet[1]  # 1행의 데이터를 가져옴
 
@@ -81,7 +81,7 @@ class ExcelDataManager :
      # 특정 행의 정보 수정 (컬럼 대소문자 구분)
 
     # 데이터 업데이트 
-    def dataUpdate(worksheet, target_row : int, data):
+    def dataUpdate(self, worksheet, target_row : int, data):
         data_dict = data.__dict__
         header_row = worksheet[1]  # 1행의 데이터를 가져옴
 
@@ -97,7 +97,7 @@ class ExcelDataManager :
      # 행의 'visible' 값을 'n'으로 변환하고 변경된 행의 인덱스를 반환하는 함수
 
     # visible값 토글
-    def visibleToggle(worksheet, target_row : int):
+    def visibleToggle(self, worksheet, target_row : int):
         header_row = worksheet[1]  # 1행의 데이터를 가져옴
 
         # 'visible' 컬럼을 찾기 위해 헤더를 탐색
@@ -120,7 +120,7 @@ class ExcelDataManager :
          # visible 값이 'n'인 행을 삭제하고 삭제된 행의 개수를 반환하는 함수
     
     # 데이터 삭제
-    def dataDelete(worksheet):
+    def dataDelete(self, worksheet):
         header_row = worksheet[1]  # 1행의 데이터를 가져옴
 
         # 'visible' 컬럼을 찾기 위해 헤더를 탐색
@@ -144,13 +144,13 @@ class ExcelDataManager :
 
         return deleted_row_count
     
-def create_data_list(worksheet) -> list:
-    headers = [cell.value for cell in next(worksheet.iter_rows(min_row=1, max_row=1, values_only=True))]
-    data_list = []
-    for row in worksheet.iter_rows(min_row=2, values_only=True):
-        data = {headers[i]: row[i] for i in range(len(headers))}
-        data_list.append(data)
-    return data_list
+    def create_data_list(self, worksheet) -> list:
+        headers = [cell for cell in next(worksheet.iter_rows(min_row=1, max_row=1, values_only=True))]
+        data_list = []
+        for row in worksheet.iter_rows(min_row=2, values_only=True):
+            data = {headers[i]: row[i] for i in range(len(headers))}
+            data_list.append(data)
+        return data_list
 
 class data_type_TEST :
     def __init__(self, num, name) :
