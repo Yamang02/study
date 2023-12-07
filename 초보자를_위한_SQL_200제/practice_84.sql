@@ -1,0 +1,18 @@
+/* 84. SELECT FOR UPDATE절 이해하기 */
+
+
+/* 
+JONES의 이름과 월급, 부서 번호를 조회하는 동안 다른 세션에서 JONES의 데이터를 
+갱신하지 못하게 함 
+*/
+
+/* SESSION A */
+SELECT ENAME, SAL, DEPTNO FROM EMP
+WHERE ENAME = 'JONES' FOR UPDATE;
+
+/* SESSION B (LOCKED) */
+UPDATE EMP SET SAL = 9000 WHERE ENAME = 'JONES';
+
+/* SESSION A */
+COMMIT;
+
