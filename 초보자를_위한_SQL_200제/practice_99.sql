@@ -1,0 +1,19 @@
+/* 실수로 지운 데이터 복구하기 ① (FLASHBACK QUERY)*/
+
+SELECT
+    *
+FROM
+    EMP AS OF TIMESTAMP ( SYSTIMESTAMP - INTERVAL '5' MINUTE )
+WHERE
+    ENAME = 'KING';
+    
+SELECT ENAME, SAL FROM EMP WHERE ENAME = 'KING';    
+
+UPDATE EMP SET SAL = 0 WHERE ENAME = 'KING';
+
+COMMIT;
+
+/*5분전의 시간 확인*/
+/*특정 시간을 입력해서 확인도 가능 TIMESTAMP 'YY/MM/DD HH:MM:SS' */
+/* 플래쉬백 골든 타임은 기본 15분.  UNDO RETENTION으로 확인 가능 */
+SELECT NAME, VALUE FROM V$PARAMETER WHERE NAME='undo_retention';
