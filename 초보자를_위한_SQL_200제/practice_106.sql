@@ -1,0 +1,10 @@
+/* 106. 데이터의 품질 높이기 ③(NOT NULL)*/
+
+CREATE TABLE DEPTS (
+    DEPNO NUMBER(10),
+    DNAME VARCHAR2(14),
+    LOC   VARCHAR2(10)
+        CONSTRAINT DEPTS_LOC_NN NOT NULL
+);
+
+/*NULL 입력값 비허용*/
