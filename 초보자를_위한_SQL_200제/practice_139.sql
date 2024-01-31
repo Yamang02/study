@@ -1,0 +1,13 @@
+/*139. PL/SQL 변수 이해하기 ①*/
+
+SET SERVEROUTPUT ON
+ACCEPT P_NUM1 PROMPT '첫 번째 숫자'
+ACCEPT P_NUM2 PROMPT '두 번째 숫자'
+
+DECLARE
+    V_SUM NUMBER(10);
+
+BEGIN 
+    V_SUM := &P_NUM1 + &P_NUM2;
+    
+END;
