@@ -6,8 +6,8 @@ ACCEPT P_NUM2 PROMPT '두 번째 숫자'
 
 DECLARE
     V_SUM NUMBER(10);
-
-BEGIN 
+BEGIN
     V_SUM := &P_NUM1 + &P_NUM2;
-    
+    DBMS_OUTPUT.PUT_LINE('총합은' || V_SUM);
+
 END;
