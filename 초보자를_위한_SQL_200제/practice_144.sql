@@ -1,6 +1,6 @@
 /*144. PL/SQL While Loop 이해하기 */
-
-DECLARE V_COUNT NUMBER(10) := 0;
+SET SERVEROUTPUT ON
+DECLARE V_COUNT  NUMBER(10) := 0;
 
 
 BEGIN
@@ -9,6 +9,6 @@ BEGIN
         DBMS_OUTPUT.PUT_LINE('2 x'
                              || V_COUNT
                              || ' = '
-                             || 2 + V_COUNT);
+                             || 2 * V_COUNT);
     END LOOP;
 END;
