@@ -1,0 +1,22 @@
+/*150. 프로시저 구현하기 */
+
+SET SERVEROUTPUT ON
+
+SET VERIFY OFF
+
+CREATE OR REPLACE PROCEDURE P_ENAME_SAL (
+    P_ENAME IN EMP.ENAME%TYPE
+) IS
+    V_SAL EMP.SAL%TYPE;
+BEGIN
+    SELECT
+        SAL INTO V_SAL
+    FROM
+        EMP
+    WHERE
+        ENAME = P_ENAME;
+    DBMS_OUTPUT.PUT_LINE(V_SAL
+                         || '입니다');
+END;
+
+EXEC P_ENAME_SAL('SCOTT');
