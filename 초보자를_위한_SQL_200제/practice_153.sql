@@ -1,0 +1,19 @@
+/*153. 수학식 구현하기 ② (직각삼각형) */
+
+SET SERVEROUTPUT ON
+
+SET VERIFY OFF
+
+ACCEPT P_NUM1 PROMPT '밑변'
+
+ACCEPT P_NUM2 PROMPT '높이'
+
+ACCEPT P_NUM3 PROMPT '빗변'
+
+BEGIN
+    IF POWER(&P_NUM1, 2) + POWER(&P_NUM2, 2) = POWER(&P_NUM3, 2) THEN
+        DBMS_OUTPUT.PUT_LINE('직각삼각형');
+    ELSE
+        DBMS_OUTPUT.PUT_LINE('직각삼각형이 아님');
+    END IF;
+END;
