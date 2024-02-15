@@ -1,0 +1,23 @@
+/* 154. 수학식 구현하기 ③ (지수 함수) */
+
+SET SERVEROUTPUT ON
+
+SET VERIFY OFF
+
+ACCEPT P_NUM1 PROMPT '밑수'
+
+ACCEPT P_NUM2 PROMPT '지수'
+
+DECLARE
+    V_RESULT NUMBER(10) := 1;
+    V_NUM2   NUMBER(10) := &P_NUM1;
+    V_COUNT  NUMBER(10) := 0;
+BEGIN
+    LOOP
+        V_COUNT := V_COUNT +1;
+        V_RESULT := V_RESULT * V_NUM2;
+        EXIT WHEN V_COUNT = &P_NUM2;
+    END LOOP;
+
+    DBMS_OUTPUT.PUT_LINE(V_RESULT);
+END;
