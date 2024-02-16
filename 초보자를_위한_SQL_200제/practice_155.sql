@@ -1,0 +1,26 @@
+/* 수학식 구현하기 ④(로그 함수) */
+
+SET SERVEROUTPUT ON
+
+SET VERIFY OFF
+
+ACCEPT P_NUM1 PROMPT '밑수'
+
+ACCEPT P_NUM2 PROMPT '진수'
+
+DECLARE
+    V_NUM1   NUMBER(10) := &P_NUM1;
+    V_NUM2   NUMBER(10) := &P_NUM2;
+    V_COUNT  NUMBER(10) := 0;
+    V_RESULT NUMBER(10) := 1;
+BEGIN
+    LOOP
+        V_COUNT := V_COUNT +1;
+        V_RESULT := V_RESULT * V_NUM1;
+        EXIT WHEN V_RESULT = V_NUM2;
+    END LOOP;
+
+    DBMS_OUTPUT.PUT_LINE(
+        A => V_COUNT /*IN VARCHAR2*/
+    );
+END;
