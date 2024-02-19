@@ -1,0 +1,22 @@
+/* 158. 기초 통계 구현하기 ⓛ(평균값) */
+
+SET SERVEROUTPUT ON
+
+SET VERIFY OFF
+
+ACCEPT P_ARR PROMPT '숫자 입력'
+
+DECLARE
+    TYPE ARR_TYPE IS
+        VARRAY(5) OF NUMBER(10);
+    V_NUM_ARR ARR_TYPE := ARR_TYPE(&P_ARR);
+    V_SUM     NUMBER(10) := 0;
+    V_CNT     NUMBER(10) := 0;
+BEGIN
+    FOR I IN 1 .. V_NUM_ARR.COUNT LOOP
+        V_SUM := V_SUM + V_NUM_ARR(I);
+        V_CNT := V_CNT + 1;
+    END LOOP;
+
+    DBMS_OUTPUT.PUT_LINE(V_SUM / V_CNT);
+END;
