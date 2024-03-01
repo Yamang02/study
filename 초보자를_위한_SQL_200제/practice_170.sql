@@ -1,0 +1,23 @@
+/* PL/SQL로 알고리즘 문제 풀기 ③*/
+
+SET SERVEROUTPUT ON
+SET VERIFY OFF
+
+ACCEPT P_NUM1 PROMPT '밑변'
+
+ACCEPT P_NUM2 PROMPT '높이'
+
+ACCEPT P_NUM3 PROMPT '빗변'
+
+DECLARE
+    V_NUM1 NUMBER(10) := &P_NUM1;
+    V_NUM2 NUMBER(10) := &P_NUM2;
+    V_NUM3 NUMBER(10) := &P_NUM3;
+
+BEGIN
+    IF (V_NUM1)**2 + (V_NUM2)**2 = (V_NUM3)**2 THEN
+        DBMS_OUTPUT.PUT_LINE('직각삼각형');
+    ELSE
+        DBMS_OUTPUT.PUT_LINE('직각삼각형 아님');
+    END IF;
+END;
