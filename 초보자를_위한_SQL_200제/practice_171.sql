@@ -1,0 +1,20 @@
+/* 171.PL/SQL로 알고리즘 문제 풀기 ④ (팩토리얼) */
+
+SET SERVEROUTPUT ON
+
+SET VERIFY OFF
+
+ACCEPT P_NUM PROMPT '숫자 입력'
+
+DECLARE
+    V_NUM1 NUMBER(10) := &P_NUM;
+    V_NUM2 NUMBER(10) := &P_NUM;
+BEGIN
+    LOOP
+        V_NUM1 := V_NUM1 - 1;
+        V_NUM2 := V_NUM2 * V_NUM1;
+        EXIT WHEN V_NUM1 = 1;
+    END LOOP;
+
+    DBMS_OUTPUT.PUT_LINE(V_NUM2);
+END;
