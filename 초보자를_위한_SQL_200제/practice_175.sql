@@ -1,4 +1,5 @@
 /* PL/SQL로 알고리즘 문제 풀기 ⑧ (삽입 정렬) */
+-- GIT COMMIT 정리용
 
 SET SERVEROUTPUT ON
 
