@@ -1,0 +1,171 @@
+/* 179.SQL로 머신러닝 구현하기 ① (NAVIVEBAYES) */
+
+DROP TABLE NAIVE_FLU_TRAIN;
+
+CREATE TABLE NAIVE_FLU_TRAIN (
+    PATIENT_ID NUMBER(10),
+    CHILLS VARCHAR2(2),
+    RUNNY_NOSE VARCHAR2(2),
+    HEADACHE VARCHAR2(10),
+    FEVER VARCHAR2(2),
+    FLU VARCHAR2(2)
+);
+
+INSERT INTO NAIVE_FLU_TRAIN VALUES(
+    1,
+    'Y',
+    'N',
+    'MILD',
+    'Y',
+    'N'
+);
+
+INSERT INTO NAIVE_FLU_TRAIN VALUES(
+    2,
+    'Y',
+    'Y',
+    'NO',
+    'N',
+    'Y'
+);
+
+INSERT INTO NAIVE_FLU_TRAIN VALUES(
+    3,
+    'Y',
+    'N',
+    'STRONG',
+    'Y',
+    'Y'
+);
+
+INSERT INTO NAIVE_FLU_TRAIN VALUES(
+    4,
+    'N',
+    'Y',
+    'MILD',
+    'Y',
+    'Y'
+);
+
+INSERT INTO NAIVE_FLU_TRAIN VALUES(
+    5,
+    'N',
+    'N',
+    'NO',
+    'N',
+    'N'
+);
+
+INSERT INTO NAIVE_FLU_TRAIN VALUES(
+    6,
+    'N',
+    'Y',
+    'STRONG',
+    'Y',
+    'Y'
+);
+
+INSERT INTO NAIVE_FLU_TRAIN VALUES(
+    7,
+    'N',
+    'Y',
+    'STRONG',
+    'N',
+    'N'
+);
+
+INSERT INTO NAIVE_FLU_TRAIN VALUES(
+    8,
+    'Y',
+    'Y',
+    'MILD',
+    'Y',
+    'Y'
+);
+
+COMMIT;
+
+SELECT
+    *
+FROM
+    NAIVE_FLU_TRAIN;
+
+DROP TABLE NAIVE_FLU_TEST;
+
+CREATE TABLE NAIVE_FLU_TEST (
+    PATIENT_ID NUMBER(10),
+    CHILLS VARCHAR2(2),
+    RUNNY_NOSE VARCHAR2(2),
+    HEADACHE VARCHAR2(10),
+    FEVER VARCHAR2(2),
+    FLU VARCHAR2(2)
+);
+
+INSERT INTO NAIVE_FLU_TEST VALUES(
+    9,
+    'Y',
+    'N',
+    'MILD',
+    'N',
+    NULL
+);
+
+COMMIT;
+
+SELECT
+    *
+FROM
+    NAIVE_FLU_TEST;
+
+DROP TABLE SETTINGS_GLM;
+
+CREATE TABLE SETTINGS_GLM AS
+    SELECT
+        *
+    FROM
+        TABLE (DBMS_DATA_MINING.GET_DEFAULT_SETTINGS)
+    WHERE
+        SETTING_NAME LIKE '%GLM%';
+-- ORA-40107: operation requires Data Mining option to be installed
+
+BEGIN
+    INSERT INTO SETTINGS_GLM VALUES (
+        DBMS_DATA_MINING.ALGO_NAME,
+        'ALGO_NAIVE_BAYES'
+    );
+    INSERT INTO SETTINGS_GLM VALUES (
+        DBMS_DATA_MINING.PREP_AUTO,
+        'ON'
+    );
+    COMMIT;
+END;
+/
+
+
+
+BEGIN
+  DBMS_DATA_MINING.DROP_MODEL('MD_CLASSIFICATION_MODEL');
+END;
+/
+
+BEGIN 
+   DBMS_DATA_MINING.CREATE_MODEL(
+      MODEL_NAME           => 'MD_CLASSIFICATION_MODEL',
+      MINING_FUNCTION      => DBMS_DATA_MINING.CLASSIFICATION,
+      DATA_TABLE_NAME       => 'NAIVE_FLU_TRAIN',
+      CASE_ID_COLUMN_NAME   => 'PATIENT_ID',
+      TARGET_COLUMN_NAME   => 'FLU',
+      SETTINGS_TABLE_NAME   => 'SETTINGS_GLM');
+END;
+/
+
+SELECT MODEL_NAME,
+          ALGORITHM,
+          MINING_FUNCTION
+  FROM ALL_MINING_MODELS
+  WHERE MODEL_NAME = 'MD_CLASSIFICATION_MODEL';
+
+SELECT T.*,
+  PREDICTION (MD_CLASSIFICATION_MODEL USING *) 예측값
+  FROM NAIVE_FLU_TEST T;
+
