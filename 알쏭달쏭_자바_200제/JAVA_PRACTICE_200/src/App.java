@@ -6,9 +6,13 @@ public class App {
 		
 		// 1. Quiz.Hello();
 		// 2. Quiz.HelloError();
+		// 3. 
+		/*
 		Quiz.Hello1A();
 		Quiz.Hello1B();
 		Quiz.Hello1C();
-		
+		*/
+		Quiz.PrintName1A();
+		Quiz.PrintName1B();
 	}
 }
