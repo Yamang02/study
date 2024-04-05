@@ -12,7 +12,11 @@ public class App {
 		Quiz.Hello1B();
 		Quiz.Hello1C();
 		*/
+		/*4 
 		Quiz.PrintName1A();
 		Quiz.PrintName1B();
+		*/
+		Quiz.PrintName2A();
+		Quiz.PrintName2B();
 	}
 }

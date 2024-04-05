@@ -36,5 +36,17 @@ public class Chapter1 {
 	public void PrintName1B() {
 		System.out.println("홍\n길\n동");
 	}
+	
+	public void PrintName2A() {
+		System.out.println("홍");
+		System.out.println("");
+		System.out.println("길");
+		System.out.println("동");
+		
+	}
+	
+	public void PrintName2B() {
+		System.out.println("홍\n\n길\n동");
+	}
 
 }
