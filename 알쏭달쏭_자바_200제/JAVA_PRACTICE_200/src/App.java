@@ -20,9 +20,10 @@ public class App {
 		*/
 //		Quiz.PrintName2A();
 //		Quiz.PrintName2B();
-		
+		 /* 5
 		Quiz.SumDiff1();
 		Quiz.SumDiff2();
-		
+		*/
+		Quiz.SumAve1();
 	}
 }
