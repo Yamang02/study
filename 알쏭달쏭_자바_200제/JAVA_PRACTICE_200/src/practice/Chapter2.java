@@ -48,26 +48,37 @@ public class Chapter2 {
 		System.out.println("평균값은 " + sum / 3 + "입니다.");
 
 	}
-	
+
 	public void SumAve1() {
 		int x;
 		int y;
-		
-		x=63;
-		y=18;
-		
-		System.out.println("x값은 " + x +  "입니다.");
-		System.out.println("y값은 " + y +  "입니다.");
-		System.out.println("합계는 " + (x+y) +  "입니다.");
-		System.out.println("평균값은 " + (x+y)/2 +  "입니다.");
-		
+
+		x = 63;
+		y = 18;
+
+		System.out.println("x값은 " + x + "입니다.");
+		System.out.println("y값은 " + y + "입니다.");
+		System.out.println("합계는 " + (x + y) + "입니다.");
+		System.out.println("평균값은 " + (x + y) / 2 + "입니다.");
+
 	}
-	
+
 	public void ScanInteger() {
 		Scanner stdIn = new Scanner(System.in);
-		System.out.println("integer: ");
+		System.out.print("integer: ");
 		int x = stdIn.nextInt();
-		System.out.println("you inputted integer : "+ x);
-		
+		System.out.println("you inputted integer : " + x);
+
+	}
+
+	public void PlusMinus10() {
+		Scanner stdIn = new Scanner(System.in);
+
+		System.out.print("integer : ");
+		int x = stdIn.nextInt();
+
+		System.out.println("Plus 10 : " + (x + 10));
+		System.out.println("Minus 10 : " + (x - 10));
+
 	}
 }
