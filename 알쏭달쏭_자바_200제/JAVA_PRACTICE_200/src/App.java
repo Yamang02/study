@@ -25,6 +25,8 @@ public class App {
 		Quiz.SumAve3A();
 		Quiz.SumAve3B();
 		*/
-		Quiz.ScanInteger();
+		// 7 Quiz.ScanInteger();
+		// 8 Quiz.PlusMinus10();
+		Quiz.LowestDigit();
 	}
 }
