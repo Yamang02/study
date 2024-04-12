@@ -81,15 +81,30 @@ public class Chapter2 {
 		System.out.println("Minus 10 : " + (x - 10));
 
 	}
-	
+
 	public void LowestDigit() {
 		Scanner stdIn = new Scanner(System.in);
-		
+
 		System.out.print("integer : ");
 		int x = stdIn.nextInt();
-		
-		System.out.println("value except Lowest digit is : " + (x/10));
-		System.out.println("Lowest digit is : " + (x%10));
-		
+
+		System.out.println("value except Lowest digit is : " + (x / 10));
+		System.out.println("Lowest digit is : " + (x % 10));
+
 	}
+
+	public void SumAveDouble() {
+		Scanner stdIn = new Scanner(System.in);
+
+		System.out.print("value x : ");
+		double x = stdIn.nextDouble();
+
+		System.out.print("value y : ");
+		double y = stdIn.nextDouble();
+
+		System.out.println("sum : " + (x + y));
+		System.out.println("average : " + (x + y) / 2);
+
+	}
+
 }
