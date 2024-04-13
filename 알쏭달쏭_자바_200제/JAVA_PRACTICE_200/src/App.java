@@ -29,6 +29,7 @@ public class App {
 		// 8 Quiz.ScanInteger();
 		// 9 Quiz.PlusMinus10();
 		// 10 Quiz.LowestDigit();
-		Quiz.SumAveDouble();
+		// 11 Quiz.SumAveDouble();
+		Quiz.Triangle();
 	}
 }

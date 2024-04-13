@@ -107,4 +107,21 @@ public class Chapter2 {
 
 	}
 
+	public void Triangle() {
+
+		Scanner stdIn = new Scanner(System.in);
+		System.out.println("get triangle size");
+
+		System.out.print("width : ");
+		double width = stdIn.nextDouble();
+
+		System.out.print("height : ");
+		double height = stdIn.nextDouble();
+
+		System.out.println("size : " + (width * height) / 2);
+
+		;
+
+	}
+
 }
