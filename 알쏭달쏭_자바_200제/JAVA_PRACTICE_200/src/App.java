@@ -30,6 +30,7 @@ public class App {
 		// 9 Quiz.PlusMinus10();
 		// 10 Quiz.LowestDigit();
 		// 11 Quiz.SumAveDouble();
-		Quiz.Triangle();
+		// 12 Quiz.Triangle();
+		Quiz.Globe();
 	}
 }

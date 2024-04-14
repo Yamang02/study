@@ -120,8 +120,18 @@ public class Chapter2 {
 
 		System.out.println("size : " + (width * height) / 2);
 
-		;
+	}
 
+	public void Globe() {
+		Scanner stdIn = new Scanner(System.in);
+		final double PI = 3.1416;
+
+		System.out.println("Golbe size volume");
+		System.out.print("radius : ");
+		double r = stdIn.nextDouble();
+
+		System.out.println("size : " + (4 * PI * r * r));
+		System.out.println("volume : " + (4 / 3.0 * PI * r * r * r));
 	}
 
 }
