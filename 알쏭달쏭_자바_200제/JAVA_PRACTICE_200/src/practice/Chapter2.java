@@ -1,5 +1,6 @@
 package practice;
 
+import java.util.Random;
 import java.util.Scanner;
 
 public class Chapter2 {
@@ -134,4 +135,29 @@ public class Chapter2 {
 		System.out.println("volume : " + (4 / 3.0 * PI * r * r * r));
 	}
 
+	public void RandomInteger() {
+		Random rand = new Random();
+
+		int n1 = 1 + rand.nextInt(9);
+		int n2 = -1 + rand.nextInt(9);
+		int n3 = 10 + rand.nextInt(90);
+
+		System.out.println("make 3 random value");
+		System.out.println("1 digit plus : " + n1);
+		System.out.println("1 digit minus : " + n2);
+		System.out.println("2 digit plus : " + n3);
+
+	}
+
+	public void RandomPlusMinus5() {
+		Random rand = new Random();
+		Scanner stdIn = new Scanner(System.in);
+
+		System.out.print("integer? : ");
+		int x = stdIn.nextInt();
+
+		System.out.println("generate +-5 random int");
+		System.out.println("value : " + (x - 5 + rand.nextInt(11)));
+
+	}
 }
