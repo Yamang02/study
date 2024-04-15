@@ -31,6 +31,7 @@ public class App {
 		// 10 Quiz.LowestDigit();
 		// 11 Quiz.SumAveDouble();
 		// 12 Quiz.Triangle();
-		Quiz.Globe();
+		// 13 Quiz.Globe();
+		Quiz.RandomInteger();
 	}
 }
