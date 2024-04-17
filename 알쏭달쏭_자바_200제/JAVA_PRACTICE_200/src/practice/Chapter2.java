@@ -135,20 +135,17 @@ public class Chapter2 {
 		System.out.println("volume : " + (4 / 3.0 * PI * r * r * r));
 	}
 
-
-	public void RandomInteger( ) {
+	public void RandomInteger() {
 		Random rand = new Random();
-		
+
 		int n1 = 1 + rand.nextInt(9);
 		int n2 = -1 + rand.nextInt(9);
 		int n3 = 10 + rand.nextInt(90);
-		
 
 		System.out.println("make 3 random value");
 		System.out.println("1 digit plus : " + n1);
 		System.out.println("1 digit minus : " + n2);
 		System.out.println("2 digit plus : " + n3);
-
 
 	}
 
@@ -162,6 +159,41 @@ public class Chapter2 {
 		System.out.println("generate +-5 random int");
 		System.out.println("value : " + (x - 5 + rand.nextInt(11)));
 
-		
+	}
+
+	public void RandomDouble() {
+		Random rand = new Random();
+
+		double x1 = rand.nextDouble();
+		double x2 = -1 + rand.nextDouble() * 10;
+		double x3 = -1 + 2 * rand.nextDouble();
+
+		System.out.println("generating 3 random double");
+		System.out.println("0.0 ~ 1.0 :  " + x1);
+		System.out.println("0.0 ~ 10.0 :  " + x2);
+		System.out.println("-1.0 ~ 1.0 :  " + x3);
+	}
+
+	public void Greeting() {
+		Scanner stdIn = new Scanner(System.in);
+
+		System.out.print("last name : ");
+		String lastName = stdIn.next();
+		System.out.print("first name : ");
+		String firstName = stdIn.next();
+		System.out.println("Hello, " + lastName + firstName);
+
+	}
+
+	public void Address() {
+
+		Scanner stdIn = new Scanner(System.in);
+
+		System.out.print("Address? : ");
+		String address = stdIn.nextLine();
+
+		System.out.println("Address : " + address);
+
+	}
 
 }
