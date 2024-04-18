@@ -174,4 +174,26 @@ public class Chapter2 {
 		System.out.println("-1.0 ~ 1.0 :  " + x3);
 	}
 
+	public void Greeting() {
+		Scanner stdIn = new Scanner(System.in);
+
+		System.out.print("last name : ");
+		String lastName = stdIn.next();
+		System.out.print("first name : ");
+		String firstName = stdIn.next();
+		System.out.println("Hello, " + lastName + firstName);
+
+	}
+
+	public void Address() {
+
+		Scanner stdIn = new Scanner(System.in);
+
+		System.out.print("Address? : ");
+		String address = stdIn.nextLine();
+
+		System.out.println("Address : " + address);
+
+	}
+
 }

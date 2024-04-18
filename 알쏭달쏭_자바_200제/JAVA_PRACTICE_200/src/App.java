@@ -36,6 +36,8 @@ public class App {
 		// 14 Quiz.RandomInteger();
 		// 15 Quiz.RandomPlusMinus5();
 		// 16 Quiz.RandomInteger();
-		Quiz.RandomDouble();
+		// 17 Quiz.RandomDouble();
+		// 18 Quiz.Greeting();
+		Quiz.Address();
 	}
 }
