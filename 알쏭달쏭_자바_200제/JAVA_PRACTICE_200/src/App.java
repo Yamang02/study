@@ -32,7 +32,11 @@ public class App {
 		// 11 Quiz.SumAveDouble();
 		// 12 Quiz.Triangle();
 		// 13 Quiz.Globe();
+<<<<<<< HEAD
 		// 14 Quiz.RandomInteger();
 		Quiz.RandomPlusMinus5();
+=======
+		Quiz.RandomInteger();
+>>>>>>> 0fc0fddfcc124d47013f22959dc1dd8855aef8e4
 	}
 }

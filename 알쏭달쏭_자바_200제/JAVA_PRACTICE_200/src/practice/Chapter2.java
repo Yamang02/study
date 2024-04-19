@@ -135,6 +135,7 @@ public class Chapter2 {
 		System.out.println("volume : " + (4 / 3.0 * PI * r * r * r));
 	}
 
+<<<<<<< HEAD
 	public void RandomInteger() {
 		Random rand = new Random();
 
@@ -142,10 +143,20 @@ public class Chapter2 {
 		int n2 = -1 + rand.nextInt(9);
 		int n3 = 10 + rand.nextInt(90);
 
+=======
+	public void RandomInteger( ) {
+		Random rand = new Random();
+		
+		int n1 = 1 + rand.nextInt(9);
+		int n2 = -1 + rand.nextInt(9);
+		int n3 = 10 + rand.nextInt(90);
+		
+>>>>>>> 0fc0fddfcc124d47013f22959dc1dd8855aef8e4
 		System.out.println("make 3 random value");
 		System.out.println("1 digit plus : " + n1);
 		System.out.println("1 digit minus : " + n2);
 		System.out.println("2 digit plus : " + n3);
+<<<<<<< HEAD
 
 	}
 
@@ -160,4 +171,9 @@ public class Chapter2 {
 		System.out.println("value : " + (x - 5 + rand.nextInt(11)));
 
 	}
+=======
+		
+	}
+	
+>>>>>>> 0fc0fddfcc124d47013f22959dc1dd8855aef8e4
 }
