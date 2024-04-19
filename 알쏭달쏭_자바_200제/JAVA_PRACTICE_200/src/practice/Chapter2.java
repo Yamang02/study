@@ -1,5 +1,6 @@
 package practice;
 
+import java.util.Random;
 import java.util.Scanner;
 
 public class Chapter2 {
@@ -81,4 +82,86 @@ public class Chapter2 {
 		System.out.println("Minus 10 : " + (x - 10));
 
 	}
+
+	public void LowestDigit() {
+		Scanner stdIn = new Scanner(System.in);
+
+		System.out.print("integer : ");
+		int x = stdIn.nextInt();
+
+		System.out.println("value except Lowest digit is : " + (x / 10));
+		System.out.println("Lowest digit is : " + (x % 10));
+
+	}
+
+	public void SumAveDouble() {
+		Scanner stdIn = new Scanner(System.in);
+
+		System.out.print("value x : ");
+		double x = stdIn.nextDouble();
+
+		System.out.print("value y : ");
+		double y = stdIn.nextDouble();
+
+		System.out.println("sum : " + (x + y));
+		System.out.println("average : " + (x + y) / 2);
+
+	}
+
+	public void Triangle() {
+
+		Scanner stdIn = new Scanner(System.in);
+		System.out.println("get triangle size");
+
+		System.out.print("width : ");
+		double width = stdIn.nextDouble();
+
+		System.out.print("height : ");
+		double height = stdIn.nextDouble();
+
+		System.out.println("size : " + (width * height) / 2);
+
+	}
+
+	public void Globe() {
+		Scanner stdIn = new Scanner(System.in);
+		final double PI = 3.1416;
+
+		System.out.println("Golbe size volume");
+		System.out.print("radius : ");
+		double r = stdIn.nextDouble();
+
+		System.out.println("size : " + (4 * PI * r * r));
+		System.out.println("volume : " + (4 / 3.0 * PI * r * r * r));
+	}
+
+
+	public void RandomInteger( ) {
+		Random rand = new Random();
+		
+		int n1 = 1 + rand.nextInt(9);
+		int n2 = -1 + rand.nextInt(9);
+		int n3 = 10 + rand.nextInt(90);
+		
+
+		System.out.println("make 3 random value");
+		System.out.println("1 digit plus : " + n1);
+		System.out.println("1 digit minus : " + n2);
+		System.out.println("2 digit plus : " + n3);
+
+
+	}
+
+	public void RandomPlusMinus5() {
+		Random rand = new Random();
+		Scanner stdIn = new Scanner(System.in);
+
+		System.out.print("integer? : ");
+		int x = stdIn.nextInt();
+
+		System.out.println("generate +-5 random int");
+		System.out.println("value : " + (x - 5 + rand.nextInt(11)));
+
+		
+
 }

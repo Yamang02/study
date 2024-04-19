@@ -19,13 +19,24 @@ public class App {
 //		Quiz.PrintName2B();
 
 		/*
-		 * 5 Quiz.SumDiff1(); Quiz.SumDiff2();
+		 * 5 Quiz.SumDiff1(); 
+		 *  6 Quiz.SumDiff2();
 		 */
-		/* 6
+		/* 7
 		Quiz.SumAve3A();
 		Quiz.SumAve3B();
 		*/
-		// 7 Quiz.ScanInteger();
-		Quiz.PlusMinus10();
+
+		// 8 Quiz.ScanInteger();
+		// 9 Quiz.PlusMinus10();
+		// 10 Quiz.LowestDigit();
+		// 11 Quiz.SumAveDouble();
+		// 12 Quiz.Triangle();
+		// 13 Quiz.Globe();
+		// 14 Quiz.RandomInteger();
+		Quiz.RandomPlusMinus5();
+
+		Quiz.RandomInteger();
+
 	}
 }
