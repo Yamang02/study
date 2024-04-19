@@ -26,17 +26,17 @@ public class App {
 		Quiz.SumAve3A();
 		Quiz.SumAve3B();
 		*/
+
 		// 8 Quiz.ScanInteger();
 		// 9 Quiz.PlusMinus10();
 		// 10 Quiz.LowestDigit();
 		// 11 Quiz.SumAveDouble();
 		// 12 Quiz.Triangle();
 		// 13 Quiz.Globe();
-<<<<<<< HEAD
 		// 14 Quiz.RandomInteger();
 		Quiz.RandomPlusMinus5();
-=======
+
 		Quiz.RandomInteger();
->>>>>>> 0fc0fddfcc124d47013f22959dc1dd8855aef8e4
+
 	}
 }
