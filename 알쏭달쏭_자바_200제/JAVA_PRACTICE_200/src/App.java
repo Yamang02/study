@@ -34,9 +34,10 @@ public class App {
 		// 12 Quiz.Triangle();
 		// 13 Quiz.Globe();
 		// 14 Quiz.RandomInteger();
-		Quiz.RandomPlusMinus5();
-
-		Quiz.RandomInteger();
-
+		// 15 Quiz.RandomPlusMinus5();
+		// 16 Quiz.RandomInteger();
+		// 17 Quiz.RandomDouble();
+		// 18 Quiz.Greeting();
+		Quiz.Address();
 	}
 }
