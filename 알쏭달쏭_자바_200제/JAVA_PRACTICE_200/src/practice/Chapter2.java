@@ -195,5 +195,18 @@ public class Chapter2 {
 		System.out.println("Address : " + address);
 
 	}
+	
+	public void StringTester() {
+		String s1 = "ABC";
+		String s2 = "XYZ";
+		
+		System.out.println("String s1 : " + s1);
+		System.out.println("String s2 : " + s2);
+		
+		s1= "FBI";
+		System.out.println("String s1 : " + s1);
+		System.out.println("String s2 : " + s2);
+		
+	}
 
 }
