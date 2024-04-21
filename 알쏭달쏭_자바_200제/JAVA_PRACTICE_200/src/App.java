@@ -1,10 +1,12 @@
 import practice.Chapter1;
 import practice.Chapter2;
+import practice.Chapter3;
 
 public class App {
 	public static void main(String[] args) throws Exception {
 //		Chapter1 Quiz = new Chapter1();
-		Chapter2 Quiz = new Chapter2();
+//		Chapter2 Quiz = new Chapter2();
+		Chapter3 Quiz = new Chapter3();
 
 		// 1. Quiz.Hello();
 		// 2. Quiz.HelloError();
@@ -39,6 +41,7 @@ public class App {
 		// 17 Quiz.RandomDouble();
 		// 18 Quiz.Greeting();
 		// 19 Quiz.Address();
-		Quiz.StringTester();
+		// 20 Quiz.StringTester();
+		Quiz.Negative();
 	}
 }
