@@ -42,6 +42,8 @@ public class App {
 		// 18 Quiz.Greeting();
 		// 19 Quiz.Address();
 		// 20 Quiz.StringTester();
-		Quiz.Negative();
+		// 21 Quiz.Negative();
+		Quiz.Absolute1();
+		Quiz.Absolute2();
 	}
 }
