@@ -44,6 +44,6 @@ public class App {
 		// 22 Quiz.Absolute1();
 		// 22 Quiz.Absolute2();
 		// 23 Quiz.Measure1();
-		Quiz.Measure2();
+		// Quiz.Measure2();
 	}
 }
