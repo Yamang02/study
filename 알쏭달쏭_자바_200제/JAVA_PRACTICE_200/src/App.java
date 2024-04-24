@@ -21,13 +21,11 @@ public class App {
 //		Quiz.PrintName2B();
 
 		/*
-		 * 5 Quiz.SumDiff1(); 
-		 *  6 Quiz.SumDiff2();
+		 * 5 Quiz.SumDiff1(); 6 Quiz.SumDiff2();
 		 */
-		/* 7
-		Quiz.SumAve3A();
-		Quiz.SumAve3B();
-		*/
+		/*
+		 * 7 Quiz.SumAve3A(); Quiz.SumAve3B();
+		 */
 
 		// 8 Quiz.ScanInteger();
 		// 9 Quiz.PlusMinus10();
@@ -42,6 +40,10 @@ public class App {
 		// 18 Quiz.Greeting();
 		// 19 Quiz.Address();
 		// 20 Quiz.StringTester();
-		Quiz.Negative();
+		// 21 Quiz.Negative();
+		// 22 Quiz.Absolute1();
+		// 22 Quiz.Absolute2();
+		// 23 Quiz.Measure1();
+		Quiz.Measure2();
 	}
 }
