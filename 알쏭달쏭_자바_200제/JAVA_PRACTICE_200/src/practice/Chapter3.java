@@ -54,7 +54,7 @@ public class Chapter3 {
 			System.out.println("B는 A의 약수가 아님");
 
 	}
-	
+
 	public void Measure2() {
 		Scanner stdIn = new Scanner(System.in);
 
@@ -67,5 +67,20 @@ public class Chapter3 {
 			System.out.println("B는 A의 not 약수");
 		else
 			System.out.println("B는 A의 약수");
+	}
+
+	public void Sign() {
+		Scanner stdIn = new Scanner(System.in);
+
+		System.out.print("int : ");
+		int n = stdIn.nextInt();
+
+		if (n > 0)
+			System.out.println("value is plus");
+		else if (n < 0)
+			System.out.println("value is minus");
+		else
+			System.out.println("value is 0");
+
 	}
 }
