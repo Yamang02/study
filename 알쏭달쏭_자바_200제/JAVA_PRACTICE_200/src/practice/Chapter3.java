@@ -79,7 +79,7 @@ public class Chapter3 {
 			System.out.println("value is plus");
 		else if (n < 0)
 			System.out.println("value is minus");
-		else
+		else if (n == 0)
 			System.out.println("value is 0");
 
 	}
