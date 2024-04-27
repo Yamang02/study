@@ -83,4 +83,22 @@ public class Chapter3 {
 			System.out.println("value is 0");
 
 	}
+
+	public void Balance() {
+		Scanner stdIn = new Scanner(System.in);
+
+		System.out.print("var A : ");
+		int a = stdIn.nextInt();
+		System.out.print("var B : ");
+		int b = stdIn.nextInt();
+
+		if (a > b)
+			System.out.println("a is bigger");
+		else if (a < b)
+			System.out.println("b is bigger");
+		else
+			System.out.println("they are equal");
+
+	}
+
 }
