@@ -101,4 +101,23 @@ public class Chapter3 {
 
 	}
 
+	public void BalanceWrong() {
+		Scanner stdIn = new Scanner(System.in);
+
+		System.out.print("var A : ");
+		int a = stdIn.nextInt();
+		System.out.print("var B : ");
+		int b = stdIn.nextInt();
+		
+		// int의 값 한계로 인해 아래 식은 유효하지 않다. -1 -2147483648
+		// input missmatch
+		int diff = a - b;
+		if (diff > 0)
+			System.out.println("a is bigger");
+		else if (diff < 0)
+			System.out.println("b is bigger");
+		else
+			System.out.println("they are equal");
+	}
+
 }
