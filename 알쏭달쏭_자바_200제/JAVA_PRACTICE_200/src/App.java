@@ -46,6 +46,8 @@ public class App {
 		// 23 Quiz.Measure1();
 		// 24 Quiz.Measure2();
 		// 25, 26 Quiz.Sign();
-		Quiz.Balance();
+		// 27 Quiz.Balance();
+		// 28 Quiz.BalanceWrong();
+		Quiz.GoInto5();
 	}
 }
