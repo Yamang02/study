@@ -48,6 +48,7 @@ public class App {
 		// 25, 26 Quiz.Sign();
 		// 27 Quiz.Balance();
 		// 28 Quiz.BalanceWrong();
-		Quiz.GoInto5();
+		// 29 Quiz.GoInto5();
+		Quiz.MultipleOf10();
 	}
 }

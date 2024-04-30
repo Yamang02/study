@@ -108,7 +108,7 @@ public class Chapter3 {
 		int a = stdIn.nextInt();
 		System.out.print("var B : ");
 		int b = stdIn.nextInt();
-		
+
 		// int의 값 한계로 인해 아래 식은 유효하지 않다. -1 -2147483648
 		// input missmatch
 		int diff = a - b;
@@ -119,20 +119,36 @@ public class Chapter3 {
 		else
 			System.out.println("they are equal");
 	}
-	
+
 	public void GoInto5() {
 		Scanner stdIn = new Scanner(System.in);
-		
+
 		System.out.print("int : ? ");
 		int n = stdIn.nextInt();
-		
+
 		if (n > 0)
-			if (n % 5 == 0 )
+			if (n % 5 == 0)
 				System.out.println("this value could divide by 5");
-			else 
+			else
 				System.out.println("this value couldn't divide by 5");
-		else 
+		else
 			System.out.println("you inserted minus int");
+	}
+
+	public void MultipleOf10() {
+		Scanner stdIn = new Scanner(System.in);
+
+		System.out.print("int : ? ");
+		int n = stdIn.nextInt();
+
+		if (n > 0)
+			if (n % 10 == 0)
+				System.out.println("this value is multiple of 10");
+			else
+				System.out.println("this value isn't multiple of 10");
+		else
+			System.out.println("you inserted minus int");
+
 	}
 
 }
