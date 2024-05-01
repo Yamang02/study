@@ -151,4 +151,22 @@ public class Chapter3 {
 
 	}
 
+	public void Modulo3() {
+		Scanner stdIn = new Scanner(System.in);
+
+		System.out.print("int : ? ");
+		int n = stdIn.nextInt();
+
+		if (n > 0)
+			if (n % 3 == 0)
+				System.out.println("this value could divide by 3");
+			else if (n % 3 == 1)
+				System.out.println("this value remain 1 after divided by 3");
+			else
+				System.out.println("this value remain 2 after divided by 3");
+		else
+			System.out.println("you inserted minus int");
+
+	}
+
 }
