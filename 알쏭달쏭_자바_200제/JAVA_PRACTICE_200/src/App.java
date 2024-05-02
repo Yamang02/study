@@ -50,6 +50,7 @@ public class App {
 		// 28 Quiz.BalanceWrong();
 		// 29 Quiz.GoInto5();
 		// 30 Quiz.MultipleOf10();
-		Quiz.Modulo3();
+		// 31 Quiz.Modulo3();
+		Quiz.Grade1();
 	}
 }
