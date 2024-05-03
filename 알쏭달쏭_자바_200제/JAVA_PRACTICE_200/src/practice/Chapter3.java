@@ -190,4 +190,25 @@ public class Chapter3 {
 
 	}
 
+	public void Grade2() {
+		Scanner stdIn = new Scanner(System.in);
+
+		System.out.print("score? :");
+		int point = stdIn.nextInt();
+
+		if (point < 0 || point > 100)
+			System.out.println("Wrong score");
+		else if (point <= 49)
+			System.out.println("F");
+		else if (point <= 59)
+			System.out.println("D");
+		else if (point <= 69)
+			System.out.println("C");
+		else if (point <= 79)
+			System.out.println("B");
+		else
+			System.out.println("A");
+
+	}
+
 }

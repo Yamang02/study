@@ -51,6 +51,7 @@ public class App {
 		// 29 Quiz.GoInto5();
 		// 30 Quiz.MultipleOf10();
 		// 31 Quiz.Modulo3();
-		Quiz.Grade1();
+		// 32 Quiz.Grade1();
+		Quiz.Grade2();
 	}
 }
