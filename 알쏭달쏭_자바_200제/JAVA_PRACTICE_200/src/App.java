@@ -52,6 +52,8 @@ public class App {
 		// 30 Quiz.MultipleOf10();
 		// 31 Quiz.Modulo3();
 		// 32 Quiz.Grade1();
-		Quiz.Grade2();
+		// 33 Quiz.Grade2();
+		// 34_1 Quiz.Max2A();
+		Quiz.Max2B();
 	}
 }

@@ -211,4 +211,35 @@ public class Chapter3 {
 
 	}
 
+	public void Max2A() {
+		Scanner stdIn = new Scanner(System.in);
+
+		System.out.print(" a : ");
+		double a = stdIn.nextDouble();
+		System.out.print(" b : ");
+		double b = stdIn.nextDouble();
+
+		double max;
+		if (a > b)
+			max = a;
+		else
+			max = b;
+
+		System.out.println(max + "is bigger value");
+
+	}
+
+	public void Max2B() {
+		Scanner stdIn = new Scanner(System.in);
+
+		System.out.print(" a : ");
+		double a = stdIn.nextDouble();
+		System.out.print(" b : ");
+		double b = stdIn.nextDouble();
+
+		double max = a > b ? a : b;
+		System.out.println(max + "is bigger value");
+
+	}
+
 }
