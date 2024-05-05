@@ -242,4 +242,34 @@ public class Chapter3 {
 
 	}
 
+	public void Diff2A() {
+		Scanner stdIn = new Scanner(System.in);
+		System.out.print(" a : ");
+		int a = stdIn.nextInt();
+		System.out.print(" b : ");
+		int b = stdIn.nextInt();
+
+		int diff;
+		if (a >= b)
+			diff = a - b;
+		else
+			diff = b - a;
+
+		System.out.println("diff is" + diff);
+
+	}
+
+	public void Diff2B() {
+		Scanner stdIn = new Scanner(System.in);
+		System.out.print(" a : ");
+		int a = stdIn.nextInt();
+		System.out.print(" b : ");
+		int b = stdIn.nextInt();
+
+		int diff = a >= b ? a - b : b - a;
+
+		System.out.println("diff is" + diff);
+
+	}
+
 }

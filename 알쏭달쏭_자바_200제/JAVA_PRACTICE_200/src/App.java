@@ -54,6 +54,8 @@ public class App {
 		// 32 Quiz.Grade1();
 		// 33 Quiz.Grade2();
 		// 34_1 Quiz.Max2A();
-		Quiz.Max2B();
+		// 34_2 Quiz.Max2B();
+		// 35_1 Quiz.Diff2A();
+		Quiz.Diff2B();
 	}
 }
