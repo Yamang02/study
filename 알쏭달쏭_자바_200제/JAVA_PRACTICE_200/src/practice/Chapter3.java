@@ -272,4 +272,35 @@ public class Chapter3 {
 
 	}
 
+	public void Diff2Digits1() {
+		Scanner stdIn = new Scanner(System.in);
+
+		System.out.print(" a : ");
+		int a = stdIn.nextInt();
+		System.out.print(" b : ");
+		int b = stdIn.nextInt();
+
+		int diff = a >= b ? a - b : b - a;
+
+		if (diff <= 10)
+			System.out.println("diff under 10");
+		else
+			System.out.println("diff over 10");
+
+	}
+
+	public void Diff2Digits2() {
+		Scanner stdIn = new Scanner(System.in);
+
+		System.out.print(" a : ");
+		int a = stdIn.nextInt();
+		System.out.print(" b : ");
+		int b = stdIn.nextInt();
+
+		int diff = a >= b ? a - b : b - a;
+
+		System.out.println("diff " + (diff <= 10 ? "under" : "over") + " 10");
+
+	}
+
 }
