@@ -58,6 +58,7 @@ public class App {
 		// 35_1 Quiz.Diff2A();
 		// 35_2 Quiz.Diff2B();
 		// 36_1 Quiz.Diff2Digits1();
-		Quiz.Diff2Digits2();
+		// 36_2 Quiz.Diff2Digits2();
+		Quiz.Min3();
 	}
 }

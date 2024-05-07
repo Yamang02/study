@@ -435,3 +435,6 @@ ms_sql_practice/study.mdf
 .metadata/
 *.classpath
 *.project
+알쏭달쏭_자바_200제/study/.settings/org.eclipse.core.resources.prefs
+알쏭달쏭_자바_200제/study/.settings/org.eclipse.jdt.core.prefs
+알쏭달쏭_자바_200제/study/src/module-info.java
