@@ -323,4 +323,33 @@ public class Chapter3 {
 
 	}
 
+	public void Med3() {
+		Scanner stdIn = new Scanner(System.in);
+
+		System.out.print("int a : ");
+		int a = stdIn.nextInt();
+		System.out.print("int b : ");
+		int b = stdIn.nextInt();
+		System.out.print("int c : ");
+		int c = stdIn.nextInt();
+
+		int med;
+		if (a >= b)
+			if (b >= c)
+				med = b;
+			else if (a <= c)
+				med = a;
+			else
+				med = c;
+		else if (a > c)
+			med = a;
+		else if (b > c)
+			med = c;
+		else
+			med = b;
+
+		System.out.println("med  : " + med);
+
+	}
+
 }
