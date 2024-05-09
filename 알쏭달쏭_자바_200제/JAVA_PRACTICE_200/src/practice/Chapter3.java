@@ -323,4 +323,57 @@ public class Chapter3 {
 
 	}
 
+	public void Med3() {
+		Scanner stdIn = new Scanner(System.in);
+
+		System.out.print("int a : ");
+		int a = stdIn.nextInt();
+		System.out.print("int b : ");
+		int b = stdIn.nextInt();
+		System.out.print("int c : ");
+		int c = stdIn.nextInt();
+
+		int med;
+		if (a >= b)
+			if (b >= c)
+				med = b;
+			else if (a <= c)
+				med = a;
+			else
+				med = c;
+		else if (a > c)
+			med = a;
+		else if (b > c)
+			med = c;
+		else
+			med = b;
+
+		System.out.println("med  : " + med);
+
+	}
+
+	public void MinMaxEq() {
+		Scanner stdIn = new Scanner(System.in);
+
+		System.out.print("int a ");
+		int a = stdIn.nextInt();
+		System.out.print("int b ");
+		int b = stdIn.nextInt();
+
+		if (a == b)
+			System.out.println("two values are equal");
+		else {
+			int min, max;
+			if (a < b) {
+				min = a;
+				max = b;
+
+			} else {
+				min = b;
+				max = a;
+			}
+			System.out.println("min : " + min);
+			System.out.println("max : " + max);
+		}
+	}
 }
