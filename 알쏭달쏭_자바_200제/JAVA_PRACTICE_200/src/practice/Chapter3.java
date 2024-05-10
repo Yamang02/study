@@ -376,4 +376,22 @@ public class Chapter3 {
 			System.out.println("max : " + max);
 		}
 	}
+
+	public void Sort20escending() {
+		Scanner stdIn = new Scanner(System.in);
+		
+		System.out.print("int a ");
+		int a = stdIn.nextInt();
+		System.out.print("int b ");
+		int b = stdIn.nextInt();
+		
+		if(a<b) {
+			int t = a;
+			a = b;
+			b = t;
+		}
+		System.out.println("sort as a >= b");
+		System.out.println("variant a : " + a);
+		System.out.println("variant b : " + b);
+	}
 }

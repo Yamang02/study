@@ -61,6 +61,7 @@ public class App {
 		// 36_2 Quiz.Diff2Digits2();
 		// 37 Quiz.Min3();
 		// 38 Quiz.Med3();
-		Quiz.MinMaxEq();
+		// 39 Quiz.MinMaxEq();
+		Quiz.Sort20escending();
 	}
 }
