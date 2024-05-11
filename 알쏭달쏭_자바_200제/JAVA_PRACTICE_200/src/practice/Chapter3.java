@@ -379,13 +379,13 @@ public class Chapter3 {
 
 	public void Sort20escending() {
 		Scanner stdIn = new Scanner(System.in);
-		
+
 		System.out.print("int a ");
 		int a = stdIn.nextInt();
 		System.out.print("int b ");
 		int b = stdIn.nextInt();
-		
-		if(a<b) {
+
+		if (a < b) {
 			int t = a;
 			a = b;
 			b = t;
@@ -393,5 +393,36 @@ public class Chapter3 {
 		System.out.println("sort as a >= b");
 		System.out.println("variant a : " + a);
 		System.out.println("variant b : " + b);
+	}
+
+	public void Sort3() {
+		Scanner stdIn = new Scanner(System.in);
+
+		System.out.print("int a ");
+		int a = stdIn.nextInt();
+		System.out.print("int b ");
+		int b = stdIn.nextInt();
+		System.out.print("int c ");
+		int c = stdIn.nextInt();
+
+		if (a > b) {
+			int t = a;
+			a = b;
+			b = t;
+		}
+		if (b > c) {
+			int t = b;
+			b = c;
+			c = t;
+		}
+		if (a > b) {
+			int t = a;
+			a = b;
+			b = t;
+		}
+		System.out.println("sort as  a<= b<= c");
+		System.out.println("variant a : " + a);
+		System.out.println("variant b : " + b);
+		System.out.println("variant c : " + c);
 	}
 }

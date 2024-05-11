@@ -62,6 +62,8 @@ public class App {
 		// 37 Quiz.Min3();
 		// 38 Quiz.Med3();
 		// 39 Quiz.MinMaxEq();
-		Quiz.Sort20escending();
+		// 40 Quiz.Sort20escending();
+		Quiz.Sort3();
+		
 	}
 }
