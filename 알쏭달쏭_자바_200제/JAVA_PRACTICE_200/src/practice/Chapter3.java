@@ -1,5 +1,6 @@
 package practice;
 
+import java.util.Random;
 import java.util.Scanner;
 
 public class Chapter3 {
@@ -424,5 +425,25 @@ public class Chapter3 {
 		System.out.println("variant a : " + a);
 		System.out.println("variant b : " + b);
 		System.out.println("variant c : " + c);
+	}
+
+	public void FingerFlashing() {
+		Random rand = new Random();
+
+		System.out.print("computer : ");
+		int hand = rand.nextInt(3);
+
+		switch (hand) {
+		case 0:
+			System.out.println("sissors");
+			break;
+		case 1:
+			System.out.println("rock");
+			break;
+		case 2:
+			System.out.println("paper");
+			break;
+		}
+
 	}
 }

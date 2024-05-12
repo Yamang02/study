@@ -63,7 +63,8 @@ public class App {
 		// 38 Quiz.Med3();
 		// 39 Quiz.MinMaxEq();
 		// 40 Quiz.Sort20escending();
-		Quiz.Sort3();
+		// 41 Quiz.Sort3();
+		Quiz.FingerFlashing();
 		
 	}
 }
