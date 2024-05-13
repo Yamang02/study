@@ -64,7 +64,8 @@ public class App {
 		// 39 Quiz.MinMaxEq();
 		// 40 Quiz.Sort20escending();
 		// 41 Quiz.Sort3();
-		Quiz.FingerFlashing();
+		// 42 Quiz.FingerFlashing();
+		Quiz.Season();
 		
 	}
 }
