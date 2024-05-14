@@ -1,12 +1,14 @@
 import practice.Chapter1;
 import practice.Chapter2;
 import practice.Chapter3;
+import practice.Chapter4;
 
 public class App {
 	public static void main(String[] args) throws Exception {
 //		Chapter1 Quiz = new Chapter1();
 //		Chapter2 Quiz = new Chapter2();
-		Chapter3 Quiz = new Chapter3();
+//		Chapter3 Quiz = new Chapter3();
+		Chapter4 Quiz = new Chapter4();
 
 		// 1. Quiz.Hello();
 		// 2. Quiz.HelloError();
@@ -64,7 +66,8 @@ public class App {
 		// 39 Quiz.MinMaxEq();
 		// 40 Quiz.Sort20escending();
 		// 41 Quiz.Sort3();
-		Quiz.FingerFlashing();
+		// 42 Quiz.FingerFlashing();
+		Quiz.SignRepeat();
 		
 	}
 }
