@@ -26,4 +26,15 @@ public class Chapter4 {
 
 	}
 
+	public void ThreeDigits() {
+		Scanner stdIn = new Scanner(System.in);
+		int x;
+		do {
+			System.out.print("Three Digit int : ");
+			x = stdIn.nextInt();
+		} while (x < 100 || x > 999);
+
+		System.out.println("insert value is : " + x);
+	}
+
 }
