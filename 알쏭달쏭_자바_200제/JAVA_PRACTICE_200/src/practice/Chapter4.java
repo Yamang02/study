@@ -1,5 +1,6 @@
 package practice;
 
+import java.util.Random;
 import java.util.Scanner;
 
 public class Chapter4 {
@@ -35,6 +36,25 @@ public class Chapter4 {
 		} while (x < 100 || x > 999);
 
 		System.out.println("insert value is : " + x);
+	}
+
+	public void Number2digits() {
+		Random rand = new Random();
+		Scanner stdIn = new Scanner(System.in);
+		int no = 10 + rand.nextInt(10); // 10~99 random int
+		System.out.println("guess 2 digit int start ");
+		System.out.println("get 10~99 int");
+		int x;
+		do {
+			x = stdIn.nextInt();
+			if (x > no)
+				System.out.println("smaller int");
+			else if (x < no)
+				System.out.println("bigger int");
+		} while (x != no);
+
+		System.out.println("gotcha!");
+
 	}
 
 }

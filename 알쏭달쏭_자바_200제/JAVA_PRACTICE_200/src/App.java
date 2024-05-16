@@ -68,7 +68,7 @@ public class App {
 		// 41 Quiz.Sort3();
 		// 42 Quiz.FingerFlashing();
 		// 43 Quiz.SignRepeat();
-		Quiz.ThreeDigits();
-		
+		// 44. Quiz.ThreeDigits();
+		Quiz.Number2digits();
 	}
 }
