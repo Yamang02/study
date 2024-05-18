@@ -71,10 +71,25 @@ public class Chapter4 {
 		}
 
 		do {
-			System.out.println(a +  " ");
-			a = a+1;
+			System.out.println(a + " ");
+			a = a + 1;
 		} while (a <= b);
 		System.out.println();
+	}
+
+	public void CountDown() {
+		Scanner stdIn = new Scanner(System.in);
+		System.out.println("Start Countdown");
+		int x;
+		do {
+			System.out.print("plus int : ? ");
+			x = stdIn.nextInt();
+		} while (x <= 0);
+
+		while (x >= 0)
+
+			System.out.println(x--);
+		System.out.println("x value reached " + x);
 	}
 
 }
