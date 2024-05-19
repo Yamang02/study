@@ -92,4 +92,20 @@ public class Chapter4 {
 		System.out.println("x value reached " + x);
 	}
 
+	public void CountDownPre() {
+		Scanner stdIn = new Scanner(System.in);
+		System.out.println("Start Countdown");
+		int x;
+		do {
+			System.out.print("plus int : ? ");
+			x = stdIn.nextInt();
+		} while (x <= 0);
+
+		while (x >= 0)
+
+			System.out.println(--x);
+		System.out.println("x value reached " + x);
+
+	}
+
 }
