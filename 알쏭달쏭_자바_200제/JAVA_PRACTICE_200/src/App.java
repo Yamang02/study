@@ -72,6 +72,8 @@ public class App {
 		// 45. Quiz.Number2digits();
 		// 46. Quiz.EnumScope();
 		// 47. Quiz.CountDown();
-		Quiz.CountDownPre();
+		// 48. Quiz.CountDownPre();
+		// 49_1. Quiz.PutAsterisk1();
+		Quiz.PutAsterisk2();
 	}
 }

@@ -108,4 +108,33 @@ public class Chapter4 {
 
 	}
 
+	public void PutAsterisk1() {
+		Scanner stdIn = new Scanner(System.in);
+		System.out.print("how many * ? :  ");
+		int n = stdIn.nextInt();
+		if (n > 0) {
+			int i = 0;
+			while (i < n) {
+				System.out.print("*");
+				i++;
+			}
+			System.out.println();
+		}
+	}
+
+	public void PutAsterisk2() {
+		Scanner stdIn = new Scanner(System.in);
+		System.out.print("how many * ? :  ");
+		int n = stdIn.nextInt();
+		if (n > 0) {
+			int i = 0;
+			while (i < n) {
+				System.out.print('*');
+				i++;
+			}
+			System.out.println();
+		}
+
+	}
+
 }
