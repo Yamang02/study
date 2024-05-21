@@ -74,6 +74,7 @@ public class App {
 		// 47. Quiz.CountDown();
 		// 48. Quiz.CountDownPre();
 		// 49_1. Quiz.PutAsterisk1();
-		Quiz.PutAsterisk2();
+		// 49_2. Quiz.PutAsterisk2();
+		Quiz.PutAsteriskAlt1();
 	}
 }
