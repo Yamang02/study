@@ -156,4 +156,22 @@ public class Chapter4 {
 
 	}
 
+	public void PutAsteriskAlt2() {
+		Scanner stdIn = new Scanner(System.in);
+		System.out.println("how many *?");
+		int n = stdIn.nextInt();
+		if (n > 0) {
+			int i = 0;
+			while (i < n / 2) {
+				System.out.print("*+");
+				i++;
+			}
+			if (n % 2 == 1) {
+				System.out.print('*');
+				System.out.println();
+			}
+		}
+
+	}
+
 }
