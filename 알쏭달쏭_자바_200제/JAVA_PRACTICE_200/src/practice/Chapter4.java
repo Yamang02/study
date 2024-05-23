@@ -174,4 +174,22 @@ public class Chapter4 {
 
 	}
 
+	public void DigitNo() {
+		Scanner stdIn = new Scanner(System.in);
+		System.out.println("Digit of Plus");
+		int x;
+
+		do {
+			System.out.println("plus int : ");
+			x = stdIn.nextInt();
+		} while (x <= 0);
+
+		int digit = 0;
+		while (x > 0) {
+			digit++;
+			x /= 10;
+		}
+		System.out.println("value is " + digit + " number");
+	}
+
 }
