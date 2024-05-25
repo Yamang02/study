@@ -76,7 +76,9 @@ public class App {
 		// 49_1. Quiz.PutAsterisk1();
 		// 49_2. Quiz.PutAsterisk2();
 		// 50. Quiz.PutAsteriskAlt1();
-		Quiz.PutAsteriskAlt2();
+		// 50_2.Quiz.PutAsteriskAlt2();
+		// 51.Quiz.DigitNo();
+		Quiz.Factorial();
 		
 	}
 }

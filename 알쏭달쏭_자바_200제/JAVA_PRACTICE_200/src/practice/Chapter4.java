@@ -174,4 +174,41 @@ public class Chapter4 {
 
 	}
 
+	public void DigitNo() {
+		Scanner stdIn = new Scanner(System.in);
+		System.out.println("Digit of Plus");
+		int x;
+
+		do {
+			System.out.println("plus int : ");
+			x = stdIn.nextInt();
+		} while (x <= 0);
+
+		int digit = 0;
+		while (x > 0) {
+			digit++;
+			x /= 10;
+		}
+		System.out.println("value is " + digit + " number");
+	}
+
+	public void Factorial() {
+		Scanner stdIn = new Scanner(System.in);
+
+		int n;
+		do {
+			System.out.println("plus int : ");
+			n = stdIn.nextInt();
+		} while (n <= 0);
+
+		int factorial = 1;
+		int i = 1;
+
+		while (i <= n) {
+			factorial *= i;
+			i++;
+		}
+		System.out.println("from 1 to " + n + " factorial is " + factorial);
+	}
+
 }
