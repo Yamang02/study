@@ -211,4 +211,16 @@ public class Chapter4 {
 		System.out.println("from 1 to " + n + " factorial is " + factorial);
 	}
 
+	public void PutAsteriskFor() {
+		Scanner stdIn = new Scanner(System.in);
+		System.out.println("how many * ? : ");
+		int n = stdIn.nextInt();
+		if (n > 0) {
+			for (int i = 0; i < n; i++)
+				System.out.print('*');
+			System.out.println();
+		}
+
+	}
+
 }
