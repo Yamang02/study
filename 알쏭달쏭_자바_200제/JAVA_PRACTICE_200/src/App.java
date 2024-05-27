@@ -79,7 +79,7 @@ public class App {
 		// 50_2.Quiz.PutAsteriskAlt2();
 		// 51. Quiz.DigitNo();
 		// 52. Quiz.Factorial();
-		Quiz.PutAsteriskFor();
-		
+		// 53. Quiz.PutAsteriskFor();
+		Quiz.CountUp();
 	}
 }
