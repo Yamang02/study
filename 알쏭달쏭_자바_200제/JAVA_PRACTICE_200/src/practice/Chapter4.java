@@ -236,4 +236,18 @@ public class Chapter4 {
 			System.out.println(i);
 	}
 
+	public void CountDownFor() {
+		Scanner stdIn = new Scanner(System.in);
+		System.out.println("start countdown ");
+
+		int x;
+		do {
+			System.out.println("plus int");
+			x = stdIn.nextInt();
+		} while (x <= 0);
+
+		for (; x >= 0; x--)
+			System.out.println(x);
+	}
+
 }

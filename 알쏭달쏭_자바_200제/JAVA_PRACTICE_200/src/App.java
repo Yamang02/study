@@ -80,6 +80,7 @@ public class App {
 		// 51. Quiz.DigitNo();
 		// 52. Quiz.Factorial();
 		// 53. Quiz.PutAsteriskFor();
-		Quiz.CountUp();
+		// 54. Quiz.CountUp();
+		Quiz.CountDownFor();
 	}
 }
