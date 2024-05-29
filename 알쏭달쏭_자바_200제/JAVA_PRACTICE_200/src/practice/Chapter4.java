@@ -236,4 +236,34 @@ public class Chapter4 {
 			System.out.println(i);
 	}
 
+	public void CountDownFor() {
+		Scanner stdIn = new Scanner(System.in);
+		System.out.println("start countdown ");
+
+		int x;
+		do {
+			System.out.println("plus int");
+			x = stdIn.nextInt();
+		} while (x <= 0);
+
+		for (; x >= 0; x--)
+			System.out.println(x);
+	}
+
+	public void SumUpFor() {
+		Scanner stdIn = new Scanner(System.in);
+		System.out.print("From 1 to n SUM ");
+		int n;
+		do {
+			System.out.println("n의 값 : ");
+			n = stdIn.nextInt();
+		} while (n <= 0);
+
+		int sum = 0;
+		for (int i = 0; i <= n; i++)
+			sum += i;
+		System.out.println("result to " + n + " sum : " + sum);
+
+	}
+
 }
