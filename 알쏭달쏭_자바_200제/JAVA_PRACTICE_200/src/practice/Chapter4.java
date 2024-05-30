@@ -255,7 +255,7 @@ public class Chapter4 {
 		System.out.print("From 1 to n SUM ");
 		int n;
 		do {
-			System.out.println("n의 값 : ");
+			System.out.println("type n : ");
 			n = stdIn.nextInt();
 		} while (n <= 0);
 
@@ -264,6 +264,24 @@ public class Chapter4 {
 			sum += i;
 		System.out.println("result to " + n + " sum : " + sum);
 
+	}
+
+	public void SumUpForExp() {
+		Scanner stdIn = new Scanner(System.in);
+		System.out.println("get Sum from 1 to n");
+		int n;
+		do {
+			System.out.print("type n : ");
+			n = stdIn.nextInt();
+		} while (n <= 0);
+		int sum = 0;
+		for (int i = 1; i < n; i++) {
+			System.out.print(i + " + ");
+			sum += i;
+		}
+		System.out.print(n + " = ");
+		sum += n;
+		System.out.println(sum);
 	}
 
 }

@@ -82,6 +82,7 @@ public class App {
 		// 53. Quiz.PutAsteriskFor();
 		// 54. Quiz.CountUp();
 		// 55. Quiz.CountDownFor();
-		Quiz.SumUpFor();
+		// 56. Quiz.SumUpFor();
+		Quiz.SumUpForExp();
 	}
 }
