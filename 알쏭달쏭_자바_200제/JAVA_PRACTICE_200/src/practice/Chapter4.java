@@ -284,4 +284,19 @@ public class Chapter4 {
 		System.out.println(sum);
 	}
 
+	public void HeightWeight() {
+		Scanner stdIn = new Scanner(System.in);
+		System.out.print("From cm : ");
+		int hMin = stdIn.nextInt();
+		System.out.print("To cm : ");
+		int hMax = stdIn.nextInt();
+		System.out.print("step cm : ");
+		int step = stdIn.nextInt();
+		System.out.println("H average kg");
+		System.out.println("--------------------");
+
+		for (int i = hMin; i <= hMax; i += step)
+			System.out.println(i + " " + 0.9 * (i - 100));
+
+	}
 }
