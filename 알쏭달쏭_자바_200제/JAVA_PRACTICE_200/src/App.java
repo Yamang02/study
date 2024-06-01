@@ -84,6 +84,7 @@ public class App {
 		// 55. Quiz.CountDownFor();
 		// 56. Quiz.SumUpFor();
 		// 57. Quiz.SumUpForExp();
-		Quiz.HeightWeight();
+		// 58. Quiz.HeightWeight();
+		Quiz.PutAsterisk5A();
 	}
 }

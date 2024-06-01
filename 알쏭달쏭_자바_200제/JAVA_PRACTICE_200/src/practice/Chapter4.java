@@ -299,4 +299,20 @@ public class Chapter4 {
 			System.out.println(i + " " + 0.9 * (i - 100));
 
 	}
+
+	public void PutAsterisk5A() {
+		Scanner stdIn = new Scanner(System.in);
+		System.out.print("how many *  ? : ");
+		int n = stdIn.nextInt();
+		if (n > 0) {
+			for (int i = 0; i < n; i++) {
+				System.out.print('*');
+				if (i % 5 == 4)
+					System.out.println();
+			}
+			if (n % 5 != 0)
+				System.out.println();
+		}
+
+	}
 }
