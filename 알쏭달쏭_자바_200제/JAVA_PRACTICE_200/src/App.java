@@ -87,5 +87,6 @@ public class App {
 		// 58. Quiz.HeightWeight();
 		// 59. Quiz.PutAsterisk5A();
 		// 60. Quiz.PutAsterisk5B();
+		Quiz.Measure();
 	}
 }
