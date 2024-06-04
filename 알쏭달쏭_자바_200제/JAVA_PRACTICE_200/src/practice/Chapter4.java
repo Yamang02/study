@@ -344,4 +344,22 @@ public class Chapter4 {
 			}
 		System.out.println("\n yaksu count : " + count);
 	}
+
+	public void Square1() {
+		Scanner stdIn = new Scanner(System.in);
+		System.out.print("int : ");
+		int n = stdIn.nextInt();
+		for (int i = 1; i <= n; i++)
+			System.out.println(i + " square is " + i * i);
+
+	}
+
+	public void Square2() {
+		Scanner stdIn = new Scanner(System.in);
+		System.out.print("int : ");
+		int n = stdIn.nextInt();
+		for (int i = 1, j = 1; i <= n; i++, j = i * i)
+			System.out.println(i + " square is " + j);
+
+	}
 }
