@@ -362,4 +362,30 @@ public class Chapter4 {
 			System.out.println(i + " square is " + j);
 
 	}
+
+	public void SeasonRepeat() {
+		Scanner stdIn = new Scanner(System.in);
+		int retry;
+		System.out.println("find season");
+		do {
+			int month;
+			do {
+				System.out.print("which month? : ");
+				month = stdIn.nextInt();
+			} while (month < 1 || month > 12);
+
+			if (month >= 3 && month <= 5)
+				System.out.println("spring");
+			else if (month >= 6 && month <= 8)
+				System.out.println("summer");
+			else if (month >= 9 && month <= 11)
+				System.out.println("fall");
+			else if (month >= 12 || month == 1 || month == 2)
+				System.out.println("winter");
+
+			System.out.print("retry? 1_YES/ 0_NO : ");
+			retry = stdIn.nextInt();
+		} while (retry == 1);
+
+	}
 }

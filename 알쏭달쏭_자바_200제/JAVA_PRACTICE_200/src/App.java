@@ -89,6 +89,8 @@ public class App {
 		// 60. Quiz.PutAsterisk5B();
 		// 61. Quiz.Measure();
 		// 62_A. Quiz.Square1();
-		Quiz.Square2();
+		// 63. Quiz.Square2();
+		Quiz.SeasonRepeat();
+		
 	}
 }
