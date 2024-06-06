@@ -388,4 +388,19 @@ public class Chapter4 {
 		} while (retry == 1);
 
 	}
+
+	public void Square() {
+		Scanner stdIn = new Scanner(System.in);
+		System.out.println("print square");
+		System.out.print("level : ");
+		int n = stdIn.nextInt();
+
+		for (int i = 1; i <= n; i++) {
+			for (int j = 1; j <= n; j++) {
+				System.out.print('*');
+			}
+			System.out.println();
+		}
+
+	}
 }
