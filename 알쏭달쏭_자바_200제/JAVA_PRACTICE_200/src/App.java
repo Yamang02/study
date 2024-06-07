@@ -91,7 +91,8 @@ public class App {
 		// 62_A. Quiz.Square1();
 		// 62_B. Quiz.Square2();
 		// 63. Quiz.SeasonRepeat();
-		Quiz.Square();
-		
+		// 64. Quiz.Square();
+		// 65_1.Quiz.IsoscelesTriangleLB();
+		Quiz.IsoscelesTriangleLU();
 	}
 }
