@@ -1,5 +1,6 @@
 package practice;
 
+import java.util.Iterator;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -399,6 +400,67 @@ public class Chapter4 {
 			for (int j = 1; j <= n; j++) {
 				System.out.print('*');
 			}
+			System.out.println();
+		}
+
+	}
+
+	public void IsoscelesTriangleLB() {
+		Scanner stdIn = new Scanner(System.in);
+
+		System.out.println("Triangle which Left Bottom is 90 degree");
+		System.out.print("level? : ");
+		int n = stdIn.nextInt();
+
+		for (int i = 1; i <= n; i++) {
+			for (int j = 1; j <= i; j++)
+				System.out.print('*');
+			System.out.println();
+		}
+	}
+
+	public void IsoscelesTriangleLU() {
+		Scanner stdIn = new Scanner(System.in);
+
+		System.out.println("Triangle which Left Bottom is 90 degree");
+		System.out.print("level? : ");
+		int n = stdIn.nextInt();
+
+		for (int i = 1; i <= n; i++) {
+			for (int j = 1; j <= n - i + 1; j++)
+				System.out.print('*');
+			System.out.println();
+		}
+	}
+
+	public void IsocelesTriangleRB() {
+		Scanner stdIn = new Scanner(System.in);
+
+		System.out.println("Triangle which Right Bottom is 90 degree");
+		System.out.print("level? : ");
+		int n = stdIn.nextInt();
+
+		for (int i = 1; i <= n; i++) {
+			for (int j = 1; j <= n - i + 1; j++)
+				System.out.print(' ');
+			for (int j = 1; j <= i; j++)
+				System.out.print('*');
+			System.out.println();
+		}
+	}
+
+	public void IsocelesTriangleRU() {
+		Scanner stdIn = new Scanner(System.in);
+
+		System.out.println("Triangle which Right Bottom is 90 degree");
+		System.out.print("level? : ");
+		int n = stdIn.nextInt();
+
+		for (int i = 1; i <= n; i++) {
+			for (int j = 1; j <= i - 1; j++)
+				System.out.print(' ');
+			for (int j = 1; j <= n - i + 1; j++)
+				System.out.print('*');
 			System.out.println();
 		}
 
