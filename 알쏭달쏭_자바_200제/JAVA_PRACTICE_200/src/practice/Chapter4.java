@@ -518,4 +518,25 @@ public class Chapter4 {
 
 	}
 
+	public void SumBreak1Ave() {
+		Scanner stdIn = new Scanner(System.in);
+		System.out.println("Sum int... ");
+		System.out.print("How many ints to sum? : ");
+		int n = stdIn.nextInt();
+		int sum = 0;
+		int i;
+		for (i = 0; i < n; i++) {
+			System.out.print("int(zero for end) : ");
+			int t = stdIn.nextInt();
+			if (t == 0)
+				break;
+			sum += t;
+		}
+
+		System.out.println("sum is " + sum);
+		if (i != 0)
+			System.out.println("average : " + sum / i);
+
+	}
+
 }

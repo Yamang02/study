@@ -98,6 +98,7 @@ public class App {
 		// 66_2.Quiz.IsocelesTriangleRU();
 		// 67.Quiz.Pyramid();
 		// 68.Quiz.DigitPyramid();
-		Quiz.Prime();
+		// 69.Quiz.Prime();
+		Quiz.SumBreak1Ave();
 	}
 }
