@@ -99,6 +99,8 @@ public class App {
 		// 67.Quiz.Pyramid();
 		// 68.Quiz.DigitPyramid();
 		// 69.Quiz.Prime();
-		Quiz.SumBreak1Ave();
+		// 70.Quiz.SumBreak1Ave();
+		// 71. Quiz.SumBreak2Ave();
+		Quiz.SumContinueAve();
 	}
 }

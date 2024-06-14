@@ -539,4 +539,56 @@ public class Chapter4 {
 
 	}
 
+	public void SumBreak2Ave() {
+		Scanner stdIn = new Scanner(System.in);
+
+		System.out.println("Sum int...");
+		System.out.println("How many ints to sum? : ");
+		int n = stdIn.nextInt();
+
+		int sum = 0;
+		int i;
+		for (i = 0; i < n; i++) {
+			System.out.print("int : ");
+			int t = stdIn.nextInt();
+			if (sum + t > 1000) {
+				System.out.println("sum overed 1,000");
+				System.out.println("final value dropped");
+				break;
+			}
+
+			sum += t;
+
+		}
+		System.out.println("sum is : " + sum);
+		if (i != 0) {
+			System.out.println("average : " + sum / i);
+		}
+
+	}
+
+	public void SumContinueAve() {
+		Scanner stdIn = new Scanner(System.in);
+		System.out.println("Start sum ints ");
+		System.out.print("How many int to sum ? : ");
+		int n = stdIn.nextInt();
+		int sum = 0;
+		int count = 0;
+		int i;
+		for (i = 0; i < n; i++) {
+			System.out.print("int : ");
+			int t = stdIn.nextInt();
+			if (t < 0) {
+				System.out.println("don't sum minus");
+				continue;
+			}
+			sum += t;
+			count++;
+		}
+		System.out.println("sum is " + sum);
+		if (i != 0) {
+			System.out.println("average is  " + sum / count);
+		}
+	}
+
 }
