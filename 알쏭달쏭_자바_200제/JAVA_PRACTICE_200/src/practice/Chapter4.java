@@ -591,4 +591,26 @@ public class Chapter4 {
 		}
 	}
 
+	public void SumGroup2() {
+		Scanner stdIn = new Scanner(System.in);
+
+		System.out.println("sum int... ");
+		int total = 0;
+
+		Outer: for (int i = 1; i <= 10; i++) {
+			System.out.println(i + " group");
+
+			for (int j = 0; j < 5; j++) {
+				System.out.print("int : ");
+				int t = stdIn.nextInt();
+				if (t == 99999)
+					break Outer;
+				else if (t == 88888)
+					continue Outer;
+				total += t;
+			}
+		}
+		System.out.println("\nsum is " + total);
+	}
+
 }
