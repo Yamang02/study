@@ -613,4 +613,35 @@ public class Chapter4 {
 		System.out.println("\nsum is " + total);
 	}
 
+	public void FindNumber() {
+		Random rand = new Random();
+		Scanner stdIn = new Scanner(System.in);
+
+		final int MAX_NO = 6;
+		int leftNo = MAX_NO;
+		int no = rand.nextInt(100);
+
+		System.out.println("guess number start!");
+		System.out.println("between 0 to 99");
+
+		int x;
+
+		do {
+			System.out.println("rest count : " + (leftNo--) + " , which number :");
+			x = stdIn.nextInt();
+
+			if (x > no)
+				System.out.println("smaller");
+			else if (x < no)
+				System.out.println("bigger");
+
+		} while (x != no && leftNo > 0);
+
+		if (x == no)
+			System.out.print("try to guess " + (MAX_NO - leftNo));
+		else
+			System.out.println("the number was " + no);
+
+	}
+
 }

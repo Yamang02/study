@@ -102,6 +102,7 @@ public class App {
 		// 70.Quiz.SumBreak1Ave();
 		// 71. Quiz.SumBreak2Ave();
 		// 72. Quiz.SumContinueAve();
-		Quiz.SumGroup2();
+		// 73. Quiz.SumGroup2();
+		Quiz.FindNumber();
 	}
 }
