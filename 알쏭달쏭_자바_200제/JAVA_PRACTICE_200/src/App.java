@@ -2,13 +2,15 @@ import practice.Chapter1;
 import practice.Chapter2;
 import practice.Chapter3;
 import practice.Chapter4;
+import practice.Chapter5;
 
 public class App {
 	public static void main(String[] args) throws Exception {
 //		Chapter1 Quiz = new Chapter1();
 //		Chapter2 Quiz = new Chapter2();
 //		Chapter3 Quiz = new Chapter3();
-		Chapter4 Quiz = new Chapter4();
+//		Chapter4 Quiz = new Chapter4();
+		Chapter5 Quiz = new Chapter5();
 
 		// 1. Quiz.Hello();
 		// 2. Quiz.HelloError();
@@ -103,6 +105,7 @@ public class App {
 		// 71. Quiz.SumBreak2Ave();
 		// 72. Quiz.SumContinueAve();
 		// 73. Quiz.SumGroup2();
-		Quiz.FindNumber();
+		// 74 Quiz.FindNumber();
+		Quiz.Print12();
 	}
 }
