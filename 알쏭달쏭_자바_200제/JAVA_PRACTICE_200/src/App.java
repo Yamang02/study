@@ -106,6 +106,7 @@ public class App {
 		// 72. Quiz.SumContinueAve();
 		// 73. Quiz.SumGroup2();
 		// 74 Quiz.FindNumber();
-		Quiz.Print12();
+		// 75.Quiz.Print12();
+		Quiz.OctHex();
 	}
 }
