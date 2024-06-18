@@ -14,9 +14,13 @@ public class Chapter5 {
 
 	public void OctHex() {
 		int x = util.getInputInt();
-
 		System.out.printf("8 jinsu is %o \n", x);
 		System.out.printf("16 jinsu is %x \n", x);
+	}
+	
+	public void OctHex1Line() {
+		int x = util.getInputInt();
+		System.out.printf("8 jinsu %o and 16 jinsu %x \n", x, x);
 	}
 
 }
