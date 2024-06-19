@@ -108,6 +108,7 @@ public class App {
 		// 74 Quiz.FindNumber();
 		// 75.Quiz.Print12();
 		// 76_A.Quiz.OctHex();
-		Quiz.OctHex1Line();
+		// 77. Quiz.OctHex1Line();
+		Quiz.FloatDoubleScanPrint();
 	}
 }

@@ -2,21 +2,34 @@ package util;
 
 import java.util.Scanner;
 
+import javax.print.DocFlavor.STRING;
+
 public class Utility {
 
 	public Scanner getScanner() {
 		return new Scanner(System.in);
 	}
-	
-	public void printEnterInt( ) {
-		System.out.print("please enter int : ");
+
+	public void printEnterNumber() {
+		System.out.print("please enter number : ");
 	}
-	
-	
-	public int getInputInt() {
-		Scanner stdIn = this.getScanner();
-		this.printEnterInt();
-		return stdIn.nextInt(); 
+
+	public void printEnterNumber(String string) {
+		System.out.print("please enter number for " + string + " : ");
 	}
-	
+
+	// Wrapper class와 generic을 이용해 모둔 Number형 받기
+	public <T extends Number> T getInputNumber(Class<T> type, Scanner sc) {
+		if (type == Integer.class) {
+			return type.cast(sc.nextInt());
+		} else if (type == Double.class) {
+			return type.cast(sc.nextDouble());
+		} else if (type == Float.class) {
+			return type.cast(sc.nextFloat());
+		} else if (type == Long.class) {
+			return type.cast(sc.nextLong());
+		}
+		return null;
+	}
+
 }
