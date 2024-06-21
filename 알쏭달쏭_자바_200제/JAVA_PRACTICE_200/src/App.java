@@ -109,6 +109,8 @@ public class App {
 		// 75.Quiz.Print12();
 		// 76_A.Quiz.OctHex();
 		// 77. Quiz.OctHex1Line();
-		Quiz.FloatDoubleScanPrint();
+		// 77_B. Quiz.FloatDoubleScanPrint();
+		// 78. Quiz.PrintBoolean();
+		Quiz.Average3Wrong();
 	}
 }

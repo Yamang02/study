@@ -46,4 +46,20 @@ public class Chapter5 {
 		System.out.println("b1 = " + b1);
 		System.out.println("b2 = " + b2);
 	}
+
+	public void Average3Wrong() {
+		Scanner sc = util.getScanner();
+		System.out.println("get x,y,z average");
+
+		util.printEnterNumber("x");
+		Integer x = util.getInputNumber(Integer.class, sc);
+		util.printEnterNumber("y");
+		Integer y = util.getInputNumber(Integer.class, sc);
+		util.printEnterNumber("z");
+		Integer z = util.getInputNumber(Integer.class, sc);
+
+		double ave = (x + y + z) / 3.0;
+		System.out.printf("x, y, z average %.3f\n", ave);
+
+	}
 }

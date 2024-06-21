@@ -2,6 +2,8 @@ package util;
 
 import java.util.Scanner;
 
+import javax.print.DocFlavor.STRING;
+
 public class Utility {
 
 	public Scanner getScanner() {
