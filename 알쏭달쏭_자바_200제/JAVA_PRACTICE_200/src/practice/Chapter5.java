@@ -62,4 +62,14 @@ public class Chapter5 {
 		System.out.printf("x, y, z average %.3f\n", ave);
 
 	}
+
+	public void FloatToInteger() {
+		int a;
+
+		a = (int) 10.0;
+		// a = 10.0;
+
+		System.out.println("a = " + a);
+
+	}
 }
