@@ -112,6 +112,8 @@ public class App {
 		// 77_B. Quiz.FloatDoubleScanPrint();
 		// 78. Quiz.PrintBoolean();
 		// 79. Quiz.Average3Wrong();
-		Quiz.FloatToInteger();
+		// 80. Quiz.FloatToInteger();
+		Quiz.LoopFloatInt();
+		
 	}
 }
