@@ -82,4 +82,14 @@ public class Chapter5 {
 			System.out.printf("%9.7f %9.7f\n", x, (float) i / 1000);
 
 	}
+
+	public void SquareFloat() {
+		System.out.println("x       square of x");
+		System.out.println("--------------------");
+
+		float x = 0.0f;
+		for (int i = 0; i <= 1000; i++, x += 0.001F)
+			System.out.printf("%5.3f %10.7f\n", x, x * x);
+
+	}
 }

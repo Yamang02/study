@@ -113,7 +113,7 @@ public class App {
 		// 78. Quiz.PrintBoolean();
 		// 79. Quiz.Average3Wrong();
 		// 80. Quiz.FloatToInteger();
-		Quiz.LoopFloatInt();
-		
+		// 81. Quiz.LoopFloatInt();
+		Quiz.SquareFloat();
 	}
 }
