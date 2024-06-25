@@ -92,4 +92,9 @@ public class Chapter5 {
 			System.out.printf("%5.3f %10.7f\n", x, x * x);
 
 	}
+
+	public void printABC() {
+		System.out.println("\"ABC\\n\"");
+		
+	}
 }

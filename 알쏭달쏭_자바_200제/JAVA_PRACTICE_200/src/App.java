@@ -114,6 +114,7 @@ public class App {
 		// 79. Quiz.Average3Wrong();
 		// 80. Quiz.FloatToInteger();
 		// 81. Quiz.LoopFloatInt();
-		Quiz.SquareFloat();
+		// 82. Quiz.SquareFloat();
+		Quiz.printABC();
 	}
 }
