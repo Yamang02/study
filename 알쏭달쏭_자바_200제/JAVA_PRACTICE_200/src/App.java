@@ -3,6 +3,7 @@ import practice.Chapter2;
 import practice.Chapter3;
 import practice.Chapter4;
 import practice.Chapter5;
+import practice.Chapter6;
 
 public class App {
 	public static void main(String[] args) throws Exception {
@@ -10,7 +11,8 @@ public class App {
 //		Chapter2 Quiz = new Chapter2();
 //		Chapter3 Quiz = new Chapter3();
 //		Chapter4 Quiz = new Chapter4();
-		Chapter5 Quiz = new Chapter5();
+//		Chapter5 Quiz = new Chapter5();
+		Chapter6 Quiz = new Chapter6();
 
 		// 1. Quiz.Hello();
 		// 2. Quiz.HelloError();
@@ -115,6 +117,7 @@ public class App {
 		// 80. Quiz.FloatToInteger();
 		// 81. Quiz.LoopFloatInt();
 		// 82. Quiz.SquareFloat();
-		Quiz.printABC();
+		// 83. Quiz.printABC();
+		Quiz.DoubleArray();
 	}
 }
