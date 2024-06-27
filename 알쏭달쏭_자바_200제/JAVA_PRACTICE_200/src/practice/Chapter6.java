@@ -9,12 +9,34 @@ public class Chapter6 {
 	Utility util = new Utility();
 
 	public void DoubleArray() {
-		double[] a = new double[5];
+		double[] a = util.getDoubleArray(5);
 
 		for (int i = 0; i < a.length; i++) {
 			System.out.println("a[" + i + "] = " + a[i]);
 		}
 
+	}
+
+	public void DoubleArrayFor() {
+		double[] a = util.getDoubleArray(5);
+
+		for (int i = 0; i < a.length; i++) {
+			a[i] = (i + 1) * 1.1;
+		}
+
+		for (int i = 0; i < a.length; i++) {
+			System.out.println("a[" + i + "] = " + a[i]);
+		}
+	}
+
+	public void IntArrayFor() {
+		int[] a = new int[5];
+
+		for (int i = 0; i < a.length; i++)
+			a[i] = 5 - i;
+
+		for (int i = 0; i < a.length; i++)
+			System.out.println("a[" + i + "] =" + a[i]);
 	}
 
 }
