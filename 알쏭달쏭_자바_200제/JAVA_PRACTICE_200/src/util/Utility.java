@@ -30,4 +30,8 @@ public class Utility {
 		return null;
 	}
 
+	public double[] getDoubleArray(int size) {
+		return new double[size];
+	}
+
 }

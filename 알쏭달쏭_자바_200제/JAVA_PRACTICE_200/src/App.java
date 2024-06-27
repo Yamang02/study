@@ -118,6 +118,7 @@ public class App {
 		// 81. Quiz.LoopFloatInt();
 		// 82. Quiz.SquareFloat();
 		// 83. Quiz.printABC();
-		Quiz.DoubleArray();
+		// 84. Quiz.DoubleArray();
+		Quiz.DoubleArrayFor();
 	}
 }
