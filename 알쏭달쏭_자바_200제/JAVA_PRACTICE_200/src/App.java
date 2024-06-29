@@ -120,6 +120,7 @@ public class App {
 		// 83. Quiz.printABC();
 		// 84. Quiz.DoubleArray();
 		// 85. Quiz.DoubleArrayFor();
-		Quiz.IntArrayFor();
+		// 86. Quiz.IntArrayFor();
+		Quiz.ColumnChart();
 	}
 }
