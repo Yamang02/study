@@ -63,13 +63,23 @@ public class Chapter6 {
 		}
 		for (int i = 0; i < 2 * n; i++) {
 			System.out.print('-');
-			System.out.println();
+
 		}
+
+		System.out.println();
 
 		for (int i = 0; i < n; i++) {
 			System.out.print(i % 10 + " ");
-			System.out.println();
 
+		}
+		System.out.println();
+	}
+
+	public void IntArray54321() {
+		int[] a = { 5, 4, 3, 2, 1 };
+
+		for (int i = 0; i < a.length; i++) {
+			System.out.println("a[" + i + "]=" + a[i]);
 		}
 
 	}
