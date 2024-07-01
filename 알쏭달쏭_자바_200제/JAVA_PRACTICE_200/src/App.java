@@ -122,6 +122,7 @@ public class App {
 		// 85. Quiz.DoubleArrayFor();
 		// 86. Quiz.IntArrayFor();
 		// 87. Quiz.ColumnChart();
-		Quiz.IntArray54321();
+		// 88.. Quiz.IntArray54321();
+		Quiz.PrintArray();
 	}
 }

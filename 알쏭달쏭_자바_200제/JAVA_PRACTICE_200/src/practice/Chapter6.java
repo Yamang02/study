@@ -84,4 +84,27 @@ public class Chapter6 {
 
 	}
 
+	public void PrintArray() {
+		Scanner sc = util.getScanner();
+		util.printEnterNumber("n");
+		Integer n = util.getInputNumber(Integer.class, sc);
+
+		int[] a = new int[n];
+
+		for (int i = 0; i < a.length; i++) {
+			System.out.print("a[" + i + "] = ");
+			a[i] = sc.nextInt();
+		}
+
+		System.out.print("a = {");
+		if (n >= 2)
+			for (int i = 0; i < a.length - 1; i++) {
+				System.out.print(a[i] + " , ");
+			}
+		if (n >= 1)
+			System.out.print(a[n - 1]);
+		System.out.println("}");
+
+	}
+
 }
