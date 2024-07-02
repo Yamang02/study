@@ -107,4 +107,35 @@ public class Chapter6 {
 
 	}
 
+	public void PointSumAve() {
+		Scanner sc = util.getScanner();
+
+		util.printEnterNumber("people");
+		Integer n = util.getInputNumber(Integer.class, sc);
+		int[] point = new int[n];
+
+		System.out.println("input score");
+		int sum = 0;
+
+		for (int i = 0; i < n; i++) {
+			System.out.print("score of " + (i + 1));
+			point[i] = sc.nextInt();
+			sum += point[i];
+		}
+
+		int max = point[0];
+		int min = point[0];
+		for (int i = 1; i < n; i++) {
+			if (point[i] > max)
+				max = point[i];
+			if (point[i] < min)
+				min = point[i];
+		}
+
+		System.out.println("sum is " + sum);
+		System.out.println("average is " + (double) sum / n);
+		System.out.println("max is " + max);
+		System.out.println("min is " + min);
+	}
+
 }
