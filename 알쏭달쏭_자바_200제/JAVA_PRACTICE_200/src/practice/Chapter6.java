@@ -1,6 +1,6 @@
 package practice;
 
-import java.util.Iterator;
+
 import java.util.Random;
 import java.util.Scanner;
 
@@ -76,20 +76,19 @@ public class Chapter6 {
 	}
 
 	public void IntArray54321() {
-		int[] a = { 5, 4, 3, 2, 1 };
+		Integer[] a = { 5, 4, 3, 2, 1 };
 
-		for (int i = 0; i < a.length; i++) {
-			System.out.println("a[" + i + "]=" + a[i]);
-		}
+//		for (int i = 0; i < a.length; i++) {
+//			System.out.println("a[" + i + "]=" + a[i]);
+//		}
+		util.printAllElementsInArray(a);
 
 	}
 
 	public void PrintArray() {
 		Scanner sc = util.getScanner();
 		util.printEnterNumber("n");
-		Integer n = util.getInputNumber(Integer.class, sc);
-
-		int[] a = new int[n];
+		int[] a = util.getIntegerArray(sc);
 
 		for (int i = 0; i < a.length; i++) {
 			System.out.print("a[" + i + "] = ");
@@ -97,12 +96,12 @@ public class Chapter6 {
 		}
 
 		System.out.print("a = {");
-		if (n >= 2)
+		if (a.length >= 2)
 			for (int i = 0; i < a.length - 1; i++) {
 				System.out.print(a[i] + " , ");
 			}
-		if (n >= 1)
-			System.out.print(a[n - 1]);
+		if (a.length >= 1)
+			System.out.print(a[a.length - 1]);
 		System.out.println("}");
 
 	}
@@ -111,13 +110,12 @@ public class Chapter6 {
 		Scanner sc = util.getScanner();
 
 		util.printEnterNumber("people");
-		Integer n = util.getInputNumber(Integer.class, sc);
-		int[] point = new int[n];
+		int[] point = util.getIntegerArray(sc);
 
 		System.out.println("input score");
 		int sum = 0;
 
-		for (int i = 0; i < n; i++) {
+		for (int i = 0; i < point.length; i++) {
 			System.out.print("score of " + (i + 1));
 			point[i] = sc.nextInt();
 			sum += point[i];
@@ -125,7 +123,7 @@ public class Chapter6 {
 
 		int max = point[0];
 		int min = point[0];
-		for (int i = 1; i < n; i++) {
+		for (int i = 1; i < point.length; i++) {
 			if (point[i] > max)
 				max = point[i];
 			if (point[i] < min)
@@ -133,9 +131,71 @@ public class Chapter6 {
 		}
 
 		System.out.println("sum is " + sum);
-		System.out.println("average is " + (double) sum / n);
+		System.out.println("average is " + (double) sum / point.length);
 		System.out.println("max is " + max);
 		System.out.println("min is " + min);
+	}
+
+	public void LinearSerachTop() {
+		Scanner sc = util.getScanner();
+
+		util.printEnterNumber("elements");
+		int[] a = util.getIntegerArray(sc);
+
+		for (int i = 0; i < a.length; i++) {
+			System.out.print("a[" + i + "] =");
+			a[i] = sc.nextInt();
+		}
+
+		System.out.print("int to find : ");
+		int key = sc.nextInt();
+
+		int j;
+		for (j = 0; j < a.length; j++)
+			if (a[j] == key)
+				break;
+
+		if (j < a.length)
+			System.out.println("value is in a[" + j + "]");
+		else
+			System.out.println("there is no value on the array");
+
+	}
+
+	public void ArraySumAve() {
+		Scanner sc = util.getScanner();
+		util.printEnterNumber("elements");
+		Integer n = util.getInputNumber(Integer.class, sc);
+
+		double[] a = new double[n];
+
+		for (int i = 0; i < a.length; i++) {
+			System.out.println("a[" + i + "]=");
+			a[i] = sc.nextDouble();
+
+		}
+
+		double sum = 0;
+		for (double i : a)
+			sum += i;
+
+		System.out.println("sum is " + sum);
+		System.out.println("average is " + sum / n);
+	}
+
+	public void ArrayRand() {
+		Random rand = new Random();
+		Scanner sc = Utility.getScanner();
+		util.printEnterNumber("element");
+		Integer n = util.getInputNumber(Integer.class, sc);
+
+		Integer[] a = new Integer[n];
+
+		for (int i = 0; i < a.length; i++) {
+			a[i] = 1 + rand.nextInt(10);
+		}
+
+		util.printAllElementsInArray(a);
 	}
 
 }

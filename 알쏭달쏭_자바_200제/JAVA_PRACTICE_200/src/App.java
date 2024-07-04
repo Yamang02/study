@@ -124,7 +124,10 @@ public class App {
 		// 87. Quiz.ColumnChart();
 		// 88. Quiz.IntArray54321();
 		// 89. Quiz.PrintArray();
-		Quiz.PointSumAve();
-		
+		// 90. Quiz.PointSumAve();
+		// 91. Quiz.LinearSerachTop();
+		// 92. Quiz.ArraySumAve();
+		Quiz.ArrayRand();
+
 	}
 }

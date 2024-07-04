@@ -34,4 +34,8 @@ public class Utility {
 		return new double[size];
 	}
 
+	public int[] getIntegerArray(Scanner sc) {
+		return new int[sc.nextInt()];
+	}
+
 }
