@@ -1,10 +1,12 @@
 package util;
 
+import java.lang.reflect.Array;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Utility {
 
-	public Scanner getScanner() {
+	public static Scanner getScanner() {
 		return new Scanner(System.in);
 	}
 
@@ -38,4 +40,16 @@ public class Utility {
 		return new int[sc.nextInt()];
 	}
 
+//	public static <T extends Number> T[] createNumberArray(Class<T> type, int size, Scanner sc) {
+//		@SuppressWarnings("unchecked")
+//		T[] array = (T[]) Array.newInstance(type, size);
+//		return array;
+//	}
+
+	public <T extends Object> void printAllElementsInArray(T[] array) {
+		for (int i = 0; i < array.length; i++) {
+			System.out.println("array[" + i + "] = " + array[i]);
+		}
+
+	}
 }
