@@ -2,6 +2,7 @@ package util;
 
 import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.Random;
 import java.util.Scanner;
 
 public class Utility {
@@ -10,16 +11,20 @@ public class Utility {
 		return new Scanner(System.in);
 	}
 
-	public void printEnterNumber() {
+	public static Random getRandom() {
+		return new Random();
+	}
+
+	public static void printEnterNumber() {
 		System.out.print("please enter number : ");
 	}
 
-	public void printEnterNumber(String string) {
+	public static void printEnterNumber(String string) {
 		System.out.print("please enter number for " + string + " : ");
 	}
 
 	// Wrapper class와 generic을 이용해 모둔 Number형 받기
-	public <T extends Number> T getInputNumber(Class<T> type, Scanner sc) {
+	public static <T extends Number> T getInputNumber(Class<T> type, Scanner sc) {
 		if (type == Integer.class) {
 			return type.cast(sc.nextInt());
 		} else if (type == Double.class) {
@@ -32,11 +37,11 @@ public class Utility {
 		return null;
 	}
 
-	public double[] getDoubleArray(int size) {
+	public static double[] getDoubleArray(int size) {
 		return new double[size];
 	}
 
-	public int[] getIntegerArray(Scanner sc) {
+	public static int[] getIntegerArray(Scanner sc) {
 		return new int[sc.nextInt()];
 	}
 
@@ -46,7 +51,7 @@ public class Utility {
 //		return array;
 //	}
 
-	public <T extends Object> void printAllElementsInArray(T[] array) {
+	public static <T extends Object> void printAllElementsInArray(T[] array) {
 		for (int i = 0; i < array.length; i++) {
 			System.out.println("array[" + i + "] = " + array[i]);
 		}

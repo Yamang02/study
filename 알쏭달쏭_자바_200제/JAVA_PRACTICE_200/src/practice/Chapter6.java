@@ -1,6 +1,6 @@
 package practice;
 
-
+import java.util.Iterator;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -10,7 +10,7 @@ public class Chapter6 {
 	Utility util = new Utility();
 
 	public void DoubleArray() {
-		double[] a = util.getDoubleArray(5);
+		double[] a = Utility.getDoubleArray(5);
 
 		for (int i = 0; i < a.length; i++) {
 			System.out.println("a[" + i + "] = " + a[i]);
@@ -19,7 +19,7 @@ public class Chapter6 {
 	}
 
 	public void DoubleArrayFor() {
-		double[] a = util.getDoubleArray(5);
+		double[] a = Utility.getDoubleArray(5);
 
 		for (int i = 0; i < a.length; i++) {
 			a[i] = (i + 1) * 1.1;
@@ -42,9 +42,9 @@ public class Chapter6 {
 
 	public void ColumnChart() {
 		Random rand = new Random();
-		Scanner sc = util.getScanner();
-		util.printEnterNumber("n");
-		Integer n = util.getInputNumber(Integer.class, sc);
+		Scanner sc = Utility.getScanner();
+		Utility.printEnterNumber("n");
+		Integer n = Utility.getInputNumber(Integer.class, sc);
 
 		int[] a = new int[n];
 
@@ -81,14 +81,14 @@ public class Chapter6 {
 //		for (int i = 0; i < a.length; i++) {
 //			System.out.println("a[" + i + "]=" + a[i]);
 //		}
-		util.printAllElementsInArray(a);
+		Utility.printAllElementsInArray(a);
 
 	}
 
 	public void PrintArray() {
-		Scanner sc = util.getScanner();
-		util.printEnterNumber("n");
-		int[] a = util.getIntegerArray(sc);
+		Scanner sc = Utility.getScanner();
+		Utility.printEnterNumber("n");
+		int[] a = Utility.getIntegerArray(sc);
 
 		for (int i = 0; i < a.length; i++) {
 			System.out.print("a[" + i + "] = ");
@@ -107,10 +107,10 @@ public class Chapter6 {
 	}
 
 	public void PointSumAve() {
-		Scanner sc = util.getScanner();
+		Scanner sc = Utility.getScanner();
 
-		util.printEnterNumber("people");
-		int[] point = util.getIntegerArray(sc);
+		Utility.printEnterNumber("people");
+		int[] point = Utility.getIntegerArray(sc);
 
 		System.out.println("input score");
 		int sum = 0;
@@ -137,10 +137,10 @@ public class Chapter6 {
 	}
 
 	public void LinearSerachTop() {
-		Scanner sc = util.getScanner();
+		Scanner sc = Utility.getScanner();
 
-		util.printEnterNumber("elements");
-		int[] a = util.getIntegerArray(sc);
+		Utility.printEnterNumber("elements");
+		int[] a = Utility.getIntegerArray(sc);
 
 		for (int i = 0; i < a.length; i++) {
 			System.out.print("a[" + i + "] =");
@@ -163,9 +163,9 @@ public class Chapter6 {
 	}
 
 	public void ArraySumAve() {
-		Scanner sc = util.getScanner();
-		util.printEnterNumber("elements");
-		Integer n = util.getInputNumber(Integer.class, sc);
+		Scanner sc = Utility.getScanner();
+		Utility.printEnterNumber("elements");
+		Integer n = Utility.getInputNumber(Integer.class, sc);
 
 		double[] a = new double[n];
 
@@ -186,8 +186,8 @@ public class Chapter6 {
 	public void ArrayRand() {
 		Random rand = new Random();
 		Scanner sc = Utility.getScanner();
-		util.printEnterNumber("element");
-		Integer n = util.getInputNumber(Integer.class, sc);
+		Utility.printEnterNumber("element");
+		Integer n = Utility.getInputNumber(Integer.class, sc);
 
 		Integer[] a = new Integer[n];
 
@@ -195,7 +195,26 @@ public class Chapter6 {
 			a[i] = 1 + rand.nextInt(10);
 		}
 
-		util.printAllElementsInArray(a);
+		Utility.printAllElementsInArray(a);
+	}
+
+	public void ArrayRandX() {
+		Random rand = Utility.getRandom();
+		Scanner sc = Utility.getScanner();
+		Utility.printEnterNumber("elements");
+		Integer n = Utility.getInputNumber(Integer.class, sc);
+		Integer[] a = new Integer[n];
+
+		a[0] = 1 + rand.nextInt(10);
+
+		for (int i = 1; i < a.length; i++) {
+			do {
+				a[i] = 1 + rand.nextInt(10);
+			} while (a[i] == a[i - 1]);
+		}
+
+		Utility.printAllElementsInArray(a);
+
 	}
 
 }
