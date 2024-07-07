@@ -128,7 +128,8 @@ public class App {
 		// 91. Quiz.LinearSerachTop();
 		// 92. Quiz.ArraySumAve();
 		// 93. Quiz.ArrayRand();
-		Quiz.ArrayRandX();
+		// 94. Quiz.ArrayRandX();
+		Quiz.ArrayRandY();
 
 	}
 }

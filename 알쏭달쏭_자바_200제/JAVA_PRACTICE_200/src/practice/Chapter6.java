@@ -214,7 +214,30 @@ public class Chapter6 {
 		}
 
 		Utility.printAllElementsInArray(a);
+	}
 
+	public void ArrayRandY() {
+		Random rand = Utility.getRandom();
+		Scanner sc = Utility.getScanner();
+		Utility.printEnterNumber("elements");
+		Integer n = Utility.getInputNumber(Integer.class, sc);
+		Integer[] a = new Integer[n];
+
+		a[0] = 1 + rand.nextInt(10);
+
+		for (int i = 1; i < a.length; i++) {
+			int j;
+			do {
+				a[i] = 1 + rand.nextInt(10);
+				for (j = 0; j < a.length; j++) {
+					if (a[j] == a[i]) {
+						break;
+					}
+				}
+			} while (j < i);
+		}
+
+		Utility.printAllElementsInArray(a);
 	}
 
 }
