@@ -129,7 +129,9 @@ public class App {
 		// 92. Quiz.ArraySumAve();
 		// 93. Quiz.ArrayRand();
 		// 94. Quiz.ArrayRandX();
-		Quiz.ArrayRandY();
+		// 95. Quiz.ArrayRandY();
+		Quiz.Shuffle();
+		
 
 	}
 }

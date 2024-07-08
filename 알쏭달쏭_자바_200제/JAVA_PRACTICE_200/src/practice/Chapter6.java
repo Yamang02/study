@@ -240,4 +240,29 @@ public class Chapter6 {
 		Utility.printAllElementsInArray(a);
 	}
 
+	public void Shuffle() {
+		Random rand = Utility.getRandom();
+		Scanner sc = Utility.getScanner();
+		Utility.printEnterNumber("elements");
+		Integer n = Utility.getInputNumber(Integer.class, sc);
+		Integer[] a = new Integer[n];
+
+		for (int i = 0; i < a.length; i++) {
+			System.out.print("a[" + i + "] = ");
+			a[i] = sc.nextInt();
+		}
+
+		for (int i = 0; i < 2 * n; i++) {
+			int idx1 = rand.nextInt(n);
+			int idx2 = rand.nextInt(n);
+			int t = a[idx1];
+			a[idx1] = a[idx2];
+			a[idx2] = t;
+		}
+		
+		System.out.println("elements suffled");
+		Utility.printAllElementsInArray(a);
+
+	}
+
 }
