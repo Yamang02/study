@@ -138,7 +138,6 @@ public class Chapter6 {
 
 	public void LinearSerachTop() {
 		Scanner sc = Utility.getScanner();
-
 		Utility.printEnterNumber("elements");
 		int[] a = Utility.getIntegerArray(sc);
 
@@ -259,9 +258,31 @@ public class Chapter6 {
 			a[idx1] = a[idx2];
 			a[idx2] = t;
 		}
-		
+
 		System.out.println("elements suffled");
 		Utility.printAllElementsInArray(a);
+
+	}
+
+	public void CopyArrayReverse() {
+		Random rand = Utility.getRandom();
+		Scanner sc = Utility.getScanner();
+		Utility.printEnterNumber("elements");
+		Integer n = Utility.getInputNumber(Integer.class, sc);
+		Integer[] a = new Integer[n];
+		Integer[] b = new Integer[n];
+
+		for (int i = 0; i < a.length; i++) {
+			System.out.print("a[" + i + "] = ");
+			a[i] = sc.nextInt();
+		}
+
+		for (int i = 0; i < b.length; i++) {
+			b[i] = a[n - i - 1];
+		}
+
+		System.out.println(" copy all of elements in a, reversed on b array");
+		Utility.printAllElementsInArray(b);
 
 	}
 
