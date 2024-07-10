@@ -286,4 +286,36 @@ public class Chapter6 {
 
 	}
 
+	public void MonthCAI() {
+		Random rand = Utility.getRandom();
+		Scanner sc = Utility.getScanner();
+
+		String[] monthString = { "January", "February", "March", "April", "May", "June", "July", "August", "September",
+				"October", "November", "December" };
+
+		System.out.println("insert month");
+		System.out.println("Type First alphabet as Uppercase");
+
+		int retry;
+		int last = -1;
+
+		do {
+			int month;
+			do {
+				month = rand.nextInt(12);
+			} while (month == last);
+			last = month;
+
+			while (true) {
+				System.out.print((month + 1) + " Month : ");
+				String s = sc.next();
+
+				if (s.equals(monthString[month]))
+					break;
+				System.out.println("wrong");
+			}
+			System.out.print("Correct. retry? 1...Yes/0...No");
+			retry = sc.nextInt();
+		} while (retry == 1);
+	}
 }
