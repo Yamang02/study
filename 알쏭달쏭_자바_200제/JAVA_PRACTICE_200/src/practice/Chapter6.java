@@ -318,4 +318,36 @@ public class Chapter6 {
 			retry = sc.nextInt();
 		} while (retry == 1);
 	}
+
+	public void DayCAI1() {
+		Random rand = Utility.getRandom();
+		Scanner sc = Utility.getScanner();
+
+		String[] dayKorean = { "일", "월", "화", "수", "목", "금", "토" };
+		String[] dayEnglish = { "sunday", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday" };
+
+		System.out.println("type day name in English");
+
+		int retry;
+		int last = -1;
+
+		do {
+			int day;
+			do {
+				day = rand.nextInt(7);
+			} while (day == last);
+			last = day;
+
+			while (true) {
+				System.out.println(dayKorean[day] + "요일 : ");
+				String s = sc.next();
+
+				if (s.equals(dayEnglish[day]))
+					break;
+				System.out.println("wrong");
+			}
+			System.out.print("Correct. retry? 1...Yes/0...No");
+			retry = sc.nextInt();
+		} while (retry == 1);
+	}
 }

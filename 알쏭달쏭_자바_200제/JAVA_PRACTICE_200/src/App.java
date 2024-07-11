@@ -132,7 +132,8 @@ public class App {
 		// 95. Quiz.ArrayRandY();
 		// 96. Quiz.Shuffle();
 		// 97. Quiz.CopyArrayReverse();
-		Quiz.MonthCAI();
+		// 98. Quiz.MonthCAI();
+		Quiz.DayCAI1();
 		
 
 	}
