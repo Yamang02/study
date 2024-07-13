@@ -356,8 +356,53 @@ public class Chapter6 {
 		System.out.println("a = " + a);
 		a = null;
 		System.out.println("a = " + a);
+
+//		a = {1, 2, 3, 4, 5};
+		int[] b = { 6, 5, 4, 3, 2, 1, 0 };
+		b = a;
+		// garbage collection
+
+//		final int[]a = new int [5]; -- 배열의 요소는 바뀔 수 있으나, 참조 위치는 바뀔 수 없음. 
+
 	}
-	
-	
-	
+
+	public void MatrixProduct() {
+		Scanner sc = Utility.getScanner();
+		int[][] a = new int[4][3];
+		int[][] b = new int[3][4];
+		int[][] c = new int[4][4];
+
+		System.out.println("Insert element of matrix array a");
+		for (int i = 0; i < 4; i++) {
+			for (int j = 0; j < 3; j++) {
+				System.out.printf("a[%d][%d] : ", i, j);
+				a[i][j] = sc.nextInt();
+			}
+		}
+
+		System.out.println("Insert element of matrix array b");
+		for (int i = 0; i < 3; i++) {
+			for (int j = 0; j < 4; j++) {
+				System.out.printf("b[%d][%d] : ", i, j);
+				b[i][j] = sc.nextInt();
+			}
+		}
+
+		for (int i = 0; i < 4; i++) {
+			for (int j = 0; j < 4; j++) {
+				c[i][j] = 0;
+				for (int k = 0; k < 3; k++) {
+					c[i][j] += a[i][k] * b[k][j];
+				}
+			}
+		}
+		
+		System.out.println("multiply of array a and b");
+		for (int i = 0; i < c.length; i++) {
+			for (int j = 0; j < c[i].length; j++) {
+				System.out.printf("%5d", c[i][j]);
+			}
+		} 
+	}
+
 }

@@ -134,7 +134,8 @@ public class App {
 		// 97. Quiz.CopyArrayReverse();
 		// 98. Quiz.MonthCAI();
 		// 99. Quiz.DayCAI1();
-		Quiz.PrintArrayVariable();
+		// 100. Quiz.PrintArrayVariable();
+		Quiz.MatrixProduct();
 		
 
 	}
