@@ -396,13 +396,43 @@ public class Chapter6 {
 				}
 			}
 		}
-		
+
 		System.out.println("multiply of array a and b");
 		for (int i = 0; i < c.length; i++) {
 			for (int j = 0; j < c[i].length; j++) {
 				System.out.printf("%5d", c[i][j]);
 			}
-		} 
+		}
+
+	}
+
+	public void PointTotalization() {
+		Scanner sc = Utility.getScanner();
+		final int number = 6;
+
+		int[][] point = new int[number][2];
+		int[] sumStudent = new int[number];
+		int[] sumSubject = new int[2];
+
+		System.out.printf("Insert Korean, Math score of %d students.\n", number);
+
+		for (int i = 0; i < number; i++) {
+			System.out.printf("%2d korean score : ", i + 1);
+			point[i][0] = sc.nextInt();
+			System.out.println("     math score : ");
+			point[i][1] = sc.nextInt();
+
+			sumStudent[i] = point[i][0] + point[i][1];
+			sumSubject[0] += point[i][0];
+			sumSubject[1] += point[i][1];
+
+		}
+
+		System.out.println("No. Korean Math Average");
+		for (int i = 0; i < number; i++) {
+			System.out.printf("%2d%6d%6d%6.1f\n", i + 1, point[i][0], point[i][1], (double) sumStudent[i] / 2);
+			System.out.printf("Average%6.1f%6.1f\n", (double) sumSubject[0] / number, (double) sumSubject[1] / number);
+		}
 	}
 
 }

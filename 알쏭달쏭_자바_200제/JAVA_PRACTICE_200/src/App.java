@@ -135,8 +135,8 @@ public class App {
 		// 98. Quiz.MonthCAI();
 		// 99. Quiz.DayCAI1();
 		// 100. Quiz.PrintArrayVariable();
-		Quiz.MatrixProduct();
-		
+		// 101. Quiz.MatrixProduct();
+		Quiz.PointTotalization();
 
 	}
 }
