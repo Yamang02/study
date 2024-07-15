@@ -435,4 +435,37 @@ public class Chapter6 {
 		}
 	}
 
+	public void UnevennessArray() {
+		Scanner sc = Utility.getScanner();
+
+		System.out.println("creating random 2 degree matrix array");
+		Utility.printEnterNumber("row count");
+		int height = sc.nextInt();
+
+		int[][] c = new int[height][];
+
+		for (int i = 0; i < c.length; i++) {
+			System.out.print(i + "row count column :");
+			int width = sc.nextInt();
+			c[i] = new int[width];
+		}
+
+		System.out.println("Inter each Element");
+		for (int i = 0; i < c.length; i++) {
+			for (int j = 0; j < c[i].length; j++) {
+				System.out.printf("c[%d][%d] : ", i, j);
+				c[i][j] = sc.nextInt();
+			}
+		}
+
+		System.out.println("array c's element are....");
+		for (int i = 0; i < c.length; i++) {
+			for (int j = 0; j < c[i].length; j++) {
+				System.out.printf("%3d", c[i][j]);
+			}
+			System.out.println();
+
+		}
+	}
+
 }
