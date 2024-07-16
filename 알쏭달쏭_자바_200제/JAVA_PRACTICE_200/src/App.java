@@ -137,7 +137,8 @@ public class App {
 		// 100. Quiz.PrintArrayVariable();
 		// 101. Quiz.MatrixProduct();
 		// 102. Quiz.PointTotalization();
-		Quiz.UnevennessArray();
+		// 103. Quiz.UnevennessArray();
+		Quiz.PointClass();
 
 	}
 }

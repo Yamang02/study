@@ -468,4 +468,38 @@ public class Chapter6 {
 		}
 	}
 
+	public void PointClass() {
+		Scanner sc = Utility.getScanner();
+
+		Utility.printEnterNumber("num of class");
+		int classNum = sc.nextInt();
+		int[][] point = new int[classNum][];
+		int totNumber = 0;
+
+		for (int i = 0; i < point.length; i++) {
+			System.out.printf("\n%d class's student count : ", i + 1);
+			int num = sc.nextInt();
+			point[i] = new int[num];
+			totNumber += num;
+			for (int j = 0; j < point[i].length; j++) {
+				System.out.printf("%d class %d number's score : ", i + 1, j + 1);
+				point[i][j] = sc.nextInt();
+			}
+		}
+
+		System.out.println(" class , sum    average ");
+		System.out.println("-------------------------");
+		int total = 0;
+		for (int i = 0; i < point.length; i++) {
+			int sum = 0;
+			for (int j = 0; j < point[i].length; j++) {
+				sum += point[i][j];
+			}
+			total += sum;
+			System.out.printf(" %2d class, %7d%7.1f\n", i + 1, sum, (double) sum / point[i].length);
+		}
+		System.out.println("------+------------------");
+		System.out.printf("  sum  : %7d%7.1f\n  ", total, (double) total / totNumber);
+	}
+
 }
