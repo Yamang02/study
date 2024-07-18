@@ -143,7 +143,8 @@ public class App {
 		// 102. Quiz.PointTotalization();
 		// 103. Quiz.UnevennessArray();
 		// 104. Quiz.PointClass();
-		Quiz.SignOf1();
+		// 105. Quiz.SignOf1();
+		Quiz.Min3();
 
 	}
 }

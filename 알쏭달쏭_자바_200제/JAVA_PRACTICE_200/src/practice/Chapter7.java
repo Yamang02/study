@@ -19,4 +19,16 @@ public class Chapter7 {
 
 	}
 
+	public void Min3() {
+
+		Scanner sc = Utility.getScanner();
+		Utility.printEnterNumber("int a");
+		int a = sc.nextInt();
+		Utility.printEnterNumber("int b");
+		int b = sc.nextInt();
+		Utility.printEnterNumber("int c");
+		int c = sc.nextInt();
+		System.out.println("min is " + new practice.chapter7.Min3().min(a, b, c));
+	}
+
 }
