@@ -19,4 +19,29 @@ public class Chapter7 {
 
 	}
 
+	public void Min3() {
+
+		Scanner sc = Utility.getScanner();
+		Utility.printEnterNumber("int a");
+		int a = sc.nextInt();
+		Utility.printEnterNumber("int b");
+		int b = sc.nextInt();
+		Utility.printEnterNumber("int c");
+		int c = sc.nextInt();
+		System.out.println("min is " + new practice.chapter7.Min3().min(a, b, c));
+	}
+
+	public void SumUp1() {
+		Scanner sc = util.getScanner();
+
+		System.out.println("Sum 1 to x");
+		int x;
+		do {
+			System.out.print("value of x : ");
+			x = sc.nextInt();
+		} while (x <= 0);
+
+		System.out.print("Sum 1 to x is " + new practice.chapter7.SumUp1().sumUp(x));
+	}
+
 }
