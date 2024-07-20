@@ -44,4 +44,16 @@ public class Chapter7 {
 		System.out.print("Sum 1 to x is " + new practice.chapter7.SumUp1().sumUp(x));
 	}
 
+	public void SumUp2() {
+		Scanner sc = util.getScanner();
+
+		System.out.println("Sum 1 to x");
+		int x;
+		do {
+			System.out.print("value of x : ");
+			x = sc.nextInt();
+		} while (x <= 0);
+
+		System.out.print("Sum 1 to x is " + new practice.chapter7.SumUp2().sumUp(x));
+	}
 }

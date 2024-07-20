@@ -17,7 +17,6 @@ public class App {
 //		Chapter6 Quiz = new Chapter6();
 		Chapter7 Quiz = new Chapter7();
 
-
 		// 1. Quiz.Hello();
 		// 2. Quiz.HelloError();
 		// 3.
@@ -145,7 +144,8 @@ public class App {
 		// 104. Quiz.PointClass();
 		// 105. Quiz.SignOf1();
 		// 106. Quiz.Min3();
-		Quiz.SumUp1();
+		// 107. Quiz.SumUp1();
+		Quiz.SumUp2();
 
 	}
 }
