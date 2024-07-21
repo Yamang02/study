@@ -56,4 +56,8 @@ public class Chapter7 {
 
 		System.out.print("Sum 1 to x is " + new practice.chapter7.SumUp2().sumUp(x));
 	}
+
+	public void Hello() {
+		new practice.chapter7.Hello().hello();
+	}
 }

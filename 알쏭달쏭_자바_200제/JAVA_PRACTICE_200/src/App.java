@@ -145,7 +145,8 @@ public class App {
 		// 105. Quiz.SignOf1();
 		// 106. Quiz.Min3();
 		// 107. Quiz.SumUp1();
-		Quiz.SumUp2();
+		// 108. Quiz.SumUp2();
+		Quiz.Hello();
 
 	}
 }
