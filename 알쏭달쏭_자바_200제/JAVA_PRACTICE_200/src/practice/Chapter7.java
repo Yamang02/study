@@ -60,4 +60,8 @@ public class Chapter7 {
 	public void Hello() {
 		new practice.chapter7.Hello().hello();
 	}
+
+	public void PrintSeason(int n) {
+		new practice.chapter7.PrintSeason().printSeason(n);
+	}
 }

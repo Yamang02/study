@@ -146,7 +146,7 @@ public class App {
 		// 106. Quiz.Min3();
 		// 107. Quiz.SumUp1();
 		// 108. Quiz.SumUp2();
-		Quiz.Hello();
-
+		// 109. Quiz.Hello();
+		Quiz.PrintSeason(0);
 	}
 }
