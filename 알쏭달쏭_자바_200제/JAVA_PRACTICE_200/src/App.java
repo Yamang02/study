@@ -147,6 +147,7 @@ public class App {
 		// 107. Quiz.SumUp1();
 		// 108. Quiz.SumUp2();
 		// 109. Quiz.Hello();
-		Quiz.PrintSeason(0);
+		// 110. Quiz.PrintSeason(0);
+		Quiz.IsoscelesTriangleB();
 	}
 }

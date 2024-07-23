@@ -64,4 +64,17 @@ public class Chapter7 {
 	public void PrintSeason(int n) {
 		new practice.chapter7.PrintSeason().printSeason(n);
 	}
+
+	public void IsoscelesTriangleB() {
+		Scanner sc = Utility.getScanner();
+
+		System.out.println("print left-bottom jicgak triangle");
+		System.out.print("level ? : ");
+		int n = sc.nextInt();
+		for (int i = 1; i <= n; i++) {
+			new practice.chapter7.IsoscelesTriangleB().putStars(i);
+			System.out.println();
+		}
+
+	}
 }
