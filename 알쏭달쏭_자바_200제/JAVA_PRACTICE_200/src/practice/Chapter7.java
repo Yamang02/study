@@ -77,4 +77,16 @@ public class Chapter7 {
 		}
 
 	}
+
+	public void RandomTester() {
+		Scanner sc = Utility.getScanner();
+
+		System.out.println("get random int ");
+		System.out.print("min ? : ");
+		int min = sc.nextInt();
+		System.out.print("max ? : ");
+		int max = sc.nextInt();
+
+		System.out.println("random int is " + new practice.chapter7.RandomTester().random(min, max));
+	}
 }
