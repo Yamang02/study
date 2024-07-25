@@ -89,4 +89,28 @@ public class Chapter7 {
 
 		System.out.println("random int is " + new practice.chapter7.RandomTester().random(min, max));
 	}
+
+	public void InverseNumber() {
+
+		Scanner sc = Utility.getScanner();
+
+		int x;
+		do {
+			int n = new practice.chapter7.InverseNumber().readPlusInt();
+
+			System.out.print("in reverse...");
+			while (n > 0) {
+				System.out.print(n % 10);
+				n /= 10;
+			}
+
+			do {
+				System.out.print("retry? Yes...1 / No... 0 :");
+				x = sc.nextInt();
+
+			} while (x != 0 && x != 1);
+		} while (x == 1);
+
+	}
+
 }

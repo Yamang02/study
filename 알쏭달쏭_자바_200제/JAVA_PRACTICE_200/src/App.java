@@ -149,6 +149,8 @@ public class App {
 		// 109. Quiz.Hello();
 		// 110. Quiz.PrintSeason(0);
 		// 111. Quiz.IsoscelesTriangleB();
-		Quiz.RandomTester();
+		// 112. Quiz.RandomTester();
+		Quiz.InverseNumber();
+		
 	}
 }
