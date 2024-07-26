@@ -2,6 +2,7 @@ package practice;
 
 import util.Utility;
 
+import java.util.Random;
 import java.util.Scanner;
 
 public class Chapter7 {
@@ -88,5 +89,67 @@ public class Chapter7 {
 		int max = sc.nextInt();
 
 		System.out.println("random int is " + new practice.chapter7.RandomTester().random(min, max));
+	}
+
+	public void InverseNumber() {
+
+		Scanner sc = Utility.getScanner();
+
+		int x;
+		do {
+			int n = new practice.chapter7.InverseNumber().readPlusInt();
+
+			System.out.print("in reverse...");
+			while (n > 0) {
+				System.out.print(n % 10);
+				n /= 10;
+			}
+
+			do {
+				System.out.print("retry? Yes...1 / No... 0 :");
+				x = sc.nextInt();
+
+			} while (x != 0 && x != 1);
+		} while (x == 1);
+
+	}
+
+	public void MentalArithemtic() {
+
+		Random rand = new Random();
+		System.out.println("Mental Arithemtic");
+		Scanner sc = Utility.getScanner();
+
+		do {
+			int x = rand.nextInt(900) + 100; // 3자리 수
+			int y = rand.nextInt(900) + 100; // 3자리 수
+			int z = rand.nextInt(900) + 100; // 3자리 수
+			int pattern = rand.nextInt(4); // 패턴 번호
+
+			int answer;
+			switch (pattern) {
+			case 0:
+				answer = x + y + z;
+				break;
+			case 1:
+				answer = x + y - z;
+				break;
+			case 2:
+				answer = x - y + z;
+				break;
+			default:
+				answer = x - y - z;
+				break;
+			}
+
+			while (true) {
+				System.out.print(
+						x + ((pattern < 2) ? " + " : " - ") + y + ((pattern % 2 == 0) ? " + " : " - ") + z + " =");
+				int k = sc.nextInt();
+				if (k == answer)
+					break;
+				System.out.println("wrong");
+			}
+		} while (new practice.chapter7.MentalArithmetic().confirmRetry());
 	}
 }
