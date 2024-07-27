@@ -152,4 +152,28 @@ public class Chapter7 {
 			}
 		} while (new practice.chapter7.MentalArithmetic().confirmRetry());
 	}
+
+	public void ShitfValue() {
+
+		Scanner sc = Utility.getScanner();
+
+		System.out.println("int x, n bit shift");
+		Utility.printEnterNumber("x");
+		int x = sc.nextInt();
+		Utility.printEnterNumber("n");
+		int n = sc.nextInt();
+
+		int mPower = x * new practice.chapter7.Shiftvalue().pow2(n);
+		int dPower = x / new practice.chapter7.Shiftvalue().pow2(n);
+		int lShift = x << n;
+		int rShift = x >> n;
+
+		System.out.printf("[a] x * (2의 %d승) = %d\n", n, mPower);
+		System.out.printf("[b] x / (2의 %d승) = %d\n", n, dPower);
+		System.out.printf("[a] x << %d = %d\n", n, lShift);
+		System.out.printf("[a] x >> %d = %d\n", n, rShift);
+
+		System.out.println("[a] 와 [c]의 값의 일치" + ((mPower == lShift) ? "합니다." : "하지 않습니다."));
+		System.out.println("[b] 와 [d]의 값의 일치" + ((dPower == rShift) ? "합니다." : "하지 않습니다."));
+	}
 }

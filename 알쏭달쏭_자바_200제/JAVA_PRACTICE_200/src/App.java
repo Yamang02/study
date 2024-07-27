@@ -151,7 +151,8 @@ public class App {
 		// 111. Quiz.IsoscelesTriangleB();
 		// 112. Quiz.RandomTester();
 		// 113. Quiz.InverseNumber();
-		Quiz.MentalArithemtic();
+		// 114. Quiz.MentalArithemtic();
+		Quiz.ShitfValue();
 		
 	}
 }
