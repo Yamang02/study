@@ -152,7 +152,8 @@ public class App {
 		// 112. Quiz.RandomTester();
 		// 113. Quiz.InverseNumber();
 		// 114. Quiz.MentalArithemtic();
-		Quiz.ShitfValue();
+		// 115. Quiz.ShitfValue();
+		Quiz.Rotate();
 		
 	}
 }

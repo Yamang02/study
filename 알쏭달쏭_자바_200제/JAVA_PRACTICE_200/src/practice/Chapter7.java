@@ -176,4 +176,23 @@ public class Chapter7 {
 		System.out.println("[a] 와 [c]의 값의 일치" + ((mPower == lShift) ? "합니다." : "하지 않습니다."));
 		System.out.println("[b] 와 [d]의 값의 일치" + ((dPower == rShift) ? "합니다." : "하지 않습니다."));
 	}
+
+	public void Rotate() {
+		Scanner sc = Utility.getScanner();
+
+		System.out.println("정수x를 n비트 회전");
+		Utility.printEnterNumber("x");
+		int x = sc.nextInt();
+		Utility.printEnterNumber("n");
+		int n = sc.nextInt();
+		System.out.println("befor");
+		practice.chapter7.Rotate rt = new practice.chapter7.Rotate();
+
+		rt.printBits(x);
+
+		System.out.print("\n 오른쪽 회전");
+		rt.printBits();
+		
+	}
+
 }
