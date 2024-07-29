@@ -1,9 +1,10 @@
 package practice;
 
-import util.Utility;
-
 import java.util.Random;
 import java.util.Scanner;
+
+import practice.chapter7.SetBit;
+import util.Utility;
 
 public class Chapter7 {
 
@@ -177,22 +178,43 @@ public class Chapter7 {
 		System.out.println("[b] 와 [d]의 값의 일치" + ((dPower == rShift) ? "합니다." : "하지 않습니다."));
 	}
 
-	public void Rotate() {
+//	public void Rotate() {
+//		Scanner sc = Utility.getScanner();
+//
+//		System.out.println("정수x를 n비트 회전");
+//		Utility.printEnterNumber("x");
+//		int x = sc.nextInt();
+//		Utility.printEnterNumber("n");
+//		int n = sc.nextInt();
+//		System.out.println("befor");
+//		practice.chapter7.Rotate rt = new practice.chapter7.Rotate();
+//
+//		rt.printBits(x);
+//
+//		System.out.print("\n 오른쪽 회전");
+//		rt.printBits();
+//		
+//	}
+
+	public void SetBit() {
 		Scanner sc = Utility.getScanner();
 
-		System.out.println("정수x를 n비트 회전");
+		System.out.println("정수 x의 pos번째 비트를 변경");
 		Utility.printEnterNumber("x");
 		int x = sc.nextInt();
-		Utility.printEnterNumber("n");
-		int n = sc.nextInt();
-		System.out.println("befor");
-		practice.chapter7.Rotate rt = new practice.chapter7.Rotate();
+		System.out.print("pos : ");
+		int pos = sc.nextInt();
 
-		rt.printBits(x);
-
-		System.out.print("\n 오른쪽 회전");
-		rt.printBits();
-		
+		System.out.print("x                      = ");
+		SetBit sb = new practice.chapter7.SetBit();
+		sb.printBits(x);
+		System.out.print("\nset(x,pos)           = ");
+		sb.printBits(sb.set(x, pos));
+		System.out.print("\nreset(x,pos)         = ");
+		sb.printBits(sb.reset(x, pos));
+		System.out.print("\ninverse(x,pos)       = ");
+		sb.printBits(sb.inverse(x, pos));
+		System.out.println();
 	}
 
 }

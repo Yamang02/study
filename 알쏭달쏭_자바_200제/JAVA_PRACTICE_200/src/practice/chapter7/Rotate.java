@@ -7,17 +7,17 @@ public class Rotate {
 			System.out.print(((x >>> i & 1) == 1)? '1' : '0');
 		}
 	
-	int rRotate(int x, int n) {
+	public int rRotate(int x, int n) {
 		if (n < 0 ) return lRotate(x, -n);
 		n %= 32;
-		return (n == 0 ? x : ( x >>> n) | (x << (32 -n)));
+		return (n == 0 ? x : (( x >>> n)|(x << (32 -n))));
 	}
 	
 	
 	public static int lRotate(int x, int n) {
 		if (n < 0 ) return rRotate(x, -n);
 		n %= 32;
-		return (n == 0 ? x : ( x << n) | (x >>> (32 -n)));
+		return (n == 0 ? x : (x << n)|(x >>> (32 -n)));
 	}
 	
 	}

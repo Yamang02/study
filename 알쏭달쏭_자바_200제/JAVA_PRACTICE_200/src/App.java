@@ -153,7 +153,8 @@ public class App {
 		// 113. Quiz.InverseNumber();
 		// 114. Quiz.MentalArithemtic();
 		// 115. Quiz.ShitfValue();
-		Quiz.Rotate();
+		// 116. Quiz.Rotate();
+		Quiz.SetBit();
 		
 	}
 }
