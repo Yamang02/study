@@ -4,6 +4,7 @@ import java.util.Random;
 import java.util.Scanner;
 
 import practice.chapter7.SetBit;
+import practice.chapter7.SetBits;
 import util.Utility;
 
 public class Chapter7 {
@@ -198,6 +199,7 @@ public class Chapter7 {
 
 	public void SetBit() {
 		Scanner sc = Utility.getScanner();
+		SetBit sb = new practice.chapter7.SetBit();
 
 		System.out.println("정수 x의 pos번째 비트를 변경");
 		Utility.printEnterNumber("x");
@@ -206,7 +208,6 @@ public class Chapter7 {
 		int pos = sc.nextInt();
 
 		System.out.print("x                      = ");
-		SetBit sb = new practice.chapter7.SetBit();
 		sb.printBits(x);
 		System.out.print("\nset(x,pos)           = ");
 		sb.printBits(sb.set(x, pos));
@@ -215,6 +216,29 @@ public class Chapter7 {
 		System.out.print("\ninverse(x,pos)       = ");
 		sb.printBits(sb.inverse(x, pos));
 		System.out.println();
+	}
+
+	public void SetBits() {
+		SetBits sb = new practice.chapter7.SetBits();
+		Scanner sc = Utility.getScanner();
+		System.out.println("정수 x의 pos번째 비트를 변경");
+		Utility.printEnterNumber("x");
+		int x = sc.nextInt();
+		System.out.print("pos : ");
+		int pos = sc.nextInt();
+		System.out.print("n : ");
+		int n = sc.nextInt();
+
+		System.out.print("x                      : ");
+		sb.printBits(x);
+		System.out.print("\nset(x,pos)           = ");
+		sb.printBits(sb.setN(x, pos, n));
+		System.out.print("\nreset(x,pos)         = ");
+		sb.printBits(sb.resetN(x, pos, n));
+		System.out.print("\ninverse(x,pos)       = ");
+		sb.printBits(sb.inverseN(x, pos, n));
+		System.out.println();
+
 	}
 
 }
