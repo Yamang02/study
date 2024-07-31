@@ -154,7 +154,9 @@ public class App {
 		// 114. Quiz.MentalArithemtic();
 		// 115. Quiz.ShitfValue();
 		// 116. Quiz.Rotate();
-		Quiz.SetBit();
+		// 117. Quiz.SetBit();
+		// 118. Quiz.SetBits();
+		Quiz.SumOf1();
 		
 	}
 }
