@@ -156,7 +156,8 @@ public class App {
 		// 116. Quiz.Rotate();
 		// 117. Quiz.SetBit();
 		// 118. Quiz.SetBits();
-		Quiz.SumOf1();
+		// 119. Quiz.SumOf1();
+		Quiz.minOfHeightWeight();
 		
 	}
 }

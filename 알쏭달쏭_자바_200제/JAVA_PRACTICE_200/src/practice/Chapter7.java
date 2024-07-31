@@ -255,4 +255,25 @@ public class Chapter7 {
 		System.out.println("sum is " + new practice.chapter7.SumOf1().sumOf(x));
 
 	}
+
+	public void minOfHeightWeight() {
+		Scanner sc = Utility.getScanner();
+		Utility.printEnterNumber("number of people");
+		int num = sc.nextInt();
+
+		int[] height = new int[num];
+		int[] weight = new int[num];
+
+		System.out.println(num + "people's heiht and weight");
+		for (int i = 0; i < num; i++) {
+			System.out.print(i + 1 + "'s height");
+			height[i] = sc.nextInt();
+			System.out.print(i + 1 + "'s weight");
+			weight[i] = sc.nextInt();
+		}
+
+		practice.chapter7.minOfHeightWeight mo = new practice.chapter7.minOfHeightWeight();
+		System.out.println("smallest's height :" + mo.minOf(height));
+		System.out.println("smallest's height :" + mo.minOf(weight));
+	}
 }
