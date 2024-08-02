@@ -276,4 +276,33 @@ public class Chapter7 {
 		System.out.println("smallest's height :" + mo.minOf(height));
 		System.out.println("smallest's height :" + mo.minOf(weight));
 	}
+
+	public void LinearSearch() {
+		practice.chapter7.LinearSearch ls = new practice.chapter7.LinearSearch();
+		Scanner sc = Utility.getScanner();
+		Utility.printEnterNumber("element count");
+		int num = sc.nextInt();
+		int[] x = new int[num];
+
+		for (int i = 0; i < x.length; i++) {
+			System.out.println("x[" + i + "] : ");
+			x[i] = sc.nextInt();
+		}
+
+		Utility.printEnterNumber("value?");
+		int key = sc.nextInt();
+
+		int idxTop = ls.linearSearch(x, key);
+		int idxBtm = ls.linearSeachR(x, key);
+
+		if (idxTop == -1) {
+			System.out.println("no value in x ");
+		} else if (idxTop == idxBtm) {
+			System.out.println("there is " + key + "in index" + idxTop);
+		} else {
+			System.out.println("there is multiple value in x ....");
+			System.out.println("first one is on " + idxTop + "and last one is on " + idxBtm);
+		}
+
+	}
 }

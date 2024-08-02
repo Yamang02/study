@@ -157,7 +157,8 @@ public class App {
 		// 117. Quiz.SetBit();
 		// 118. Quiz.SetBits();
 		// 119. Quiz.SumOf1();
-		Quiz.minOfHeightWeight();
+		// 120. Quiz.minOfHeightWeight();
+		Quiz.LinearSearch();
 		
 	}
 }
