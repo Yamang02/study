@@ -2,6 +2,7 @@ package util;
 
 import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -58,6 +59,22 @@ public class Utility {
 
 	}
 
+	// 배열 반환
+	public static int[] GetIntArray(Scanner sc) {
+		printEnterNumber("size of array");
+		int size = sc.nextInt();
+		int[] x = new int[size];
+		for (int i = 0; i < x.length; i++) {
+			System.out.println(" array[" + i + "] : ");
+			x[i] = sc.nextInt();
+		}
+		return x;
+	}
 
+	public static void PrintAllElementsInIntArray(int[] ia) {
+		for (int i = 0; i < ia.length; i++) {
+			System.out.println("array[" + i + "] = " + ia[i]);
+		}
+	}
 
 }

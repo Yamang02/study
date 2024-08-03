@@ -305,4 +305,14 @@ public class Chapter7 {
 		}
 
 	}
+
+	public void AryRmv() {
+		practice.chapter7.AryRmv ar = new practice.chapter7.AryRmv();
+		Scanner sc = Utility.getScanner();
+		int[] a = Utility.GetIntArray(sc);
+		Utility.printEnterNumber("index to rmv");
+		int idx = sc.nextInt();
+		ar.aryRmv(a, idx);
+		Utility.PrintAllElementsInIntArray(a);
+	}
 }

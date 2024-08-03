@@ -158,7 +158,8 @@ public class App {
 		// 118. Quiz.SetBits();
 		// 119. Quiz.SumOf1();
 		// 120. Quiz.minOfHeightWeight();
-		Quiz.LinearSearch();
+		// 121. Quiz.LinearSearch();
+		Quiz.AryRmv();
 		
 	}
 }
