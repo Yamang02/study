@@ -309,10 +309,20 @@ public class Chapter7 {
 	public void AryRmv() {
 		practice.chapter7.AryRmv ar = new practice.chapter7.AryRmv();
 		Scanner sc = Utility.getScanner();
-		int[] a = Utility.GetIntArray(sc);
+		int[] a = Utility.getIntArray(sc);
 		Utility.printEnterNumber("index to rmv");
 		int idx = sc.nextInt();
 		ar.aryRmv(a, idx);
-		Utility.PrintAllElementsInIntArray(a);
+		Utility.printAllElementsInIntArray(a);
+	}
+
+	public void AryRmvN() {
+		practice.chapter7.AryRmvN ar = new practice.chapter7.AryRmvN();
+		Scanner sc = Utility.getScanner();
+		int[] a = Utility.getIntArray(sc);
+		int idx = Utility.getIntForEnterString(sc, "start rmv index");
+		int n = Utility.getIntForEnterString(sc, "count for rmv");
+		ar.aryRmvN(a, idx, n);
+		Utility.printAllElementsInIntArray(a);
 	}
 }

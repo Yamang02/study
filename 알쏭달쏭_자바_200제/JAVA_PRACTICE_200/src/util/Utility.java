@@ -60,7 +60,7 @@ public class Utility {
 	}
 
 	// 배열 반환
-	public static int[] GetIntArray(Scanner sc) {
+	public static int[] getIntArray(Scanner sc) {
 		printEnterNumber("size of array");
 		int size = sc.nextInt();
 		int[] x = new int[size];
@@ -71,10 +71,15 @@ public class Utility {
 		return x;
 	}
 
-	public static void PrintAllElementsInIntArray(int[] ia) {
+	public static void printAllElementsInIntArray(int[] ia) {
 		for (int i = 0; i < ia.length; i++) {
 			System.out.println("array[" + i + "] = " + ia[i]);
 		}
+	}
+
+	public static int getIntForEnterString(Scanner sc, String string) {
+		printEnterNumber(string);
+		return sc.nextInt();
 	}
 
 }
