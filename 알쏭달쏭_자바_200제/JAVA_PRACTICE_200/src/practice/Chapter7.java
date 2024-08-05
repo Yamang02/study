@@ -325,4 +325,14 @@ public class Chapter7 {
 		ar.aryRmvN(a, idx, n);
 		Utility.printAllElementsInIntArray(a);
 	}
+
+	public void AryIns() {
+		practice.chapter7.AryIns ai = new practice.chapter7.AryIns();
+		Scanner sc = Utility.getScanner();
+		int[] a = Utility.getIntArray(sc);
+		int idx = Utility.getIntForEnterString(sc, "idx of enter");
+		int n = Utility.getIntForEnterString(sc, "value of enter");
+		ai.aryIns(a, idx, n);
+		Utility.printAllElementsInIntArray(a);
+	}
 }

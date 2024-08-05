@@ -160,6 +160,7 @@ public class App {
 		// 120. Quiz.minOfHeightWeight();
 		// 121. Quiz.LinearSearch();
 		// 122. Quiz.AryRmv();
-		Quiz.AryRmvN();
+		// 123. Quiz.AryRmvN();
+		Quiz.AryIns();
 	}
 }
