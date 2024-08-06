@@ -161,6 +161,7 @@ public class App {
 		// 121. Quiz.LinearSearch();
 		// 122. Quiz.AryRmv();
 		// 123. Quiz.AryRmvN();
-		Quiz.AryIns();
+		// 124. Quiz.AryIns();
+		Quiz.AryExchange();
 	}
 }

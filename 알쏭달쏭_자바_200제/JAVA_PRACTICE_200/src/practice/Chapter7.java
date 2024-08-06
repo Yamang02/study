@@ -3,6 +3,7 @@ package practice;
 import java.util.Random;
 import java.util.Scanner;
 
+import practice.chapter7.AryExchng;
 import practice.chapter7.SetBit;
 import practice.chapter7.SetBits;
 import util.Utility;
@@ -334,5 +335,16 @@ public class Chapter7 {
 		int n = Utility.getIntForEnterString(sc, "value of enter");
 		ai.aryIns(a, idx, n);
 		Utility.printAllElementsInIntArray(a);
+	}
+
+	public void AryExchange() {
+		practice.chapter7.AryExchng ae = new AryExchng();
+		Scanner sc = Utility.getScanner();
+		int[] a = Utility.getIntArray(sc);
+		int[] b = Utility.getIntArray(sc);
+		ae.aryExchng(a, b);
+		System.out.println("exchanged");
+		Utility.printAllElementsInIntArray(a);
+		Utility.printAllElementsInIntArray(b);
 	}
 }
