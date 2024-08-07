@@ -347,4 +347,13 @@ public class Chapter7 {
 		Utility.printAllElementsInIntArray(a);
 		Utility.printAllElementsInIntArray(b);
 	}
+
+	public void ArrayClone() {
+		practice.chapter7.ArrayClone ac = new practice.chapter7.ArrayClone();
+		Scanner sc = Utility.getScanner();
+		int[] a = Utility.getIntArray(sc);
+		int[] b = ac.arrayClone(a);
+		System.out.println("Cloned");
+		Utility.printAllElementsInIntArray(b);
+	}
 }
