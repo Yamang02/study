@@ -163,6 +163,7 @@ public class App {
 		// 123. Quiz.AryRmvN();
 		// 124. Quiz.AryIns();
 		// 125. Quiz.AryExchange();
-		Quiz.ArrayClone();
+		// 126. Quiz.ArrayClone();
+		Quiz.ArraySearchIndex();
 	}
 }

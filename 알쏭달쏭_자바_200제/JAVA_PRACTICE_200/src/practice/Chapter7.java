@@ -356,4 +356,21 @@ public class Chapter7 {
 		System.out.println("Cloned");
 		Utility.printAllElementsInIntArray(b);
 	}
+
+	public void ArraySearchIndex() {
+		practice.chapter7.ArraySearchIndex asi = new practice.chapter7.ArraySearchIndex();
+		Scanner sc = Utility.getScanner();
+		int[] a = Utility.getIntArray(sc);
+		int n = Utility.getIntForEnterString(sc, "value to search");
+		int[] result = asi.arraySrchIdx(a, n);
+		if (result.length == 0) {
+			System.out.println("there is no value");
+		} else {
+			System.out.println("idx : ");
+			for (int i = 0; i < result.length; i++) {
+				System.out.println(result[i]);
+			}
+		}
+
+	}
 }
