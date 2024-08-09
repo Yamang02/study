@@ -373,4 +373,13 @@ public class Chapter7 {
 		}
 
 	}
+
+	public void ArrayRemoveOf() {
+		practice.chapter7.ArrayRemoveOf aro = new practice.chapter7.ArrayRemoveOf();
+		Scanner sc = Utility.getScanner();
+		int[] a = Utility.getIntArray(sc);
+		int idx = Utility.getIntForEnterString(sc, "idx to delete");
+		int[] b = aro.arrayRmvOf(a, idx);
+		Utility.printAllElementsInIntArray(b);
+	}
 }
