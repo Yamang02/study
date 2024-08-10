@@ -165,6 +165,7 @@ public class App {
 		// 125. Quiz.AryExchange();
 		// 126. Quiz.ArrayClone();
 		// 127. Quiz.ArraySearchIndex();
-		Quiz.ArrayRemoveOf();
+		// 128. Quiz.ArrayRemoveOf();
+		Quiz.ArrayRemoveOfN();
 	}
 }

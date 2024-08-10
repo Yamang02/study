@@ -382,4 +382,16 @@ public class Chapter7 {
 		int[] b = aro.arrayRmvOf(a, idx);
 		Utility.printAllElementsInIntArray(b);
 	}
+
+	public void ArrayRemoveOfN() {
+		practice.chapter7.ArrayRemoveOfN aron = new practice.chapter7.ArrayRemoveOfN();
+		Scanner sc = Utility.getScanner();
+		int[] a = Utility.getIntArray(sc);
+		int idx = Utility.getIntForEnterString(sc, "idx to start delete");
+		int n = Utility.getIntForEnterString(sc, "number to delete");
+		int[] b = aron.arrayRmvOfN(a, idx, n);
+		Utility.printAllElementsInIntArray(b);
+
+	}
+
 }
