@@ -394,4 +394,15 @@ public class Chapter7 {
 
 	}
 
+	public void ArrayInsOf() {
+		practice.chapter7.ArrayInsOf aio = new practice.chapter7.ArrayInsOf();
+		Scanner sc = Utility.getScanner();
+		int[] a = Utility.getIntArray(sc);
+		int idx = Utility.getIntForEnterString(sc, "idx to insert");
+		int n = Utility.getIntForEnterString(sc, "vlaue to in");
+		int[] b = aio.arrayInsOf(a, idx, n);
+		Utility.printAllElementsInIntArray(b);
+
+	}
+
 }
