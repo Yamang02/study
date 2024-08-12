@@ -405,4 +405,19 @@ public class Chapter7 {
 
 	}
 
+	public void AddMatrix() {
+		practice.chapter7.AddMatrix am = new practice.chapter7.AddMatrix();
+		int[][] a = { { 1, 2, 3 }, { 4, 5, 6 } };
+		int[][] b = { { 6, 3, 4 }, { 5, 1, 2 } };
+		int[][] c = new int[2][3];
+
+		if (am.addMatrix(a, b, c)) {
+			System.out.println(" matrix a ");
+			Utility.printMatrix(a);
+			System.out.println(" matrix b ");
+			Utility.printMatrix(b);
+			System.out.println(" matrix c ");
+			Utility.printMatrix(c);
+		}
+	}
 }
