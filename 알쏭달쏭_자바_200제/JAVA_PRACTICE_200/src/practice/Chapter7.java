@@ -420,4 +420,32 @@ public class Chapter7 {
 			Utility.printMatrix(c);
 		}
 	}
+
+	public void AddMatrixY() {
+		practice.chapter7.AddMatrixY am = new practice.chapter7.AddMatrixY();
+		Scanner sc = Utility.getScanner();
+		int height = Utility.getIntForEnterString(sc, "height of matrix");
+		int width = Utility.getIntForEnterString(sc, "width of matrix");
+		int[][] a = new int[height][width];
+		int[][] b = new int[height][width];
+		for (int i = 0; i < a.length; i++) {
+			for (int j = 0; j < a[i].length; j++) {
+				System.out.printf("a[%d][%d} : ", i, j);
+				a[i][j] = sc.nextInt();
+			}
+		}
+
+		for (int i = 0; i < a.length; i++) {
+			for (int j = 0; j < b[i].length; j++) {
+				System.out.printf("b[%d][%d} : ", i, j);
+				b[i][j] = sc.nextInt();
+			}
+		}
+		
+		int[][] c = am.addMatrix(a, b);
+		Utility.printMatrix(a);
+		Utility.printMatrix(b);
+		Utility.printMatrix(c);
+		
+	}
 }
