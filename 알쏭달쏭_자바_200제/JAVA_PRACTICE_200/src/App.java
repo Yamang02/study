@@ -169,7 +169,8 @@ public class App {
 		// 129. Quiz.ArrayRemoveOfN();
 		// 130. Quiz.ArrayInsOf();
 		// 131. Quiz.AddMatrix();
-		Quiz.AddMatrixY();
+		// 132. Quiz.AddMatrixY();
+		Quiz.AryClone2();
 		
 		
 	}

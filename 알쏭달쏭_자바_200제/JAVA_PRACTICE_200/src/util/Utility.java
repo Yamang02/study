@@ -91,4 +91,15 @@ public class Utility {
 		}
 	}
 
+	public static int[][] aryClone(int[][] a) {
+		int[][] c = new int[a.length][];
+		for (int i = 0; i < a.length; i++) {
+			c[i] = new int[a[i].length];
+			for (int j = 0; j < a[i].length; j++) {
+				c[i][j] = a[i][j];
+			}
+		}
+		return c;
+	}
+
 }

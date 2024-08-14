@@ -441,11 +441,30 @@ public class Chapter7 {
 				b[i][j] = sc.nextInt();
 			}
 		}
-		
+
 		int[][] c = am.addMatrix(a, b);
 		Utility.printMatrix(a);
 		Utility.printMatrix(b);
 		Utility.printMatrix(c);
+
+	}
+
+	public void AryClone2() {
+		practice.chapter7.AryClone2 ac = new practice.chapter7.AryClone2();
+		Scanner sc = Utility.getScanner();
+		int height = Utility.getIntForEnterString(sc, "height");
+		int width = Utility.getIntForEnterString(sc, "width");
 		
+		int[][] a = new int[height][width];
+		for (int i = 0; i < a.length; i++) {
+			for (int j = 0; j < a[i].length; j++) {
+				System.out.printf("a[%d][%d} : ", i, j);
+				a[i][j] = sc.nextInt();
+			}
+		}
+		
+		int[][] ca =  Utility.aryClone(a);
+		Utility.printMatrix(a);
+		Utility.printMatrix(ca);
 	}
 }
