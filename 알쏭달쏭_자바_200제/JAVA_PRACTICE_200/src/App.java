@@ -170,7 +170,8 @@ public class App {
 		// 130. Quiz.ArrayInsOf();
 		// 131. Quiz.AddMatrix();
 		// 132. Quiz.AddMatrixY();
-		Quiz.AryClone2();
+		// 133. Quiz.AryClone2();
+		Quiz.Min();
 		
 		
 	}

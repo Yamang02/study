@@ -4,6 +4,7 @@ import java.util.Random;
 import java.util.Scanner;
 
 import practice.chapter7.AryExchng;
+import practice.chapter7.MIn;
 import practice.chapter7.SetBit;
 import practice.chapter7.SetBits;
 import util.Utility;
@@ -454,7 +455,7 @@ public class Chapter7 {
 		Scanner sc = Utility.getScanner();
 		int height = Utility.getIntForEnterString(sc, "height");
 		int width = Utility.getIntForEnterString(sc, "width");
-		
+
 		int[][] a = new int[height][width];
 		for (int i = 0; i < a.length; i++) {
 			for (int j = 0; j < a[i].length; j++) {
@@ -462,9 +463,23 @@ public class Chapter7 {
 				a[i][j] = sc.nextInt();
 			}
 		}
-		
-		int[][] ca =  Utility.aryClone(a);
+
+		int[][] ca = Utility.aryClone(a);
 		Utility.printMatrix(a);
 		Utility.printMatrix(ca);
+	}
+
+	public void Min() {
+		practice.chapter7.MIn min = new practice.chapter7.MIn();
+		Scanner sc = Utility.getScanner();
+
+		int x = Utility.getIntForEnterString(sc, "value of x");
+		int y = Utility.getIntForEnterString(sc, "value of y");
+		int z = Utility.getIntForEnterString(sc, "value of z");
+		int[] a = Utility.getIntArray(sc);
+
+		System.out.println(min.min(x, y));
+		System.out.println(min.min(x, y, z));
+		System.out.println(min.min(a));
 	}
 }
