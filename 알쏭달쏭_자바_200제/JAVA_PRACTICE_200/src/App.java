@@ -171,8 +171,8 @@ public class App {
 		// 131. Quiz.AddMatrix();
 		// 132. Quiz.AddMatrixY();
 		// 133. Quiz.AryClone2();
-		Quiz.Min();
-		
+		// 134. Quiz.Min();
+		Quiz.Absolute();
 		
 	}
 }

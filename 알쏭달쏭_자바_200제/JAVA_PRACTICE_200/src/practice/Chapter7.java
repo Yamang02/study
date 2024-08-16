@@ -3,6 +3,7 @@ package practice;
 import java.util.Random;
 import java.util.Scanner;
 
+import practice.chapter7.Absolute;
 import practice.chapter7.AryExchng;
 import practice.chapter7.MIn;
 import practice.chapter7.SetBit;
@@ -481,5 +482,21 @@ public class Chapter7 {
 		System.out.println(min.min(x, y));
 		System.out.println(min.min(x, y, z));
 		System.out.println(min.min(a));
+	}
+
+	public void Absolute() {
+		practice.chapter7.Absolute ab = new Absolute();
+		Scanner sc = Utility.getScanner();
+
+		int a = Utility.getIntForEnterString(sc, "int a, long b, float c, double d : ");
+		long b = sc.nextLong();
+		float c = sc.nextFloat();
+		double d = sc.nextDouble();
+
+		System.out.println("a  : " + ab.absolute(a));
+		System.out.println("b  : " + ab.absolute(b));
+		System.out.println("c  : " + ab.absolute(c));
+		System.out.println("d  : " + ab.absolute(d));
+
 	}
 }
