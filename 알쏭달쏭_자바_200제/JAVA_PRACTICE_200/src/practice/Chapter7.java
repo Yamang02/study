@@ -6,6 +6,7 @@ import java.util.Scanner;
 import practice.chapter7.Absolute;
 import practice.chapter7.AryExchng;
 import practice.chapter7.MIn;
+import practice.chapter7.PrintBits;
 import practice.chapter7.SetBit;
 import practice.chapter7.SetBits;
 import util.Utility;
@@ -498,5 +499,25 @@ public class Chapter7 {
 		System.out.println("c  : " + ab.absolute(c));
 		System.out.println("d  : " + ab.absolute(d));
 
+	}
+
+	public void PrintBits() {
+		practice.chapter7.PrintBits pb = new practice.chapter7.PrintBits();
+		Scanner sc = Utility.getScanner();
+
+		System.out.println(" byte a short b int c long d");
+		byte a = sc.nextByte();
+		short b = sc.nextShort();
+		int c = sc.nextInt();
+		long d = sc.nextLong();
+
+		System.out.println("a  : ");
+		pb.printBits(a);
+		System.out.println("\nb  : ");
+		pb.printBits(b);
+		System.out.println("\nc  : ");
+		pb.printBits(c);
+		System.out.println("\nd  : ");
+		pb.printBits(d);
 	}
 }
