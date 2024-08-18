@@ -520,4 +520,31 @@ public class Chapter7 {
 		System.out.println("\nd  : ");
 		pb.printBits(d);
 	}
+
+	public void PrintArray() {
+		Scanner sc = Utility.getScanner();
+		int[] x = Utility.getIntArray(sc);
+
+		System.out.println("2 level matrix : ");
+		int height = sc.nextInt();
+
+		int[][] y = new int[height][];
+		for (int i = 0; i < y.length; i++) {
+			System.out.print(i + "row's column number :");
+			int width = sc.nextInt();
+			y[i] = new int[width];
+		}
+
+		System.out.println("enter element");
+		for (int i = 0; i < y.length; i++) {
+			for (int j = 0; j < y[i].length; j++) {
+				System.out.printf("y[%d][%d] : ", i, j);
+				y[i][j] = sc.nextInt();
+			}
+		}
+
+		Utility.printArray(x);
+		Utility.printArray(y);
+
+	}
 }

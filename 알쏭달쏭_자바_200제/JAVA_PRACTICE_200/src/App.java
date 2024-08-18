@@ -173,7 +173,8 @@ public class App {
 		// 133. Quiz.AryClone2();
 		// 134. Quiz.Min();
 		// 135. Quiz.Absolute();
-		Quiz.PrintBits();
+		// 136. Quiz.PrintBits();
+		Quiz.PrintArray();
 		
 	}
 }

@@ -102,4 +102,45 @@ public class Utility {
 		return c;
 	}
 
+	public static void printArray(int[] a) {
+		for (int i = 0; i < a.length - 1; i++) {
+			System.out.print(a[i] + " ");
+		}
+		System.out.print(a[a.length - 1]);
+		System.out.println();
+	}
+
+	public static void printArray(int[][] a) {
+		int[][] width = new int[a.length][];
+		int max = 0;
+		for (int i = 0; i < a.length - 1; i++) {
+			width[i] = new int[a[i].length];
+			if (a[i].length > max)
+				max = a[i].length;
+		}
+		int[] maxWidth = new int[max];
+		for (int i = 0; i < a.length; i++) {
+			for (int j = 0; j < a[i].length; j++) {
+				int value = a[i][j];
+				width[i][j] = (value < 0) ? 1 : 0;
+				do {
+					width[i][j]++;
+					value /= 10;
+				} while (value != 0);
+				if (width[i][j] > maxWidth[j])
+					maxWidth[j] = width[i][j];
+			}
+		}
+
+		for (int i = 0; i < a.length; i++) {
+			for (int j = 0; j < a[i].length; j++) {
+				System.out.print(a[i][j]);
+				for (int k = 0; k < maxWidth[j] - width[i][j]; k++) {
+					System.out.print(" ");
+				}
+				System.out.println(a[i][a[i].length - 1]);
+			}
+		}
+	}
+
 }
