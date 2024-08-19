@@ -5,6 +5,7 @@ import practice.Chapter4;
 import practice.Chapter5;
 import practice.Chapter6;
 import practice.Chapter7;
+import practice.Chapter8;
 import practice.chapter7.SignOf1;
 
 public class App {
@@ -15,7 +16,8 @@ public class App {
 //		Chapter4 Quiz = new Chapter4();
 //		Chapter5 Quiz = new Chapter5();
 //		Chapter6 Quiz = new Chapter6();
-		Chapter7 Quiz = new Chapter7();
+//		Chapter7 Quiz = new Chapter7();
+		Chapter8 Quiz = new Chapter8();
 
 		// 1. Quiz.Hello();
 		// 2. Quiz.HelloError();
@@ -174,7 +176,7 @@ public class App {
 		// 134. Quiz.Min();
 		// 135. Quiz.Absolute();
 		// 136. Quiz.PrintBits();
-		Quiz.PrintArray();
-		
+		// 137. Quiz.PrintArray();
+		Quiz.HumanTester();
 	}
 }
