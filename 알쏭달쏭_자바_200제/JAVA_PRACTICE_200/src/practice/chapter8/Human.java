@@ -1,14 +1,26 @@
 package practice.chapter8;
 
-import lombok.Getter;
-import lombok.Setter;
-import lombok.ToString;
+import lombok.AllArgsConstructor;
+import lombok.Data;
 
-@Getter
-@Setter
-@ToString
+//@Getter
+//@Setter
+//@ToString
+//@AllArgsConstructor
+//@NoArgsConstructor
+@Data
+@AllArgsConstructor
 public class Human {
 	public String name;
 	public int height;
 	public int weight;
+
+	public void gainWeight(int w) {
+		this.weight += w;
+	}
+
+	public void reduceWeight(int w) {
+		this.weight -= w;
+	}
+
 }

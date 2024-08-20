@@ -1,10 +1,9 @@
 package util;
 
-import java.lang.reflect.Array;
-import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.Random;
 import java.util.Scanner;
+
+import practice.chapter8.Human;
 
 public class Utility {
 
@@ -141,6 +140,10 @@ public class Utility {
 				System.out.println(a[i][a[i].length - 1]);
 			}
 		}
+	}
+
+	public static void printHuman(Human h) {
+		System.out.println(h);
 	}
 
 }

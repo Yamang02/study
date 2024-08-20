@@ -177,6 +177,7 @@ public class App {
 		// 135. Quiz.Absolute();
 		// 136. Quiz.PrintBits();
 		// 137. Quiz.PrintArray();
-		Quiz.HumanTester();
+		// 138. Quiz.HumanTester();
+		Quiz.HumanTester2();
 	}
 }
