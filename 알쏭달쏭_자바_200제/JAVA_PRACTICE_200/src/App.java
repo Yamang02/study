@@ -178,6 +178,7 @@ public class App {
 		// 136. Quiz.PrintBits();
 		// 137. Quiz.PrintArray();
 		// 138. Quiz.HumanTester();
-		Quiz.HumanTester2();
+		// 139. Quiz.HumanTester2();
+		Quiz.CarTester1();
 	}
 }
