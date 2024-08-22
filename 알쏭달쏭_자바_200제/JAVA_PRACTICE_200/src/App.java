@@ -179,6 +179,7 @@ public class App {
 		// 137. Quiz.PrintArray();
 		// 138. Quiz.HumanTester();
 		// 139. Quiz.HumanTester2();
-		Quiz.CarTester1();
+		// 140. Quiz.CarTester1();
+		Quiz.CarTester2();
 	}
 }
