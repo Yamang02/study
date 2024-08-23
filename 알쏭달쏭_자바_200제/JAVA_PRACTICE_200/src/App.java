@@ -6,6 +6,7 @@ import practice.Chapter5;
 import practice.Chapter6;
 import practice.Chapter7;
 import practice.Chapter8;
+import practice.Chapter9;
 import practice.chapter7.SignOf1;
 
 public class App {
@@ -17,7 +18,8 @@ public class App {
 //		Chapter5 Quiz = new Chapter5();
 //		Chapter6 Quiz = new Chapter6();
 //		Chapter7 Quiz = new Chapter7();
-		Chapter8 Quiz = new Chapter8();
+//		Chapter8 Quiz = new Chapter8();
+		Chapter9 Quiz = new Chapter9();
 
 		// 1. Quiz.Hello();
 		// 2. Quiz.HelloError();
@@ -180,6 +182,7 @@ public class App {
 		// 138. Quiz.HumanTester();
 		// 139. Quiz.HumanTester2();
 		// 140. Quiz.CarTester1();
-		Quiz.CarTester2();
+		// 141. Quiz.CarTester2();
+		Quiz.CoordinateTester1();
 	}
 }
