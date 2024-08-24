@@ -183,6 +183,7 @@ public class App {
 		// 139. Quiz.HumanTester2();
 		// 140. Quiz.CarTester1();
 		// 141. Quiz.CarTester2();
-		Quiz.CoordinateTester1();
+		// 142. Quiz.CoordinateTester1();
+		Quiz.CoordinateTester2();
 	}
 }
