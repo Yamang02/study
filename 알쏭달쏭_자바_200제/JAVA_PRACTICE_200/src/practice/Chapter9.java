@@ -3,6 +3,7 @@ package practice;
 import java.util.Iterator;
 import java.util.Scanner;
 
+import practice.chapter8.Human;
 import practice.chapter9.Coordinate;
 import util.Utility;
 
@@ -59,12 +60,57 @@ public class Chapter9 {
 		Coordinate[] a = new Coordinate[n];
 
 		for (int i = 0; i < a.length; i++) {
-			// a[i].set(5.5, 7.7);  // nullpointer exception
-			a[i] = new Coordinate(5.5, 7.7);; // instance 생성
+			// a[i].set(5.5, 7.7); // nullpointer exception
+			a[i] = new Coordinate(5.5, 7.7);
+			; // instance 생성
 		}
 
 		for (int i = 0; i < a.length; i++) {
 			System.out.printf("a[%d] = (%.1f, %.1f)\n", i, a[i].getX(), a[i].getY());
+		}
+
+	}
+
+	public void HumanArrayTester() {
+		Scanner sc = Utility.getScanner();
+		int n;
+
+		Human[] p = { new Human("철수", 170, 70), new Human("길동", 160, 59), };
+
+		n = Utility.getIntForEnterString(sc, "array q's count : ");
+
+		Human[] q = new Human[n];
+		for (int i = 0; i < q.length; i++) {
+			System.out.println("q[" + i + "]");
+			System.out.println("name : ");
+			String name = sc.next();
+			System.out.println("height : ");
+			int height = sc.nextInt();
+			System.out.println("weight : ");
+			int weight = sc.nextInt();
+
+			q[i] = new Human(name, height, weight);
+
+			// 2차원 배열
+			// 생성과 동시에 초기화(3행 2열)
+			Human[][] x = { { new Human("김철수", 175, 52), new Human("김영희", 169, 60) },
+					{ new Human("홍길동", 178, 70), new Human("이철수", 172, 61) },
+					{ new Human("이영희", 168, 59), new Human("김길동", 165, 59) }, };
+
+		}
+
+		n = Utility.getIntForEnterString(sc, "array y's row count : ");
+
+		Human[][] y = new Human[n][];
+		for (int i = 0; i < y.length; i++) {
+			n = Utility.getIntForEnterString(sc, "y[" + i + "]'s row count : ");
+			y[i] = new Human[n];
+			for (int j = 0; j < y.length; j++) {
+				System.out.println("y[" + i + "][" + j + "]");
+			}
+			
+		System.out.println("array p");
+			
 		}
 
 	}

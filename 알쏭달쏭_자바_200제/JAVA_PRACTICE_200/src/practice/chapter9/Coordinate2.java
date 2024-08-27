@@ -22,7 +22,7 @@ public class Coordinate2 {
 	}
 
 	public boolean equalTo(Coordinate2 c) {
-		return x == x.x && y == x.y;
+		return x == c.x && y == c.y;
 	}
 
 	public String toString() {

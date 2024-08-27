@@ -185,7 +185,8 @@ public class App {
 		// 141. Quiz.CarTester2();
 		// 142. Quiz.CoordinateTester1();
 		// 143. Quiz.CoordinateTester2();
-		Quiz.CoordinateTester3Error();
+		// 144, 145. Quiz.CoordinateTester3Error();
+		Quiz.HumanArrayTester();
 		
 	}
 }
