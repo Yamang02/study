@@ -185,7 +185,14 @@ public class App {
 		// 141. Quiz.CarTester2();
 		// 142. Quiz.CoordinateTester1();
 		// 143. Quiz.CoordinateTester2();
-		Quiz.CoordinateTester3Error();
+		// 144, 145. Quiz.CoordinateTester3Error();
+<<<<<<< HEAD
+		// 146. Quiz.HumanArrayTester();
+		// 147. Quiz.DayTester();
+		Quiz.AccountTester1();
+=======
+		Quiz.HumanArrayTester();
+>>>>>>> 50dbbb9876ad6cf6c9371e760a2b244b2f8ceb02
 		
 	}
 }
