@@ -3,10 +3,7 @@ package practice;
 import java.util.Scanner;
 
 import practice.chapter8.Human;
-<<<<<<< HEAD
 import practice.chapter9.Account;
-=======
->>>>>>> 50dbbb9876ad6cf6c9371e760a2b244b2f8ceb02
 import practice.chapter9.Coordinate;
 import practice.chapter9.Day;
 import util.Utility;
@@ -112,20 +109,13 @@ public class Chapter9 {
 			for (int j = 0; j < y.length; j++) {
 				System.out.println("y[" + i + "][" + j + "]");
 			}
-<<<<<<< HEAD
 
 			System.out.println("array p");
 
-=======
-			
-		System.out.println("array p");
-			
->>>>>>> 50dbbb9876ad6cf6c9371e760a2b244b2f8ceb02
 		}
 
 	}
 
-<<<<<<< HEAD
 	public void DayTester() {
 		Scanner sc = Utility.getScanner();
 
@@ -169,13 +159,26 @@ public class Chapter9 {
 	}
 
 	public void AccountTester1() {
-		Day day = new Day();
-		day.set(2017, 10, 25);
-		Account ac = new Account("test", "1234", 0, day);
+		Day day = new Day(2017, 10, 25);
+		Account ac = new Account("길동", "12345678", 100, day);
 
-		System.out.println(ac.toString());
+		Day p = ac.getOpenDay();
+		System.out.println("openday : " + p);
+
+		p.set(1993, 12, 31); // ac의 계좌개설일은 변경되지 않음
+
+		Day q = ac.getOpenDay();
+		System.out.println("openday : " + q);
 	}
 
-=======
->>>>>>> 50dbbb9876ad6cf6c9371e760a2b244b2f8ceb02
+	public void AccountTester2() {
+		Scanner sc = Utility.getScanner();
+		// 입력받아 계좌 생성(생략)
+		Account account = new Account("Tester2", "555555", 500, new Day(2001, 11, 18));
+
+		System.out.println("기본 정보 : " + account);
+		System.out.println("개설일 : " + account.getOpenDay().toString());
+
+	}
+
 }
