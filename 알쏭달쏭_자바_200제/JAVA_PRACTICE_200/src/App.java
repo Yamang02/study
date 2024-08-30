@@ -189,7 +189,8 @@ public class App {
 		// 146. Quiz.HumanArrayTester();
 		// 147. Quiz.DayTester();
 		// 148. Quiz.AccountTester1();
-		Quiz.AccountTester2();
+		// 149. Quiz.AccountTester2();
+		Quiz.HumanTester1();
 		
 
 	}
