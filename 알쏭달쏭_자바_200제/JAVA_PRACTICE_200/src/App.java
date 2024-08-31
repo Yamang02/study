@@ -190,8 +190,8 @@ public class App {
 		// 147. Quiz.DayTester();
 		// 148. Quiz.AccountTester1();
 		// 149. Quiz.AccountTester2();
-		Quiz.HumanTester1();
-		
+		// 150. Quiz.HumanTester1();
+		Quiz.PeriodTester();
 
 	}
 }

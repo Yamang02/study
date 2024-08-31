@@ -6,6 +6,7 @@ import practice.chapter8.Human;
 import practice.chapter9.Account;
 import practice.chapter9.Coordinate;
 import practice.chapter9.Day;
+import practice.chapter9.Period;
 import util.Utility;
 
 public class Chapter9 {
@@ -187,6 +188,12 @@ public class Chapter9 {
 
 		System.out.println("gildong : " + gildong);
 		System.out.println("chulsu : " + chulsu);
+
+	}
+
+	public void PeriodTester() {
+		Period taejo = new Period(new Day(1392, 8, 5), new Day(1398, 10, 14));
+		System.out.println("태조 = " + taejo);
 
 	}
 
