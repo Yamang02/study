@@ -12,11 +12,21 @@ import practice.chapter9.Day;
 @Data
 @AllArgsConstructor
 public class Human {
+	private static int counter = 0;
 	private String name;
 	private int height;
 	private int weight;
-	private Day birthday;
+	// private Day birthday;
+	private int id;
 
+	// constructor
+	public Human(String name, int height, int weight) {
+		this.name = name;
+		this.height = height;
+		this.weight = weight;
+
+		id = ++counter;
+	}
 
 	public void gainWeight(int w) {
 		this.weight += w;

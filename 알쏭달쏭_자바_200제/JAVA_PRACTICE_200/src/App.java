@@ -1,13 +1,4 @@
-import practice.Chapter1;
-import practice.Chapter2;
-import practice.Chapter3;
-import practice.Chapter4;
-import practice.Chapter5;
-import practice.Chapter6;
-import practice.Chapter7;
-import practice.Chapter8;
-import practice.Chapter9;
-import practice.chapter7.SignOf1;
+import practice.Chapter10;
 
 public class App {
 	public static void main(String[] args) throws Exception {
@@ -19,7 +10,8 @@ public class App {
 //		Chapter6 Quiz = new Chapter6();
 //		Chapter7 Quiz = new Chapter7();
 //		Chapter8 Quiz = new Chapter8();
-		Chapter9 Quiz = new Chapter9();
+//		Chapter9 Quiz = new Chapter9();
+		Chapter10 Quiz = new Chapter10();
 
 		// 1. Quiz.Hello();
 		// 2. Quiz.HelloError();
@@ -191,7 +183,9 @@ public class App {
 		// 148. Quiz.AccountTester1();
 		// 149. Quiz.AccountTester2();
 		// 150. Quiz.HumanTester1();
-		Quiz.PeriodTester();
+		// 151. Quiz.PeriodTester();
+		// 152. Quiz.HumanTester();
+		Quiz.IdTester();
 
 	}
 }

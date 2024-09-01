@@ -197,4 +197,12 @@ public class Chapter9 {
 
 	}
 
+	public void HumanTester() {
+		Human gildong = new Human("길동", 170, 60);
+		Human chulsu = new Human("철수", 166, 72);
+
+		System.out.println("gildong : " + gildong);
+		System.out.println("chulsu : " + chulsu);
+	}
+
 }
