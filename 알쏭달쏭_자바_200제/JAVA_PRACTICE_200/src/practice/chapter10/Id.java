@@ -10,4 +10,8 @@ public class Id {
 	public Id() {
 		id = ++counter;
 	}
+
+	public static int getMaxId() {
+		return counter;
+	}
 }
