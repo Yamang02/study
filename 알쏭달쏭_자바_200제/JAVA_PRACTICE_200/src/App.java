@@ -186,7 +186,9 @@ public class App {
 		// 151. Quiz.PeriodTester();
 		// 152. Quiz.HumanTester();
 		// 153. Quiz.IdTester();
-		Quiz.ExIdTester();
+		// 154. Quiz.ExIdTester();
+		Quiz.IntegerLimits();
+		
 
 	}
 }
