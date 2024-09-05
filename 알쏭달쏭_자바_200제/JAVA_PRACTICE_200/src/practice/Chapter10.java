@@ -1,7 +1,10 @@
 package practice;
 
+import java.util.Scanner;
+
 import practice.chapter10.ExId;
 import practice.chapter10.Id;
+import util.Utility;
 
 public class Chapter10 {
 
@@ -41,6 +44,18 @@ public class Chapter10 {
 		System.out.println("short   형 : " + Short.MIN_VALUE + " ~ " + Short.MAX_VALUE);
 		System.out.println("Integer 형 : " + Integer.MIN_VALUE + " ~ " + Integer.MAX_VALUE);
 		System.out.println("Long 	형 : " + Long.MIN_VALUE + " ~ " + Long.MAX_VALUE);
+
+	}
+
+	public void MathMethods() {
+		Scanner sc = Utility.getScanner();
+
+		System.out.print("실수값 : ");
+		double x = sc.nextDouble();
+
+		System.out.println("절댓값 : " + Math.abs(x));
+		System.out.println("제곱근 : " + Math.sqrt(x));
+		System.out.println("면 적  : " + Math.PI * x * x);
 
 	}
 

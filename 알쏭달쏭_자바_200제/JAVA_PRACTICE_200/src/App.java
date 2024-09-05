@@ -187,8 +187,7 @@ public class App {
 		// 152. Quiz.HumanTester();
 		// 153. Quiz.IdTester();
 		// 154. Quiz.ExIdTester();
-		Quiz.IntegerLimits();
-		
-
+		// 155. Quiz.IntegerLimits();
+		Quiz.MathMethods();
 	}
 }
