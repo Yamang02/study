@@ -2,9 +2,11 @@ package practice;
 
 import java.util.Scanner;
 
+import practice.chapter10.DayTester;
 import practice.chapter10.ExId;
 import practice.chapter10.Id;
 import practice.chapter7.Min3;
+import practice.chapter9.Day;
 import util.Utility;
 
 public class Chapter10 {
@@ -93,6 +95,12 @@ public class Chapter10 {
 			System.out.print(xmax[i] + " ");
 		}
 		System.out.println("}입니다.");
+	}
+
+	public void DayTester() {
+
+		Day d = new Day();
+		practice.chapter10.DayTester.display(d);
 	}
 
 }

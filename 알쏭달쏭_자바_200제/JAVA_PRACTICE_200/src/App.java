@@ -189,6 +189,8 @@ public class App {
 		// 154. Quiz.ExIdTester();
 		// 155. Quiz.IntegerLimits();
 		// 156. Quiz.MathMethods();
-		Quiz.MinMaxTester();
+		// 157. Quiz.MinMaxTester();
+		// 158
+		Quiz.DayTester();
 	}
 }
