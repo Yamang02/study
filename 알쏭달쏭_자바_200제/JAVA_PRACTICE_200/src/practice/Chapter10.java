@@ -100,7 +100,9 @@ public class Chapter10 {
 	public void DayTester() {
 
 		Day d = new Day();
-		practice.chapter10.DayTester.display(d);
+		// practice.chapter10.DayTester.display(d);
+		practice.chapter10.DayTester.change(d);
+
 	}
 
 }
