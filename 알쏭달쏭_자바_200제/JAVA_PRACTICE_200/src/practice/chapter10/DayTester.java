@@ -74,4 +74,28 @@ public class DayTester {
 
 	}
 
+	// 다른 날짜와 비교
+	public static void compare(Day day) {
+		System.out.println("비교 대상 날짜 입력");
+		int y = Utility.getIntForEnterString(sc, "year");
+		int m = Utility.getIntForEnterString(sc, "month");
+		int d = Utility.getIntForEnterString(sc, "day");
+
+		Day day2 = new Day(y, m, d);
+
+		int comp = day.compareTo(day2);
+		System.out.print(day);
+		switch (comp) {
+		case -1:
+			System.out.println("가 앞");
+			break;
+		case 1:
+			System.out.println("가 뒤");
+			break;
+		case 0:
+			System.out.println("와 같다.");
+			break;
+		}
+	}
+
 }
