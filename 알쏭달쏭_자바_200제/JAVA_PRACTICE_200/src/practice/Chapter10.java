@@ -102,8 +102,8 @@ public class Chapter10 {
 		Day d = new Day();
 		// practice.chapter10.DayTester.display(d);
 		// practice.chapter10.DayTester.change(d);
-		practice.chapter10.DayTester.compare(d);
-
+		// practice.chapter10.DayTester.compare(d);
+		practice.chapter10.DayTester.beforeAfter(d);
 	}
 
 }

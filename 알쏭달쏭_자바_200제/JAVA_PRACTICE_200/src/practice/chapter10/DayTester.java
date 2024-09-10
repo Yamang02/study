@@ -98,4 +98,29 @@ public class DayTester {
 		}
 	}
 
+	// 전후 날짜
+	public static void beforeAfter(Day day) {
+		System.out.println("[1] 내일 [2] 어제 [3] n일 후 [4] n일 전 :");
+		int type = sc.nextInt();
+		int n = 0;
+		if (type == 3 || type == 4) {
+			n = Utility.getIntForEnterString(sc, "며칠");
+		}
+		System.out.print("이 날은");
+		switch (type) {
+		case 1:
+			System.out.print(day.suceedingDay());
+			break;
+		case 2:
+			System.out.print(day.precedingDay());
+			break;
+		case 3:
+			System.out.print(day.after(n));
+			break;
+		case 4:
+			System.out.print(day.before(n));
+			break;
+		}
+		System.out.println("입니다.");
+	}
 }
